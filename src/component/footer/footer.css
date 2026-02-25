@@ -1,0 +1,111 @@
+
+
+.site-footer {
+  background: #ffffff;
+  padding: 72px 0 48px;
+  color: #222;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* last updated */
+.last-updated {
+  color: #6c757d;
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+
+/* column padding and max width so columns don't jam */
+.footer-column {
+  padding-right: 24px;
+  max-width: 320px; /* prevents a column from stretching too wide and keeps look neat */
+}
+
+/* title style */
+.title {
+  font-size: 15px;
+  margin-bottom: 18px;
+  letter-spacing: 0.2px;
+}
+
+/* list spacing — comfortable vertical rhythm */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 2.05; /* ~32px if base font 15-16px */
+  color: #4b4b4b;
+  font-size: 15px;
+}
+
+/* each item spacing */
+.footer-links li {
+  margin-bottom: 10px;
+  white-space: normal;
+}
+
+/* smaller screens: reduce max-width and spacing so layout fits */
+@media (max-width: 991.98px) {
+  .footer-column {
+    max-width: 100%;
+    padding-right: 12px;
+  }
+}
+
+/* bottom bar */
+.bottom-bar {
+  margin-top: 36px;
+  padding: 20px;
+  /* background: #E9DEFD; */
+  border-radius: 4px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* small links spacing */
+.small-links span {
+  margin: 0 10px;
+  color: #6c757d;
+  font-size: 14px;
+}
+
+/* icons vertical alignment on small screens */
+@media (max-width: 575.98px) {
+  .icons { justify-content: center; width: 100%; }
+  .small-links { font-size: 13px; }
+}
+
+/* optional subtle hover */
+.footer-links li:hover { color: #840be0; cursor: pointer; }
+.small-links span:hover { text-decoration: underline; cursor: pointer; }
+
+
+/* GO TO TOP BUTTON */
+
+.site-footer {
+  position: relative;
+}
+
+/* Go to Top Button */
+.go-top-btn {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  background: linear-gradient(135deg, #6B5BFF, #9D4CF5);
+  color: #fff;
+  border: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  z-index: 10;
+}
+
+.go-top-btn:hover {
+  transform: translateY(-4px);
+  opacity: 0.9;
+}

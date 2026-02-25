@@ -1,0 +1,27 @@
+/* DEFAULT (LIGHT) */
+.themed-section {
+  --bg-color: #ffffff;
+  --text-color: #020617;
+  --card-bg: #f8fafc;
+  --border-color: #e5e7eb;
+}
+
+/* DARK SECTION */
+.themed-section[data-theme="dark"] {
+  --bg-color: #020617;
+  --text-color: #e5e7eb;
+  --card-bg: #020617;
+  --border-color: #334155;
+}
+
+/* APPLY */
+.themed-section {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.4s ease;
+}
+
+.themed-section .card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+}

@@ -1,0 +1,11 @@
+/* 2nd row - 2nd box move up */
+.row2-move-up {
+  margin-top: -95px;
+}
+
+/* Mobile safe */
+@media (max-width: 991px) {
+  .row2-move-up {
+    margin-top: 0;
+  }
+}

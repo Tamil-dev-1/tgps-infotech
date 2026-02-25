@@ -1,0 +1,207 @@
+/* HERO */
+.dev-hero {
+  padding: 120px 20px;
+  background: radial-gradient(circle at top, #4f46e5, #020617);
+  color: white;
+}
+
+.dev-hero-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 60px;
+}
+
+.dev-badge {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.dev-hero h1 {
+  font-size: 3.4rem;
+  margin: 20px 0;
+}
+
+.dev-hero span {
+  color: #6366f1;
+}
+
+.dev-hero p {
+  opacity: 0.85;
+  max-width: 520px;
+}
+
+/* BUTTONS */
+.dev-actions {
+  margin-top: 30px;
+  display: flex;
+  gap: 16px;
+}
+
+.primary-btn {
+  padding: 14px 32px;
+  border-radius: 50px;
+  border: none;
+  background: #6366f1;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.secondary-btn {
+  padding: 14px 32px;
+  border-radius: 50px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: white;
+  cursor: pointer;
+}
+
+/* TERMINAL */
+.terminal {
+  background: #020617;
+  border-radius: 20px;
+  padding: 30px;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+/* BUILD FLOW */
+.build-flow {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.flow-grid {
+  max-width: 1000px;
+  margin: 60px auto 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.flow-card {
+  background: #141547;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.flow-card span {
+  color: #6366f1;
+  font-weight: bold;
+}
+
+/* API */
+.api-playground {
+  padding: 100px 20px;
+}
+
+.api-box {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px;
+  background: #141547;
+  border-radius: 24px;
+  text-align: center;
+  color: #e5e7eb;
+}
+
+.api-box pre {
+  margin: 30px 0;
+  padding: 24px;
+  background: #020617;
+  border-radius: 16px;
+  overflow-x: auto;
+  text-align: left;
+}
+
+/* JOURNEY */
+.dev-journey {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.journey-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.journey-step {
+  background: #0b0f2b;
+  padding: 26px;
+  border-radius: 18px;
+}
+
+/* CTA */
+.dev-cta {
+  padding: 120px 20px;
+  background: linear-gradient(135deg, #6366f1, #312e81);
+  color: white;
+  text-align: center;
+}
+
+
+/* USE CASES */
+.dev-usecases {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.usecase-grid {
+  margin-top: 50px;
+  max-width: 1000px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.usecase-card {
+  background: #141547;
+  padding: 28px;
+  border-radius: 20px;
+  color: #e5e7eb;
+  font-weight: 500;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+  .dev-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .dev-hero p {
+    margin-inline: auto;
+  }
+
+  .dev-actions {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 576px) {
+  .dev-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+  }
+
+  .terminal {
+    font-size: 13px;
+    padding: 20px;
+  }
+}

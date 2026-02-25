@@ -1,0 +1,102 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.fc-doc-page {
+  /* background: #05070d;
+  color: #e5e7eb; */
+  min-height: 100vh;
+}
+
+/* breadcrumb */
+.fc-breadcrumb {
+  color: #9ca3af;
+  font-size: 14px;
+  letter-spacing: .5px;
+}
+
+.fc-breadcrumb .accent {
+  color: #a78bfa;
+}
+
+/* titles */
+.fc-main-title {
+  /* font-size: 40px; */
+  font-size: clamp(24px, 5vw, 40px);
+  font-weight: 800;
+  /* color: white; */
+}
+
+.fc-step-title {
+  margin-top: 48px;
+  /* font-size: 32px; */
+  font-size: clamp(20px, 4vw, 32px);
+  font-weight: 700;
+  /* color: white; */
+}
+
+/* text */
+.fc-para {
+  /* color: #cbd5f1; */
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+.fc-faq-q {
+  color: #e9d5ff;
+  margin-top: 22px;
+}
+
+/* sidebar */
+.fc-doc-sidebar {
+  position: sticky;
+  top: 100px;
+  padding-left: 40px;
+}
+
+.fc-side-card {
+  border-left: 1px solid #1f2937;
+  padding-left: 18px;
+}
+
+.fc-side-title {
+  color: #6b7280;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.fc-side-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.fc-side-card li {
+  margin-bottom: 12px;
+}
+
+.fc-side-card a {
+  text-decoration: none;
+  color: #9ca3af;
+  transition: .2s;
+}
+
+.fc-side-card a:hover {
+  color: white;
+}
+
+/* edit button */
+.fc-edit-btn {
+  width: 100%;
+  background: transparent;
+  border: 1px solid #8b5cf6;
+  color: #c4b5fd;
+  padding: 10px;
+  border-radius: 10px;
+  transition: .3s;
+}
+
+.fc-edit-btn:hover {
+  background: #8b5cf6;
+  color: white;
+}

@@ -1,0 +1,92 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
+.stack-wrapper {
+  position: relative;
+  overflow: visible;   /* 🔥 MUST */
+}
+
+
+
+.page-spacer {
+  height: 120vh;
+  padding: 80px;
+  background: #f3f3f3;
+}
+
+/* Sticky wrapper */
+.stack-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  /* background: red;  */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* overflow: hidden; */
+  /* overflow-y: visible; */
+}
+
+/* Card (NOT full width) */
+.stack-card {
+  position: absolute;
+  width: 980px;
+  max-width: 90%;
+  height: 420px;
+  /* background: #ffffff; */
+  border-radius: 24px;
+  display: flex;
+  gap: 32px;
+  padding: 32px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.25);
+}
+
+/* Left image */
+.card-image {
+  width: 55%;
+  height: 100%;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Right text */
+.card-content {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-content h2 {
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.card-content p {
+  font-size: 15px;
+  line-height: 1.5;
+  opacity: 0.8;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .stack-card {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .card-image,
+  .card-content {
+    width: 100%;
+  }
+}

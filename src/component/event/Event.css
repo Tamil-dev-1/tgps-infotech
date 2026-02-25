@@ -1,0 +1,113 @@
+/* Section */
+.events-section {
+  position: relative;
+}
+
+/* Description */
+.events-desc {
+  max-width: 550px;
+  transition: 0.3s;
+}
+
+/* Card */
+.event-card {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Banner */
+.event-banner {
+  height: 200px;
+  border-radius: 22px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Dark overlay */
+.event-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.15)
+  );
+}
+
+/* Content */
+.event-overlay {
+  position: relative;
+  height: 100%;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #fff;
+}
+
+.event-bigtext {
+  font-weight: 700;
+  line-height: 1.2;
+  max-width: 80%;
+}
+
+/* Badge */
+.event-badge {
+  align-self: flex-start;
+  margin-top: 12px;
+  padding: 6px 18px;
+  border-radius: 50px;
+  border: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  backdrop-filter: blur(8px);
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.event-badge:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* CTA Button */
+.events-cta {
+  background: #7a3ef3;
+  color: #fff;
+  padding: 10px 28px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.events-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(122, 62, 243, 0.562);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .event-banner {
+    height: 220px;
+  }
+
+  .event-bigtext {
+    max-width: 100%;
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-widht: 992px) {
+  .event-banner {
+    height: 200px;
+  }
+
+  .event-bigtext {
+    font-size: 1.1rem;
+  }
+}

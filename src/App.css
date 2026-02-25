@@ -1,0 +1,235 @@
+/* DEFAULT (LIGHT THEME) */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+  --card-bg: #f8f9fa;
+  --card-text: #111111;
+  --border-color: #e5e5e5;
+}
+:root {
+  --hero-gradient: linear-gradient(127deg, #4b36ff, #111111);
+}
+/* Light theme */
+.gradient-box {
+  background: #F2E8FF;
+  border-radius: 16px;
+  padding: 24px;
+  transition: background 0.3s ease;
+}
+
+/* Gradient variables */
+:root {
+  --gradient-1: linear-gradient(127deg, #4b36ff, #111111);
+  --gradient-2: linear-gradient(127deg, #ff4b4b, #111111);
+  --gradient-3: linear-gradient(127deg, #4bff8f, #111111);
+  --gradient-4: linear-gradient(127deg, #ffb84b, #111111);
+  --gradient-5: linear-gradient(127deg, #113228, #111111);
+}
+
+/* Dark theme – individual gradients */
+[data-theme="dark"] .gradient-1 {
+  background-image: var(--gradient-1);
+}
+
+[data-theme="dark"] .gradient-2 {
+  background-image: var(--gradient-2);
+}
+
+[data-theme="dark"] .gradient-3 {
+  background-image: var(--gradient-3);
+}
+
+[data-theme="dark"] .gradient-4 {
+  background-image: var(--gradient-4);
+}
+
+/* Text color fix for dark theme */
+[data-theme="dark"] .gradient-box {
+  color: #ffffff;
+}
+
+
+[data-theme="dark"] .gradient-5 {
+  background-image: var(--gradient-5);
+}
+
+/* Text color fix for dark theme */
+[data-theme="dark"] .gradient-box {
+  color: #ffffff;
+}
+
+
+            /* Join frequencychain.org */
+
+ /* LIGHT THEME */
+:root {
+  --box-gradient: linear-gradient(180deg, #E8DDFD 0%, white 100%);
+}
+
+/* DARK THEME */
+[data-theme="dark"] {
+  --box-gradient: linear-gradient(360deg,#111111 , #1B193C);
+}
+           
+.gradient-box {
+  background-image: var(--box-gradient);
+  border-radius: 16px;
+  padding: 24px;
+  transition: background 0.3s ease;
+}
+
+
+                 /* GOVERNANCE */
+
+ /* LIGHT THEME */
+:root {
+  --bg-gradient: linear-gradient(135deg, #0d6efd, #6532ff);
+}
+
+/* DARK THEME */
+[data-theme="dark"] {
+  --bg-gradient: linear-gradient(360deg,#111111 , #1B193C);
+}
+           
+.gradient-bg {
+  background-image: var(--bg-gradient);
+  border-radius: 16px;
+  padding: 24px;
+  transition: background 0.3s ease;
+}                 
+
+
+:root {
+  --bg-sidebar: #ffffff;
+}
+
+/* DARK THEME */
+[data-theme="dark"] {
+  --bg-sidebar: linear-gradient(360deg,#111111 , #9357F4);
+}
+           
+.sidebar-bg {
+  background-image: var(--bg-sidebar);
+  border-radius: 16px;
+  padding: 24px;
+  transition: background 0.3s ease;
+} 
+
+
+:root {
+  --color-sidebar: #ffffff;
+}
+
+/* DARK THEME */
+[data-theme="dark"] {
+  --color-sidebar: linear-gradient(360deg,#111111 , #9357F4);
+}
+           
+.sidebar-text {
+  background-image: var(--color-sidebar);
+  border-radius: 16px;
+  padding: 24px;
+  transition: background 0.3s ease;
+}
+
+
+
+
+                  /* F   A  Q    PAGE */
+
+:root {
+  --color-faq: linear-gradient(135deg, #6b4dfb 0%, #4736d8 50%, #2a1fa6 100%);
+}
+
+/* DARK THEME */
+[data-theme="dark"] {
+  --color-faq: linear-gradient(360deg,#111111 , #321A29);
+}
+           
+.bg-faq {
+  background-image: var(--color-faq);
+  border-radius: 16px;
+  padding: 24px;
+  transition: background 0.3s ease;
+}          
+
+
+                          /* Developer page  */
+:root {
+  --color-dev: linear-gradient(135deg, #6b4dfb 0%, #4736d8 50%, #2a1fa6 100%);
+}
+
+/* DARK THEME */
+[data-theme="dark"] {
+  --color-dev: linear-gradient(360deg,#111111 , #113228);
+}
+           
+.bg-dev {
+  background-image: var(--color-dev);
+  border-radius: 16px;
+  padding: 24px;
+  transition: background 0.3s ease;
+}                      
+
+
+/* [data-theme="dark"] {
+  --hero-gradient: linear-gradient(127deg, #6c5cff, #ffffff);
+}
+
+.gradient-text {
+  background-image: var(--hero-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
+
+/* DARK THEME */
+[data-theme="dark"] {
+  --bg-color: #000000;
+  --text-color: #ffffff;
+  --card-bg: #151a2d;
+  --card-text: #ffff;
+  --border-color: #2a2f45;
+}
+
+.card,
+.card-body,
+.card-title,
+.card-text,
+.card p {
+  color: var(--card-text);
+}
+
+
+
+
+/* APPLY TO WHOLE WEBSITE */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* COMMON COMPONENTS */
+.card {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+   color: var(--card-text);
+}
+
+.about-frec-1{
+    --bg-color: #f0f8ff;   /* Light blue */
+  --text-color: #111111;
+  --card-bg: #ffffff;
+  --card-text: #111111;
+  --border-color: #d0d7e0;
+}
+
+.about-frec-1[data-theme="dark"]{
+     --bg-color: #101427;
+  --text-color: #f0f0f0;
+  --card-bg: #1a2033;
+  --card-text: #ffffff;
+  --border-color: #2e3650;
+}
+

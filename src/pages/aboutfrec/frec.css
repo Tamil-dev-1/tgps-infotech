@@ -1,0 +1,144 @@
+/* final road map section  */
+
+.roadmap-section {
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  padding: 100px 0;
+  color: #fff;
+}
+
+.roadmap-wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* HEADER */
+.roadmap-header {
+  max-width: 520px;
+  margin-bottom: 120px;
+}
+
+.roadmap-header h2 {
+  font-size: 34px;
+  margin-bottom: 16px;
+}
+
+.roadmap-header p {
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+.roadmap-buttons {
+  margin-top: 24px;
+  display: flex;
+  gap: 12px;
+}
+
+.btn-primary {
+  background: #6366f1;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 999px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.btn-secondary {
+  background: #111827;
+  border: 1px solid #334155;
+  padding: 10px 18px;
+  border-radius: 999px;
+  color: #fff;
+  font-size: 14px;
+}
+
+/* TIMELINE */
+.timeline {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+}
+
+/* LINE */
+.timeline-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #6366f1;
+  opacity: 0.6;
+}
+
+/* ITEM */
+.timeline-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.timeline-item.top {
+  align-items: flex-start;
+}
+
+.timeline-item.bottom {
+  align-items: flex-end;
+}
+
+/* DOT */
+.dot {
+  position: absolute;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  background: #a5b4fc;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+/* CARD */
+.card {
+  background: #111827;
+  border-radius: 16px;
+  padding: 20px;
+  width: 260px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.timeline-item.top .card {
+  margin-bottom: 60px;
+}
+
+.timeline-item.bottom .card {
+  margin-top: 60px;
+}
+
+.card h4 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.card ul {
+  padding-left: 16px;
+  color: #cbd5e1;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .timeline {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .timeline-line {
+    display: none;
+  }
+
+  .timeline-item.top .card,
+  .timeline-item.bottom .card {
+    margin: 0;
+  }
+}

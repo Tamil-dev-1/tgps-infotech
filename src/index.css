@@ -1,0 +1,77 @@
+/* Hover dropdown on desktop */
+@media (min-width: 992px) {
+  .navbar .dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .navbar .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.15s ease-in-out;
+  }
+}
+/* Slide-in mobile menu */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 85%;
+  max-width: 380px;
+  height: 100vh;
+  background: #fff;
+  z-index: 9999;
+  transition: right 0.3s ease;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.15);
+  overflow-y: auto;
+}
+
+.mobile-menu.open {
+  right: 0;
+}
+
+/* Submenu list */
+.submenu {
+  background: #f8f9fa;
+  padding: 10px 15px;
+}
+
+.submenu-item {
+  margin: 5px 0;
+  padding-bottom: 5px;
+  font-size: 15px;
+  color: #444;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Desktop hover dropdown */
+.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+/* Mega dropdown style */
+.mega-dropdown {
+  width: 300px;
+}
+
+/* Mobile accordion dropdown */
+.mobile-dropdown {
+  display: none;
+  padding-left: 15px;
+  background: blue;
+}
+
+.mobile-dropdown.show {
+  display: block;
+}
+
+.mobile-dropdown a {
+  padding: 8px 0;
+  display: block;
+  font-size: 15px;
+}

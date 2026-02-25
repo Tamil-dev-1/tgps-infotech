@@ -1,0 +1,211 @@
+/* ---------- HERO ---------- */
+.breadcrumb-text {
+  color: #8b8b8b;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.breadcrumb-text span {
+  margin: 0 6px;
+}
+
+.breadcrumb-text .active {
+  color: #b58cff;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 5vw, 4.2rem);
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.hero-desc {
+  color: #cfcfcf;
+  max-width: 520px;
+  line-height: 1.7;
+}
+
+.hero-img {
+  max-height: 520px;
+}
+
+/* ---------- CONFERENCE CARDS ---------- */
+.conference-card {
+  transition: transform 0.35s ease;
+}
+
+.conference-card:hover {
+  transform: translateY(-6px);
+}
+
+.conference-image {
+  height: 220px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.conference-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logo-box {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-box img {
+  width: 32px;
+  height: 32px;
+}
+
+
+ /* SECTION ---- 3 */
+/* ===== Horizontal scroll ===== */
+.hub-scroll {
+  display: flex;
+  gap: 22px;                 /* slightly tighter gap */
+  overflow-x: auto;
+  padding-bottom: 14px;
+  scroll-snap-type: x mandatory;
+}
+
+.hub-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.hub-scroll::-webkit-scrollbar-thumb {
+  background: #777;
+  border-radius: 10px;
+}
+
+/* ===== Card base (REDUCED SIZE) ===== */
+.hub-card {
+  min-width: 300px;          /* ↓ reduced from 340px */
+  height: 440px;             /* ↓ reduced from 520px */
+  padding: 26px 22px;        /* ↓ reduced padding */
+  border-radius: 26px;
+  color: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  scroll-snap-align: start;
+  position: relative;
+  transition: transform 0.35s ease;
+}
+
+.hub-card:hover {
+  transform: translateY(-6px);
+}
+
+/* ===== Card gradients (unchanged) ===== */
+/* .hub-card.london {
+  background: radial-gradient(circle at top, #2b3550, #0e1423);
+} */
+
+/* ===== LONDON CARD ===== */
+
+/* DARK THEME */
+.hub-card.london.dark {
+  background: radial-gradient(circle at top, #2b3550, #0e1423);
+}
+
+/* LIGHT THEME */
+.hub-card.london.light {
+  background: #EFF2F8;
+}
+
+/* .hub-card.berlin {
+  background: radial-gradient(circle at top, #4a1f5c, #16071e);
+} */
+
+/* DARK THEME */
+.hub-card.berlin.dark {
+  background: radial-gradient(circle at top, #4a1f5c, #16071e);
+}
+
+/* LIGHT THEME */
+.hub-card.berlin.light {
+  background: #F0EAF1;
+}
+
+/* .hub-card.dubai {
+  background: radial-gradient(circle at top, #5a3f10, #1a1204);
+} */
+
+/* DARK THEME */
+.hub-card.dubai.dark {
+  background: radial-gradient(circle at top, #5a3f10, #1a1204);
+}
+
+/* LIGHT THEME */
+.hub-card.dubai.light {
+  background: #F7F2E7;
+}
+
+/* .hub-card.lagos {
+  background: radial-gradient(circle at top, #0b3b4f, #03161e);
+} */
+
+/* DARK THEME */
+.hub-card.lagos.dark {
+  background: radial-gradient(circle at top, #0b3b4f, #03161e);
+}
+
+/* LIGHT THEME */
+.hub-card.lagos.light {
+  background: #E6EEF2;
+}
+
+/* ===== Logo badge (slightly smaller) ===== */
+.hub-logo {
+  width: 64px;               /* ↓ reduced */
+  height: 64px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 18px;       /* ↓ reduced */
+  background: rgba(255,255,255,0.08);
+}
+
+.hub-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===== Text (slightly compact) ===== */
+.hub-card h4 {
+  font-size: 1.35rem;        /* ↓ reduced */
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.hub-card p {
+  font-size: 0.9rem;         /* ↓ reduced */
+  line-height: 1.55;
+  color: #d0d0d0;
+  margin-bottom: 12px;
+}
+
+/* ===== Links at bottom ===== */
+.hub-links {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hub-links a {
+  color: #b58cff;
+  font-size: 0.85rem;        /* ↓ reduced */
+  text-decoration: none;
+}
+
+.hub-links a:hover {
+  text-decoration: underline;
+}

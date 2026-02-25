@@ -1,0 +1,171 @@
+.stake-img {
+  max-width: 85%;
+  animation: float 4s ease-in-out infinite;
+}
+
+.stake-line {
+  width: 60px;
+  height: 2px;
+  background: #4b36ff;
+  margin-bottom: 20px;
+}
+
+/* Slight floating effect for premium feel */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
+h2 {
+  color: #111;
+}
+
+h4 {
+  color: #000;
+  font-size: 20px;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+
+
+                                 /* SECTION ======= 4 */
+
+
+
+.premium-title {
+  font-size: 32px;
+  background-image: linear-gradient(127deg, #4b36ff, #111);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* FIXED – No crop, true 16:9 aspect ratio */
+.video-box {
+  width: 100%;
+  max-width: 750px;
+  aspect-ratio: 16 / 9;   /* THIS FIXES CROPPING */
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 auto;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* iframe fills correctly */
+.video-frame {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+/* Premium button */
+.premium-btn {
+  background: #4b36ff;
+  color: #fff;
+  border-radius: 30px;
+  font-weight: 600;
+  box-shadow: 0 5px 20px rgba(75, 54, 255, 0.4);
+  transition: 0.3s;
+}
+
+.premium-btn:hover {
+  background: #3728d5;
+  transform: translateY(-3px);
+}
+
+
+
+
+                                     /* SECTION ======= 5 */
+
+
+
+.round-corner{
+    border-top-right-radius:40px ;
+    border-bottom-left-radius: 40px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}                                     
+
+
+                          /* SECTION ======= 6 */
+.icon-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: #000;
+  margin: 0 auto;
+}
+
+
+                                /* SECTION ========= 7 */
+
+
+
+.earn-card {
+  background: #0b0d12;
+  border-top-right-radius:40px ;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 50px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Left Text */
+.earn-title {
+    color: #ffff;
+  font-size: 32px;
+  font-weight: 700;
+  max-width: 520px;
+}
+
+/* Buttons */
+.stake-btn {
+  background: #6757ff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+.buy-btn {
+  background: #1d1d1d;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+/* Right Decoration */
+.decor-area {
+  width: 250px;
+  height: 160px;
+  position: relative;
+}
+
+.decor-lines {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  right: -40px;
+  top: -20px;
+  background-image:
+    radial-gradient(circle at 40% 40%, transparent 45%, #2e3237 46%),
+    radial-gradient(circle at 60% 60%, transparent 45%, #2e3237 46%),
+    radial-gradient(circle at 50% 80%, transparent 45%, #2e3237 46%);
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  opacity: 0.4;
+}
+

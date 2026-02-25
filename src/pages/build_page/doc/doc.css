@@ -1,0 +1,255 @@
+/* Load Inter font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+.docs-container {
+  font-family: "Inter", sans-serif;
+  max-width: 1200px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  
+}
+
+/* Top-right links */
+.top-links a {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+  margin-bottom: 2px;
+  letter-spacing: 0.5px;
+}
+
+.last-edit {
+  font-size: 11px;
+  color: #666;
+}
+
+/* Title */
+.page-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+/* Text */
+.body-text {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 18px;
+  color: #111;
+}
+
+/* List */
+.custom-list {
+  padding-left: 18px;
+}
+.custom-list li {
+  margin-bottom: 14px;
+  font-size: 16px;
+}
+
+/* Info box */
+.info-box {
+  background: #e3f6df;
+  padding: 22px;
+  border-left: 5px solid #249c3a;
+  border-radius: 5px;
+}
+
+/* Sidebar */
+.sidebar {
+  border-left: 1px solid #ddd;
+  padding-left: 25px !important;
+  margin-top: -10px;
+}
+.sidebar-item {
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+/* -------------------- SECTION 2 (NO GLOBAL OVERRIDE) -------------------- */
+
+.docs-section2 {
+  width: 100%;
+  margin-top: 60px;
+}
+
+.docs-section2 .cards-centered {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Custom Row */
+.docs-section2 .cards-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Custom Column */
+.docs-section2 .cards-col {
+  flex: 1 1 calc(50% - 20px);
+  display: flex;
+}
+
+/* Card */
+.docs-section2 .doc-card {
+  border: 1px solid #dedede;
+  border-radius: 12px;
+  padding: 28px 30px;
+  /* background: #fff; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 250px;
+  transition: 0.25s;
+}
+
+.docs-section2 .doc-card:hover {
+  border-color: #111;
+}
+
+/* Icon */
+.docs-section2 .card-icon {
+  font-size: 28px;
+  margin-bottom: 18px;
+}
+
+/* Title */
+.docs-section2 .card-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Desc */
+.docs-section2 .card-desc {
+  font-size: 15px;
+  color: #555;
+  flex-grow: 1;
+  margin-bottom: 22px;
+}
+
+/* Read more */
+.docs-section2 .read-more {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #000;
+  text-decoration: none;
+}
+.docs-section2 .read-more:hover {
+  text-decoration: underline;
+}
+
+/* ------------------ RESPONSIVE ------------------ */
+
+@media (max-width: 991px) {
+  .docs-section2 .cards-col {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 767px) {
+  .docs-section2 .cards-col {
+    flex: 1 1 100%;
+  }
+}
+
+
+
+
+               /* FINAL SECTION */
+   /* TITLE */
+.sdk-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.sdk-subtitle {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* YELLOW ALERT */
+.alert-box {
+  /* background: #fff7dd; */
+  border-left: 3px solid #e9b600;
+  padding: 18px 22px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+/* CARD STYLING */
+.sdk-card {
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  padding: 28px;
+  /* background: #fff; */
+  min-height: 130px;
+  transition: 0.2s;
+}
+
+.sdk-card:hover {
+  border-color: #000;
+}
+
+/* ICON */
+.sdk-icon {
+  font-size: 26px;
+  margin-bottom: 14px;
+}
+
+/* CARD TITLE */
+.sdk-title-small {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .sdk-card {
+    min-height: 120px;
+  }
+}
+
+
+
+
+
+
+              /* demo home section */
+
+              .premium-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.premium-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+.side-img {
+  width: 140px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+
+            

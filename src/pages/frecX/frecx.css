@@ -1,0 +1,485 @@
+/* SECTION ----- 1 */
+
+.frecx-section {
+  /* min-height: 100vh; */
+  /* background-color: #000; */
+  padding: 20px 0;
+}
+
+/* Small heading */
+.frec-subtitle {
+  color: #9b6cff;
+  letter-spacing: 2px;
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+/* Big title */
+.frecx-title1 {
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+/* Paragraph */
+.frecx-desc {
+  /* font-size: 18px; */
+  font-size: 14px;
+  line-height: 1.8;
+  /* color: #cfcfcf; */
+  max-width: 520px;
+}
+
+/* Image */
+.frecx-image {
+  max-width: 420px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .frecx-title {
+    font-size: 38px;
+  }
+
+  .frecx-desc {
+    font-size: 16px;
+  }
+}
+
+/* SECTION ------- 2 */
+
+.frecx-intro {
+  /* background: #000; */
+  color: #fff;
+  padding: 10px 60px;
+}
+
+/* Meta */
+.frecx-updated {
+  color: #8b8b8b;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.frecx-updated span {
+  color: #bfbfbf;
+}
+
+/* Contributors */
+.frecx-contributors {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 32px;
+}
+
+.avatars {
+  display: flex;
+}
+
+.avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #9b6cff, #4f46e5);
+  margin-left: -8px;
+  border: 2px solid #000;
+}
+
+.contributors-link {
+  color: #9b6cff;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.contributors-link:hover {
+  text-decoration: underline;
+}
+
+/* Text */
+.frecx1-text {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #e5e5e5;
+  margin-bottom: 28px;
+  max-width: 760px;
+}
+
+.frecx-bold {
+  font-weight: 600;
+}
+
+/* List */
+.frecx-list1 {
+  padding-left: 22px;
+  margin-bottom: 32px;
+}
+
+.frecx-list1 li {
+  font-size: 13px;
+  /* color: #e5e5e5; */
+  margin-bottom: 14px;
+}
+
+/* Link */
+.frecx-link {
+  color: #9b6cff;
+  text-decoration: none;
+  margin-left: 4px;
+}
+
+.frecx-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .frecx-intro {
+    padding: 60px 24px;
+  }
+}
+
+
+/* SECTION ------- 3 */
+
+.frecx-usecases {
+  /* background: #000; */
+  color: #fff;
+  padding: 10px 60px;
+}
+
+/* Row */
+.frecx-row {
+  gap: 24px;
+  padding: 2px 0;
+}
+
+/* Icon box */
+.frecx-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: #0d0d0d; */
+  box-shadow: 0 0 0 1px #1f1f1f inset;
+}
+
+/* Icon colors */
+.frecx-icon.consumer i {
+  color: #7aa2ff;
+}
+
+.frecx-icon.developer i {
+  color: #ff7ad9;
+}
+
+.frecx-icon.investor i {
+  color: #5cffc9;
+}
+
+.frecx-icon i {
+  font-size: 28px;
+}
+
+/* Text */
+.frecx-content h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.frecx-content p {
+  font-size: 15px;
+  line-height: 1.7;
+  /* color: #cfcfcf; */
+  max-width: 760px;
+}
+
+/* Divider */
+hr {
+  border-color: #1f1f1f;
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .frecx-usecases {
+    padding: 60px 24px;
+  }
+
+  .frecx-row {
+    flex-direction: column;
+  }
+}
+
+
+/* SECTION ------ 4 */
+
+.frecx-buy-section {
+  /* background: #000; */
+  color: #fff;
+  padding: 70px 60px;
+}
+
+/* Title */
+.frecx-title2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+/* Paragraph */
+.frecx-text1 {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #d1d1d1;
+  margin-bottom: 22px;
+  max-width: 760px;
+}
+
+/* Sub headings */
+.frecx-subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 40px 0 18px;
+}
+
+/* Lists */
+.frecx-list {
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.frecx-list li {
+  font-size: 17px;
+  color: #d1d1d1;
+  margin-bottom: 14px;
+}
+
+/* SIDENOTE */
+.frecx-sidenote {
+  background: #fff4c4;
+  color: #000;
+  border-radius: 10px;
+  padding: 22px;
+  display: flex;
+  gap: 16px;
+  margin: 36px 0;
+}
+
+.sidenote-icon {
+  font-size: 26px;
+  line-height: 1;
+}
+
+.frecx-sidenote strong {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.frecx-sidenote p {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.frecx-sidenote ul {
+  padding-left: 18px;
+}
+
+.frecx-sidenote li {
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .frecx-buy-section {
+    padding: 60px 24px;
+  }
+
+  .frecx-title {
+    font-size: 32px;
+  }
+}
+
+
+/* SECTION ------ 5 */
+.frecx-send-section {
+  /* background: #000; */
+  color: #fff;
+  padding: 10px 60px;
+}
+
+/* Icon */
+.frecx-top-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.frecx-top-icon img {
+  width: 48px;
+  opacity: 0.9;
+}
+
+/* Title */
+.frecx-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 28px;
+}
+
+/* Text */
+.frecx-text {
+  font-size: 17px;
+  line-height: 1.8;
+  /* color: #d1d1d1; */
+  margin-bottom: 22px;
+  max-width: 760px;
+}
+
+/* Link */
+.frecx-link {
+  color: #9b6cff;
+  text-decoration: none;
+}
+
+.frecx-link:hover {
+  text-decoration: underline;
+}
+
+/* SIDENOTE */
+.frecx-sidenote {
+  background: #fff4c4;
+  color: #000;
+  border-radius: 10px;
+  padding: 24px;
+  display: flex;
+  gap: 16px;
+  margin: 40px 0;
+  max-width: 760px;
+}
+
+.sidenote-icon {
+  font-size: 26px;
+  line-height: 1;
+}
+
+.frecx-sidenote strong {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.frecx-sidenote p {
+  font-size: 15px;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .frecx-send-section {
+    padding: 70px 24px;
+  }
+
+  .frecx-title {
+    font-size: 32px;
+  }
+}
+
+
+/* SECTION ------- 6 */
+.frecx-time-section {
+  /* background: #000; */
+  color: #fff;
+  padding: 70px 60px;
+  overflow: hidden;
+}
+
+/* Title */
+.frecx-time-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 28px;
+  max-width: 720px;
+}
+
+/* Text */
+.frecx-time-text {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #d1d1d1;
+  margin-bottom: 22px;
+  max-width: 720px;
+}
+
+/* Image */
+.frecx-time-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.frecx-time-image img {
+  width: 360px;
+  max-width: 100%;
+  opacity: 0.95;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .frecx-time-section {
+    padding: 80px 24px;
+  }
+
+  .frecx-time-title {
+    font-size: 32px;
+  }
+
+  .frecx-time-image {
+    margin-top: 60px;
+  }
+}
+
+
+/* SECTION ------ 7 */
+.enter-l2-section {
+  background-color: #0000;
+}
+
+.enter-l2-section a:hover {
+  text-decoration: underline;
+}
+
+/* .l2-image-wrapper {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0)
+  );
+  padding: 20px;
+  border-radius: 24px;
+} */
+
+/* SECTON ------- 7 */
+.frecx-supply-section {
+  /* background-color: #000; */
+}
+
+.frecx-supply-section ul li {
+  line-height: 1.6;
+}
+
+.l2-text {
+  font-size: 30px;
+}
+
+.l2-text-p {
+  font-size: 16px;
+}
