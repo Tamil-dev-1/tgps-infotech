@@ -1,181 +1,213 @@
-import React, { useState, useContext, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useState } from "react";
 import "./Navbar.css";
-import { ThemeContext } from "../../ThemeContext";
 
-const NavbarComponent = () => {
-  const { theme, toggleTheme } = useContext(ThemeContext);
-  const [scrolled, setScrolled] = useState(false);
-  const [mobileOpen, setMobileOpen] = useState(false);
+export default function MegaNavbar() {
 
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 10);
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
-  // BACKGROUND Color
-
-  const darkGradients = [
-  "linear-gradient(90deg,rgba(6, 5, 5, 1) 0%, rgba(5, 3, 6, 1) 56%)"
-];
-
-const lightGradients = [
-  "linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%)"
-];
-
-const bg =
-  theme === "dark"
-    ? darkGradients[Math.floor(Math.random() * darkGradients.length)]
-    : lightGradients[Math.floor(Math.random() * lightGradients.length)];
-
-
-  const menuData = [
-    {
-      key: "learn",
-      title: "Learn",
-      links: [
-        { to: "about-frecx", label: "About FreC", icon: "bi-info-circle" },
-        { to: "governance", label: "Governance", icon: "bi-diagram-3" },
-        { to: "/faq", label: "FAQ", icon: "bi-question-circle" },
-      ],
-    },
-    {
-      key: "build",
-      title: "Build",
-      links: [
-        { to: "developer", label: "Developer", icon: "bi-code-slash" },
-        { to: "doc", label: "Docs", icon: "bi-journal-text" },
-      ],
-    },
-    {
-      key: "getStarted",
-      title: "Get Started",
-      links: [
-        { to: "stake-earn", label: "Stake & Earn", icon: "bi-wallet2" },
-      ],
-    },
-    {
-      key: "ecosystem",
-      title: "Ecosystem",
-      links: [
-        { to: "/ourproduct", label: "Our Product", icon: "bi-box" },
-        { to: "/blog", label: "Blog", icon: "bi-pencil-square" },
-      ],
-    },
-    {
-      key: "participate",
-      title: "Research",
-      links: [
-        { to: "whitepaper", label: "Whitepaper", icon: "bi-file-earmark-text" },
-        { to: "roadmap", label: "Roadmap", icon: "bi-map" },
-      ],
-    },
-  ];
+  const [activeNav, setActiveNav] = useState(null);
+  const [activeMenu, setActiveMenu] = useState(null);
+  const [mobileMenu, setMobileMenu] = useState(false);
+  const [mobileSubMenu, setMobileSubMenu] = useState(null);
 
   return (
-    <nav className={`navbar modern-navbar ${scrolled ? "nav-scrolled" : ""}`} style={{
-  background: bg,
-  color: theme === "dark" ? "#fff" : "#111",
-  transition: "0.3s",
-}}
->
-      <div className="container"
-    
+    <nav
+      className="navbar navbar-expand-lg bg-white shadow-sm mega-navbar"
+      onMouseLeave={() => setActiveNav(null)}
+    >
+      <div className="container-fluid px-4">
 
-      >
+        {/* Logo */}
+        <a className="navbar-brand fw-bold fs-3">LOGO</a>
 
-        {/* LEFT LOGO */}
-        <Link className="navbar-brand modern-brand" to="/">
-          <img src="/logo.svg" width="34" alt="logo" />
-          <span>FreC</span>
-        </Link>
+        {/* Mobile Toggle */}
+        <button
+          className="navbar-toggler border-0"
+          onClick={() => setMobileMenu(!mobileMenu)}
+        >
+          ☰
+        </button>
 
-        {/* CENTER MENU — DESKTOP ONLY */}
-        <div className="nav-center d-none d-lg-flex">
-          {menuData.map((menu) => (
-            <div className="modern-dropdown-wrapper" key={menu.title}>
-              <button className="modern-nav-pill">
-                {menu.title}
-                <i className="bi bi-chevron-down ms-1"></i>
-              </button>
+        {/* NAV */}
+        <ul className={`navbar-nav gap-4 mobile-nav ${mobileMenu ? "show" : ""}`}>
 
-              <div className="modern-dropdown-menu">
-                {menu.links.map((link) => (
-                  <Link key={link.label} to={link.to} className="modern-drop-item">
-                    <i className={`bi ${link.icon}`}></i>
-                    {link.label}
-                  </Link>
+          {Object.keys(fullMenuData).map((nav, i) => (
+            <li
+              key={i}
+              className="nav-item position-static mobile-nav-item"
+              onMouseEnter={() => {
+                setActiveNav(nav);
+                setActiveMenu(Object.keys(fullMenuData[nav])[0]);
+              }}
+            >
+
+              {/* Nav Click (Mobile Accordion) */}
+              <div
+                className="nav-link fw-semibold d-flex justify-content-between"
+                onClick={() =>
+                  setMobileSubMenu(mobileSubMenu === nav ? null : nav)
+                }
+              >
+                {nav} <span>▾</span>
+              </div>
+
+              {/* MOBILE ACCORDION */}
+              {mobileSubMenu === nav && (
+                <div className="mobile-submenu">
+                  {Object.keys(fullMenuData[nav]).map((item, idx) => (
+                    <div key={idx} className="mobile-submenu-item">
+                      <h6>{item}</h6>
+                      {fullMenuData[nav][item].cards.map((card, c) => (
+                        <p key={c}>{card.title}</p>
+                      ))}
+                    </div>
+                  ))}
+                </div>
+              )}
+
+            </li>
+          ))}
+
+        </ul>
+
+        {/* Buttons */}
+        <div className="d-flex gap-2 desktop-btns">
+          <button className="btn btn-warning">Get in touch</button>
+          <button className="btn btn-outline-dark">Partner With Us</button>
+        </div>
+
+      </div>
+
+      {/* DESKTOP MEGA MENU */}
+      {activeNav && (
+        <div className="mega-menu shadow-lg">
+          <div className="row g-0">
+
+            {/* LEFT SIDEBAR */}
+            <div className="col-md-3 sidebar">
+              {Object.keys(fullMenuData[activeNav]).map((item, i) => (
+                <div
+                  key={i}
+                  className={`sidebar-item ${activeMenu === item ? "active" : ""}`}
+                  onClick={() => setActiveMenu(item)}
+                >
+                  {item} <span>›</span>
+                </div>
+              ))}
+            </div>
+
+            {/* RIGHT CONTENT */}
+            <div className="col-md-9 content-area">
+              <h5 className="fw-bold mb-4">{activeMenu}</h5>
+              <p className="text-muted mb-4">
+                {fullMenuData[activeNav][activeMenu].description}
+              </p>
+
+              <div className="row">
+                {fullMenuData[activeNav][activeMenu].cards.map((card, i) => (
+                  <div key={i} className="col-md-6 mb-4">
+                    <div className="menu-card">
+                      <div className="line"></div>
+                      <h6>{card.title}</h6>
+                      <p>{card.desc}</p>
+                    </div>
+                  </div>
                 ))}
               </div>
             </div>
-          ))}
-        </div>
 
-        {/* RIGHT ACTIONS */}
-        <div className="nav-right" style={{
-          color: theme === "dark" ? "#00F7FF" : "#ffffff",
-    transition: "0.3s",
-        }}>
-          <i className="bi bi-search nav-icon" style={{fontSize:"20px"}}></i>
-          <i
-            className={`bi ${theme === "light" ? "bi-sun" : "bi-moon"} nav-icon`}
-            onClick={toggleTheme} style={{fontSize:"20px"}}
-          ></i>
-        </div>
-
-        {/* MOBILE HAMBURGER */}
-        <button
-          className="mobile-hamburger d-lg-none"
-          onClick={() => setMobileOpen(true)}
-        >
-          <i className="bi bi-list"></i>
-        </button>
-
-      </div>
-
-      {/* ===== MOBILE SIDEBAR ===== */}
-      <div className={`mobile-sidebar ${mobileOpen ? "open" : ""}`}>
-        <div className="mobile-sidebar-header">
-          <span>Menu</span>
-          <i
-            className="bi bi-x-lg"
-            onClick={() => setMobileOpen(false)}
-          ></i>
-        </div>
-
-        {menuData.map((menu) => (
-          <div key={menu.title} className="mobile-menu-group">
-            <div className="mobile-menu-title"
-            style={{
-                color: theme === "dark" ? "green" : "#FF8040",
-  transition: "0.3s",
-            }}
-            >{menu.title}</div>
-
-            {menu.links.map((link) => (
-              <Link
-                key={link.label}
-                to={link.to}
-                className="mobile-menu-link"
-                onClick={() => setMobileOpen(false)}
-              >
-                <i className={`bi ${link.icon}`}></i>
-                {link.label}
-              </Link>
-            ))}
           </div>
-        ))}
-      </div>
-
-      {/* BACKDROP */}
-      <div
-        className={`mobile-backdrop ${mobileOpen ? "show" : ""}`}
-        onClick={() => setMobileOpen(false)}
-      ></div>
+        </div>
+      )}
 
     </nav>
   );
-};
+}
 
-export default NavbarComponent;
+const fullMenuData = {
+  Blockchain: {
+    Blockchain:{
+      description:"Navigate your journey towards blockchain",
+      cards:[
+        {title:"Blockchain Development",desc:"Strategic services"},
+        {title:"Identity Management",desc:"Secure identity"},
+        {title:"Depin Development",desc:"Future apps"},
+        {title:"Offshore Center",desc:"Build teams"}
+      ]
+    },
+
+    "Demo":{
+      description:"Navigate your journey towards blockchain",
+      cards:[
+        {title:"Blockchain2 Development",desc:"Strategic services"},
+        {title:"Identity2 Management",desc:"Secure identity"},
+        {title:"Depin2 Development",desc:"Future apps"},
+        {title:"Offshore2 Center",desc:"Build teams"}
+      ]
+    }
+  },
+  AI:{
+    "AI Development":{
+      description:"AI solutions",
+      cards:[
+        {title:"ML Apps",desc:"Machine learning"},
+        {title:"Chatbots",desc:"Assistants"},
+        {title:"Vision AI",desc:"Image AI"},
+        {title:"Automation",desc:"Process AI"}
+      ]
+    }
+  },
+  Web2:{
+    "Game Development":{
+      description:"Gaming solutions",
+      cards:[
+        {title:"Unity",desc:"3D games"},
+        {title:"Unreal",desc:"AAA games"},
+        {title:"Web3",desc:"Blockchain games"},
+        {title:"AR/VR",desc:"Immersive"}
+      ]
+    }
+  },
+  Consulting:{
+    "Tech Consulting":{
+      description:"Strategic help",
+      cards:[
+        {title:"Architecture",desc:"System design"},
+        {title:"Security",desc:"Risk audit"},
+        {title:"Cloud",desc:"Infra"},
+        {title:"Scaling",desc:"Growth"}
+      ]
+    }
+  },
+  Solutions:{
+    "Business Solutions":{
+      description:"Digital tools",
+      cards:[
+        {title:"ERP",desc:"Enterprise"},
+        {title:"CRM",desc:"Customer"},
+        {title:"Fintech",desc:"Finance"},
+        {title:"Healthcare",desc:"Medical"}
+      ]
+    }
+  },
+  // Industries:{
+  //   "Industry Solutions":{
+  //     description:"Industry tech",
+  //     cards:[
+  //       {title:"Finance",desc:"Bank tech"},
+  //       {title:"Retail",desc:"Commerce"},
+  //       {title:"Logistics",desc:"Supply"},
+  //       {title:"Education",desc:"EdTech"}
+  //     ]
+  //   }
+  // },
+  "About Us":{
+    "Company":{
+      description:"Know us",
+      cards:[
+        {title:"Our Story",desc:"Journey"},
+        {title:"Team",desc:"Leadership"},
+        {title:"Careers",desc:"Join"},
+        {title:"Contact",desc:"Reach us"}
+      ]
+    }
+  }
+};

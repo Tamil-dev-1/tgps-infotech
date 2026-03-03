@@ -1,186 +1,56 @@
-import { motion } from "framer-motion";
-import FcLogoCoin from "../../assets/images/herocoin/fcCoin.webp";
-import React, { useContext } from "react";
-import { ThemeContext } from "../../ThemeContext";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay, Navigation } from "swiper/modules";
 
-const HeroSection = () => {
-  const { theme } = useContext(ThemeContext);
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
-  const words = ["Secure", "Decentralized", "Scalable"];
-  const loopWords = [...words, ...words]; // duplicate for seamless loop
+import "./Hero.css";
+import { useState } from "react";
+
+
+export default function HeroSlider() {
+  const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section
-      style={{
-        position: "relative",
-        overflow: "hidden",
-        background:
-          theme === "dark"
-            ? "#000000"
-            : "linear-gradient(146deg, rgba(0,0,0,1) 0%, rgba(18,108,250,1) 50%, rgba(105,69,197,1) 100%)",
-        color: theme === "dark" ? "#ffffff" : "#111111",
-        transition: "0.3s",
-      }}
-    >
-      {/* 🌌 BACKGROUND GLOWS */}
-      <motion.div
-        animate={{ x: [0, 100, -50, 0], y: [0, -80, 60, 0] }}
-        transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-        style={{
-          position: "absolute",
-          width: "450px",
-          height: "450px",
-          background: "radial-gradient(circle, #00f7ff55, transparent 70%)",
-          top: "-120px",
-          left: "-120px",
-          filter: "blur(70px)",
+    <section className="heros">
+      <Swiper
+        modules={[Pagination, Autoplay, Navigation]}
+        loop={true}
+        autoplay={{
+          delay: 4000,
+          disableOnInteraction: false,
         }}
-      />
-
-      <motion.div
-        animate={{ x: [0, -120, 80, 0], y: [0, 100, -60, 0] }}
-        transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-        style={{
-          position: "absolute",
-          width: "520px",
-          height: "520px",
-          background: "radial-gradient(circle, #6f00ff55, transparent 70%)",
-          bottom: "-160px",
-          right: "-160px",
-          filter: "blur(80px)",
-        }}
-      />
-
-      {/* 🌟 MAIN WRAPPER */}
-      <div
-        className="container"
-        style={{
-          position: "relative",
-          zIndex: 3,
-          minHeight: "100vh",
-          display: "flex",
-          alignItems: "center",
-        }}
+        pagination={{ clickable: true }}
+        navigation={true}
+        onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
+        className="heroSwiper"
+        
       >
-        <div className="row w-100 align-items-center" style={{ rowGap: "40px" }}>
-          
-          {/* 📝 LEFT CONTENT */}
-          <motion.div
-            className="col-12 col-md-6 col-lg-7"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            style={{ color: "#fff" }}
-          >
-            {/* 🔥 BIG ROTATING HEADLINE */}
-            <h1 className="display-4 fw-bold mb-3">
-              Powering the Future of <br />
-
-              <span
-                style={{
-                  display: "inline-block",
-                  height: "70px",
-                  overflow: "hidden",
-                  color: "#00f7ff",
-                }}
-              >
-                <motion.span
-                  animate={{ y: ["0%", "-50%"] }}
-                  transition={{
-                    duration: 7,
-                    repeat: Infinity,
-                    ease: "linear",
-                  }}
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                  }}
-                >
-                  {loopWords.map((word, i) => (
-                    <span
-                      key={i}
-                      style={{
-                        height: "70px",
-                        lineHeight: "70px",
-                      }}
-                    >
-                      {word}
-                    </span>
-                  ))}
-                </motion.span>
-              </span>
-            </h1>
-
-            <p className="text-light fs-5 mb-4">
-              Build the next generation of Web3.
-            </p>
-
-            <div className="d-flex gap-3 flex-wrap">
-              <button className="btn btn-info btn-lg px-4">
-                Get Started
-              </button>
-              <button className="btn btn-outline-light btn-lg px-4">
-                Whitepaper
-              </button>
-            </div>
-          </motion.div>
-
-          {/* 🪙 RIGHT COIN */}
-          <div className="col-12 col-md-6 col-lg-5 d-flex justify-content-center">
-            <motion.div
-              animate={{ rotateY: 360 }}
-              transition={{
-                duration: 16,
-                repeat: Infinity,
-                ease: "linear",
-              }}
-              style={{
-                width: "320px",
-                height: "320px",
-                perspective: "1200px",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <motion.img
-                src={FcLogoCoin}
-                alt="FrequencyChain Coin"
-                loading="lazy"
-                decoding="async"
-                animate={{ y: [0, -12, 0] }}
-                transition={{
-                  duration: 4,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "contain",
-                  transformStyle: "preserve-3d",
-                  filter: "drop-shadow(0 30px 60px rgba(0,247,255,0.45))",
-                }}
-              />
-            </motion.div>
+        <SwiperSlide className="hero-slide hero1">
+          <div className={`hero-content ${activeIndex === 0 ? "animate" : ""}`}>
+            <h1>Grow Your Business</h1>
+            <p>We build modern digital solutions</p>
+            <button>Let's Talk</button>
           </div>
+        </SwiperSlide>
 
-        </div>
-      </div>
+        <SwiperSlide className="hero-slide hero2">
+          <div className={`hero-content ${activeIndex === 1 ? "animate" : ""}`}>
+            <h1>Creative IT Solutions</h1>
+            <p>We turn ideas into reality</p>
+            <button>Get Started</button>
+          </div>
+        </SwiperSlide>
 
-      {/* 🎞️ GRAIN OVERLAY */}
-      <div
-        style={{
-          position: "absolute",
-          inset: 0,
-          background: "url('https://grainy-gradients.vercel.app/noise.svg')",
-          opacity: 0.06,
-          pointerEvents: "none",
-          zIndex: 2,
-        }}
-      />
+        <SwiperSlide className="hero-slide hero3">
+          <div className={`hero-content ${activeIndex === 2 ? "animate" : ""}`}>
+             <h1>Build Your Future</h1>
+            <p>Modern Web Development</p>
+            <button>Contact Us</button>
+          </div>
+        </SwiperSlide>
+      </Swiper>
     </section>
   );
-};
-
-export default HeroSection;
+}

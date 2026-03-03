@@ -1,54 +1,204 @@
-/* .carousel-item {
-  padding: 10px 5px;
+/* -----------------------------
+  BLOG SECTION
+------------------------------- */
+.blog-section {
+  background: #f6f7fb;
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+  padding-bottom: 60px; /* Space for overlapping boxes */
 }
 
-.carousel-card-img {
-  border-radius: 16px;
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+/* -----------------------------
+  SWIPER CONTAINER FIXES
+------------------------------- */
+.blog-carousel-wrapper {
+  overflow: visible;  /* Allow slides to overflow vertically on hover */
+  padding-bottom: 80px; /* Extra space for bottom overlap */
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  filter: invert(1);
-} */
-.hero-title {
-  font-size: 48px;
+.swiper-wrapper {
+  overflow: visible !important;  /* Make sure slide container allows overflow */
+}
+
+.swiper-slide {
+  overflow: visible !important; /* Prevent cropping inside slides */
+}
+
+/* -----------------------------
+  HEADING
+------------------------------- */
+.blog-subtitle {
+  color: #5a54ff;
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.blog-title {
   font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 40px;
   line-height: 1.2;
-  background-image: linear-gradient(127deg, #4b36ff, #111);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
-/* CARD */
+/* -----------------------------
+  CARD
+------------------------------- */
 .blog-card {
-  border-radius: 5px;
-  overflow: hidden;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  padding-bottom: 140px; /* Enough space for overlapping box */
+  transition: transform 0.4s ease;
+  z-index: 1; /* Base stacking */
 }
 
 .blog-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  transform: translateY(-15px);
+  z-index: 10; /* Bring hovered card above others */
 }
 
-/* IMAGE FIXED HEIGHT */
-.blog-img {
-  height: 230px;
+/* -----------------------------
+  IMAGE
+------------------------------- */
+.blog-image img {
+  width: 100%;
+  height: 280px;  /* Increased from 260px to prevent cropping on hover */
   object-fit: cover;
-  flex-shrink: 0;
+  border-radius: 20px;
+  display: block;
 }
 
-/* TITLE – FIX HEIGHT (2 LINES ONLY) */
-.blog-title {
-  min-height: 48px;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+/* -----------------------------
+  OVERLAPPING WHITE BOX
+------------------------------- */
+.blog-content-box {
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  bottom: -30px; /* Slight overlap below image */
+  background: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+  z-index: 5;
 }
 
+/* -----------------------------
+  META
+------------------------------- */
+.blog-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
 
+.blog-category {
+  background: #eef0ff;
+  color: #5a54ff;
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.blog-date {
+  font-size: 13px;
+  color: #888;
+  text-transform: uppercase;
+}
+
+/* -----------------------------
+  TITLE
+------------------------------- */
+.blog-heading {
+  font-weight: 600;
+  margin-bottom: 25px;
+  line-height: 1.4;
+}
+
+/* -----------------------------
+  FOOTER
+------------------------------- */
+.blog-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.author-name {
+  font-weight: 600;
+}
+
+.author-role {
+  color: #888;
+  font-size: 13px;
+}
+
+/* -----------------------------
+  BUTTON
+------------------------------- */
+.blog-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  background: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.blog-btn:hover {
+  background: #5a54ff;
+  color: #fff;
+  border-color: #5a54ff;
+}
+
+/* -----------------------------
+  RESPONSIVE
+------------------------------- */
+@media (max-width: 992px) {
+  .blog-card {
+    padding-bottom: 160px;
+  }
+
+  .blog-content-box {
+    bottom: -25px;
+    left: 10px;
+    right: 10px;
+  }
+
+  .blog-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-card {
+    padding-bottom: 180px;
+  }
+
+  .blog-content-box {
+    bottom: -20px;
+    left: 10px;
+    right: 10px;
+  }
+
+  .blog-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 576px) {
+  .blog-card {
+    padding-bottom: 200px;
+  }
+
+  .blog-content-box {
+    bottom: -15px;
+    left: 5px;
+    right: 5px;
+  }
+
+  .blog-title {
+    font-size: 24px;
+  }
+}

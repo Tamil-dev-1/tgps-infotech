@@ -1,56 +1,70 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import { ThemeContext } from "../../ThemeContext";
-import { Link } from "react-router-dom";
 
 import "swiper/css";
-import { path } from "framer-motion/client";
+
+import "./Blog.css";
+import BlogThumb1 from "../../assets/images/Blog/blogThumb1.jpg";
+import BlogThumb2 from "../../assets/images/Blog/blogThumb2.jpg";
+import BlogThumb3 from "../../assets/images/Blog/blogThumb3.jpg";
+
+const posts = [
+  {
+    id: 1,
+    category: "Shared Hosting",
+    date: "March 24, 2024",
+    title: "Attentive Was Born In 2015 Help Sales Teams",
+    image: BlogThumb1,
+  },
+  {
+    id: 2,
+    category: "Uncategorized",
+    date: "March 14, 2024",
+    title: "Best And Fastest Data Server Ever",
+    image: BlogThumb2,
+  },
+  {
+    id: 3,
+    category: "Technology",
+    date: "March 29, 2024",
+    title: "Life Won’t One Beast Air Over Above All",
+    image: BlogThumb3,
+  },
+  {
+    id: 4,
+    category: "Cloud",
+    date: "April 01, 2024",
+    title: "Modern Cloud Hosting Platform",
+    image: BlogThumb2,
+  },
+  {
+    id: 5,
+    category: "Security",
+    date: "April 10, 2024",
+    title: "Advanced Server Security Solutions",
+    image: BlogThumb3,
+  },
+];
 
 export default function BlogCarousel() {
-  const { theme } = useContext(ThemeContext);
-
-  const blogs = [
-    {
-      img: "https://images.pexels.com/photos/261662/pexels-photo-261662.jpeg",
-      author: "John Doe",
-      date: "14 Jan, 2024",
-      title: "Premium UI trends that will shape the next decade",
-      path: "/blog-1"
-    },
-    {
-      img: "https://images.pexels.com/photos/7887800/pexels-photo-7887800.jpeg",
-      author: "Sarah Smith",
-      date: "22 Feb, 2024",
-      title: "How modern branding works in a digital-first world",
-      path: "/blog-2"
-    },
-    {
-      img: "https://images.pexels.com/photos/14751274/pexels-photo-14751274.jpeg",
-      author: "Anoop Kumar",
-      date: "05 Mar, 2024",
-      title: "Building scalable web apps with React & Cloud",
-      path: "/blog-3"
-    },
-    {
-      img: "https://images.pexels.com/photos/8369764/pexels-photo-8369764.jpeg",
-      author: "Emily Carter",
-      date: "20 Mar, 2024",
-      title: "Why storytelling matters for product design",
-      path: "/blog-4"
-    },
-  ];
-
   return (
-    <section className="py-5">
+    <div className="blog-section py-5">
       <div className="container">
-        <h2 className="text-center fw-bold mb-4 hero-title">Recent Posts</h2>
 
-        <Swiper
+        {/* Section Heading */}
+        <div className="text-center mb-5">
+          <h6 className="blog-subtitle">LATEST BLOG</h6>
+          <h2 className="blog-title">Our Blogs</h2>
+        </div>
+
+       <div className="blog-carousel-wrapper">
+         <Swiper
           modules={[Autoplay]}
-          spaceBetween={30}
+          spaceBetween={40}
+          slidesPerView={3}
           loop={true}
-          speed={1200}
+          speed={800}
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,
@@ -58,37 +72,49 @@ export default function BlogCarousel() {
           breakpoints={{
             0: { slidesPerView: 1 },
             768: { slidesPerView: 2 },
-            1200: { slidesPerView: 3 },
+            992: { slidesPerView: 3 },
           }}
         >
-          {blogs.map((item, i) => (
-            <SwiperSlide key={i}>
-  <Link to={item.path || "#"} style={{ textDecoration: "none", color: "inherit" }}>
-    <div className="card h-100 border-0 rounded-5">
-      <img src={item.img} alt="blog" className="w-100 rounded-top-5" />
+          {posts.map((post) => (
+            <SwiperSlide key={post.id}>
+              <div className="blog-card">
 
-      <div className="p-4">
-        <small
-          style={{
-            color: theme === "dark" ? "#aaa" : "#777",
-          }}
-        >
-          BY {item.author} — {item.date}
-        </small>
+                <div className="blog-image">
+                  <img src={post.image} alt={post.title} />
+                </div>
 
-        <h5 className="mt-2 fw-semibold">{item.title}</h5>
+                <div className="blog-content-box">
+                  <div className="blog-meta">
+                    <span className="blog-category">
+                      {post.category}
+                    </span>
+                    <span className="blog-date">
+                      {post.date}
+                    </span>
+                  </div>
 
-        <span className="fw-semibold text-primary">
-          Read More →
-        </span>
-      </div>
-    </div>
-  </Link>
-</SwiperSlide>
+                  <h5 className="blog-heading">
+                    {post.title}
+                  </h5>
 
+                  <div className="blog-footer">
+                    <div>
+                      <div className="author-name">Admin</div>
+                      <small className="author-role">
+                        Co, Founder
+                      </small>
+                    </div>
+                    <button className="blog-btn">→</button>
+                  </div>
+                </div>
+
+              </div>
+            </SwiperSlide>
           ))}
         </Swiper>
+       </div>
+
       </div>
-    </section>
+    </div>
   );
 }

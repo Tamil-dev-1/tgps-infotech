@@ -1,159 +1,146 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./footer.css";
-import { useContext } from "react";
-import { ThemeContext } from "../../ThemeContext";
 
 const Footer = () => {
-
-   const {theme} = useContext(ThemeContext);
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
   return (
-    <footer className="site-footer"
-     style={{
-    background: theme === "dark" ? "#000000" : "#ffff",
-    color: theme === "dark" ? "#ffffff" : "#111111",
-    transition: "0.3s",
-  }}
-    >
-      <div className="container">
-        <p className="last-updated">Website last updated: December 8, 2025</p>
-
-        {/* 5 columns */}
-        <div className="row gx-5 gy-5">
-          <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 footer-column">
-            <h6 className="title">Learn</h6>
-            <ul className="footer-links">
-              <li>Learn Hub</li>
-              <li>What is Frequency Chain?</li>
-              <li>What is FrecX?</li>
-              <li>FrecX wallets</li>
-              <li>What is Web3?</li>
-              <li>Smart contracts</li>
-              <li>Gas fees</li>
-              <li>Run a node</li>
-              <li>Frequency security</li>
-              <li>Quiz Hub</li>
-              <li>Frequency glossary</li>
-            </ul>
-          </div>
-
-          <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 footer-column">
-            <h6 className="title">Use</h6>
-            <ul className="footer-links">
-              <li>Guides</li>
-              <li>Choose your wallet</li>
-              <li>Get FrecX</li>
-              <li>Application explorer</li>
-              <li>Stablecoins</li>
-              <li>NFTs</li>
-              <li>DeFi</li>
-              <li>DAOs</li>
-              <li>Decentralized identity</li>
-              <li>Stake FrecX</li>
-              <li>Layer 2</li>
-            </ul>
-          </div>
-
-          <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 footer-column">
-            <h6 className="title">Build</h6>
-            <ul className="footer-links">
-              <li>Builder's home</li>
-              <li>Tutorials</li>
-              <li>Documentation</li>
-              <li>Learn by coding</li>
-              <li>Set up environment</li>
-              <li>Grants</li>
-              <li>Foundational topics</li>
-              <li>UX/UI fundamentals</li>
-              <li>Mainnet Frequency</li>
-              <li>Founders</li>
-            </ul>
-          </div>
-
-          <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 footer-column">
-            <h6 className="title">Participate</h6>
-            <ul className="footer-links">
-              <li>Community hub</li>
-              <li>Online communities</li>
-              <li>Frequency Chain events</li>
-              <li>Contributing to frequencyChain.org</li>
-              <li>Translation Program</li>
-              <li>Frequency bug bounty</li>
-              <li>Frequency Foundation</li>
-              <li>Foundation Blog (↗)</li>
-              <li>Ecosystem Support Program (↗)</li>
-              <li>Devcon (↗)</li>
-            </ul>
-          </div>
-
-          <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 footer-column">
-            <h6 className="title">Research</h6>
-            <ul className="footer-links">
-              <li>Frequency Whitepaper</li>
-              <li>Frequency roadmap</li>
-              <li>Improved security</li>
-              <li>Technical history</li>
-              <li>Open research</li>
-              <li>EIPs</li>
-              <li>Frequency governance</li>
-              <li>Trillion dollar project</li>
-            </ul>
-          </div>
-        </div>
-
-        {/* Bottom bar */}
-        <div className="bottom-bar py-4 position-relative"
-           style={{
-    background: theme === "dark" ? "#280A3E" : "#E9DEFD",
-    color: theme === "dark" ? "#ffffff" : "#111111",
-    transition: "0.3s",
-  }}
+    <>
+      {/* ================= CTA SECTION ================= */}
+      <div className="container my-5">
+        <div
+          className="p-5 rounded-4 text-white"
+          style={{
+            background: "linear-gradient(90deg, #3b4fe4, #5a6df5)",
+          }}
         >
-          <div className="d-flex flex-column flex-md-row justify-content-between align-items-center gap-4">
-
-            {/* Social Icons */}
-            <div className="icons d-flex gap-4">
-              <i className="bi bi-github" style={{ fontSize: "1.8rem" }}></i>
-              <i className="bi bi-twitter-x" style={{ fontSize: "1.8rem" }}></i>
-              <i className="bi bi-discord" style={{ fontSize: "1.8rem" }}></i>
+          <div className="row align-items-center">
+            <div className="col-md-3 text-center text-md-start mb-4 mb-md-0">
+              <img
+                src="https://i.imgur.com/8Km9tLL.png"
+                alt="Man with laptop"
+                className="img-fluid"
+                style={{ maxHeight: "180px" }}
+              />
             </div>
 
-            {/* Footer Links */}
-            <div
-              className="small-links text-center text-md-start d-flex flex-wrap justify-content-center gap-3"
-              style={{ fontSize: "0.95rem", fontWeight: "500" }}
-            >
-              <span>About us</span>
-              <span>Brand assets</span>
-              <span>Jobs</span>
-              <span>Privacy policy</span>
-              <span>Terms of use</span>
-              <span>Cookie policy</span>
-              <span>Press</span>
+            <div className="col-md-6 text-center text-md-start">
+              <h3 className="fw-bold">
+                Stay Connected With <br /> Cutting Edge IT
+              </h3>
             </div>
 
+            <div className="col-md-3 text-center text-md-end mt-3 mt-md-0">
+              <button className="btn btn-light rounded-pill px-4 fw-semibold">
+                Talk To A Specialist →
+              </button>
+            </div>
           </div>
-
-          {/* GO TO TOP BUTTON */}
-          <button
-            className="go-top-btn"
-            onClick={scrollToTop}
-            aria-label="Go to top"
-          >
-            ↑
-          </button>
-
         </div>
       </div>
-    </footer>
+
+      {/* ================= FOOTER ================= */}
+      <footer className="pt-5 pb-4 text-white" style={{ background: "#1d1e60" }}>
+        <div className="container">
+          <div className="row">
+
+            {/* Column 1 */}
+            <div className="col-lg-3 col-md-6 mb-4">
+              <h3 className="fw-bold mb-3">Extech</h3>
+              <p className="text-light">
+                Extech IT is a Phasellus ultricies aliquam volutpat ullamcorper
+                laoreet neque, a lacinia curabitur lacinia mollis.
+              </p>
+
+              <div className="d-flex gap-2 mt-3">
+                <a href="#" className="btn btn-outline-light btn-sm">
+                  <i className="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" className="btn btn-outline-light btn-sm">
+                  <i className="fab fa-twitter"></i>
+                </a>
+                <a href="#" className="btn btn-outline-light btn-sm">
+                  <i className="fab fa-youtube"></i>
+                </a>
+                <a href="#" className="btn btn-outline-light btn-sm">
+                  <i className="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+
+            {/* Column 2 */}
+            <div className="col-lg-3 col-md-6 mb-4">
+              <h5 className="fw-bold mb-3">Quick Links</h5>
+              <ul className="list-unstyled">
+                <li className="mb-2"><a href="#" className="text-light text-decoration-none">Extech About</a></li>
+                <li className="mb-2"><a href="#" className="text-light text-decoration-none">Our Services</a></li>
+                <li className="mb-2"><a href="#" className="text-light text-decoration-none">Our Blogs</a></li>
+                <li className="mb-2"><a href="#" className="text-light text-decoration-none">FAQ'S</a></li>
+                <li><a href="#" className="text-light text-decoration-none">Contact Us</a></li>
+              </ul>
+            </div>
+
+            {/* Column 3 */}
+            <div className="col-lg-3 col-md-6 mb-4">
+              <h5 className="fw-bold mb-3">Recent Posts</h5>
+
+              <div className="d-flex mb-3">
+                <img
+                  src="https://images.pexels.com/photos/7651715/pexels-photo-7651715.jpeg"
+                  alt=""
+                  className="rounded me-3"
+                  width="60"
+                  height="60"
+                />
+                <div>
+                  <small className="text-info">15th April, 2024</small>
+                  <p className="mb-0 small">
+                    Top 5 Most Famous Technology Trend In 2024
+                  </p>
+                </div>
+              </div>
+
+              <div className="d-flex">
+                <img
+                  src="https://images.pexels.com/photos/7651715/pexels-photo-7651715.jpeg"
+                  alt=""
+                  className="rounded me-3"
+                  width="60"
+                  height="60"
+                />
+                <div>
+                  <small className="text-info">20th June, 2024</small>
+                  <p className="mb-0 small">
+                    The Surfing Man Will Blow Your Mind
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Column 4 */}
+            <div className="col-lg-3 col-md-6 mb-4">
+              <h5 className="fw-bold mb-3">Contact Us</h5>
+              <p><i className="fa fa-envelope me-2"></i> info@example.com</p>
+              <p><i className="fa fa-phone me-2"></i> +208-6666-0112</p>
+
+              <div className="input-group mt-3">
+                <input
+                  type="email"
+                  className="form-control"
+                  placeholder="Your email address"
+                />
+                <button className="btn btn-primary">→</button>
+              </div>
+
+              <div className="form-check mt-3">
+                <input className="form-check-input" type="checkbox" />
+                <label className="form-check-label small">
+                  I agree to the <a href="#" className="text-white">Privacy Policy</a>
+                </label>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </footer>
+    </>
   );
 };
 

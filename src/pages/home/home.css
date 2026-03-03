@@ -1,41 +1,274 @@
-/* 
+/* About section styles */
 
-.hero-section {
-  padding: 120px 0;
-  background: linear-gradient(#eef3fb, #dfeaf7);
-  position: relative;
+.about-section {
+  background-color: #f8f9fb;
 }
 
-.hero-title {
-  font-size: 72px;
-  font-weight: 800;
+.about-small-title {
+  color: #1b1f31;
+  font-weight: 500;
+}
+
+.about-main-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #0b1c4d;
+  line-height: 1.2;
+}
+
+.icon-box {
+  width: 60px;
+  height: 60px;
+  background-color: #e9f0ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  color: #3b5bdb;
+}
+
+@media (max-width: 768px) {
+  .about-main-title {
+    font-size: 32px;
+  }
+}
+
+.right-image {
+  height: 350px;          /* increase height here */
+  object-fit: cover;      /* keeps image nicely cropped */
+  width: 85%;
+}
+
+/* img-rounded */
+.round-diagonal {
+  border-radius: 25px 0 25px 0;
+}
+.middle-img{
+  margin-bottom: 25px;
+}
+
+
+/* WHY CHOOSE US SECTION */
+
+.why-section {
+  background: #eef1f6;
+}
+
+/* LEFT */
+.section-subtitle {
   letter-spacing: 2px;
+  font-size: 14px;
   color: #000;
 }
 
-.hero-subtitle {
-  margin-top: -15px;
-  font-size: 64px;
+.section-title {
+  font-size: 42px;
   font-weight: 700;
-  color: #6ca8ff;
 }
 
-.hero-image-wrapper {
-  margin: 40px 0;
+.section-text {
+  color: #6c757d;
+  max-width: 500px;
 }
 
-.hero-image {
-  width: 260px;
-  height: auto;
-  filter: drop-shadow(0px 20px 40px rgba(0, 0, 0, 0.25));
+.play-btn {
+  width: 60px;
+  height: 60px;
+  background: #3b5bdb;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 18px;
 }
 
-.hero-description {
-  max-width: 650px;
-  margin: 0 auto;
-  font-size: 16px;
+/* RIGHT CARDS */
+.service-card {
+  background: #fff;
+  padding: 40px 25px;
+  border-radius: 14px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.service-card h5 {
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.service-icon {
+  font-size: 40px;
+  color: #3b5bdb;
+}
+
+/* ACTIVE BLUE CARD */
+.service-card.active {
+  background: linear-gradient(135deg, #3b5bdb, #4c6ef5);
+  color: #fff;
+}
+
+.service-card.active .service-icon {
+  color: #fff;
+}
+
+.service-card.active p {
+  color: #e9ecef;
+}
+
+
+/* OUR PROCESS SECTION */
+
+.process-section {
+  background: linear-gradient(135deg, #1c54e2, #1a5cff);
+}
+
+.small-title {
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.main-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.process-box {
+  position: relative;
+  padding: 40px 25px;
+  text-align: left;
+}
+
+/* Vertical Divider Line */
+.process-box::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  right: 0;
+  width: 1px;
+  height: 60%;
+  background: rgba(255,255,255,0.3);
+}
+
+.process-box.last::after {
+  display: none;
+}
+
+/* Icon Circle */
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  color: #1c54e2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  font-size: 22px;
+  
+}
+
+.process-box h5 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.process-box p {
+  font-size: 14px;
+  color: #e6e6e6;
+}
+
+.process-box a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+
+
+/* OUR SERVICES SECTIONS STYLE */
+.services-section {
+  background: #f8f9fa;
+  padding: 80px 0;
+}
+
+/* Subtitle */
+.services-subtitle {
+  color: #2f6edb;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Title */
+.services-title {
+  font-size: clamp(26px, 4vw, 42px);
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+/* Line */
+.title-line {
+  width: 50px;
+  height: 3px;
+  background: #2f6edb;
+  margin: 15px auto;
+}
+
+/* Desc */
+.services-desc {
+  max-width: 600px;
+  margin: auto;
   color: #666;
-} */
+}
+
+/* Card */
+.service-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  transition: 0.3s;
+  height: 100%;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.service-img {
+  width: 80px;
+  height: 80px;
+}
+
+/* Responsive */
+@media(max-width: 768px){
+  .services-section {
+    padding: 50px 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Welcome to FrecX ==== section */

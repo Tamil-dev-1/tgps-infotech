@@ -1,0 +1,144 @@
+.tech-row-wrapper {
+  height: 80vh;
+  overflow: hidden;
+}
+
+.tech-panel {
+  flex: 1;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.6s ease-in-out;
+  display: flex;
+  align-items: flex-end;
+  padding: 40px;
+  color: #fff;
+}
+
+/* Dark Overlay */
+.tech-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* background: rgba(0, 0, 50, 0.65); */
+  background: rgba(0, 0, 50, 0.4);
+}
+
+.tech-content-box {
+  position: relative;
+  z-index: 2;
+  max-width: 500px;
+}
+
+.tech-title {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.tech-desc {
+  margin-top: 15px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* When Hovered */
+.tech-expanded {
+  flex: 4;
+}
+
+/* Hide Remaining Panels */
+.tech-collapsed {
+  flex: 0;
+  width: 0;
+  padding: 0;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+/* ============================= */
+/* 📱 Mobile Responsive */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  .tech-row-wrapper {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .tech-panel {
+    flex: unset;
+    width: 100%;
+    height: 320px;
+    padding: 25px;
+  }
+
+  .tech-expanded,
+  .tech-collapsed {
+    flex: unset;
+    width: 100%;
+    opacity: 1;
+  }
+
+  .tech-title {
+    font-size: 20px;
+  }
+
+  .tech-desc {
+    font-size: 14px;
+  }
+
+}
+
+/* ===================================== */
+/* 📱 Tablet Responsive (Below 992px) */
+/* ===================================== */
+
+@media (max-width: 992px) {
+
+  .tech-row-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 20px;              /* 🔥 gap between images */
+  }
+
+  .tech-panel {
+    flex: unset;
+    width: 100%;
+    height: 350px;
+  }
+
+  /* Disable expand/collapse in tablet & mobile */
+  .tech-expanded,
+  .tech-collapsed {
+    flex: unset;
+    width: 100%;
+    opacity: 1;
+    padding: 40px;
+  }
+}
+
+/* ===================================== */
+/* 📱 Mobile Responsive (Below 576px) */
+/* ===================================== */
+
+@media (max-width: 576px) {
+
+  .tech-row-wrapper {
+    gap: 15px;              /* Slightly smaller gap */
+  }
+
+  .tech-panel {
+    height: 280px;
+    padding: 25px;
+  }
+
+  .tech-title {
+    font-size: 20px;
+  }
+
+  .tech-desc {
+    font-size: 14px;
+  }
+}

@@ -1,111 +1,138 @@
-
-
-.site-footer {
-  background: #ffffff;
-  padding: 72px 0 48px;
-  color: #222;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-}
-
-/* last updated */
-.last-updated {
-  color: #6c757d;
-  font-size: 14px;
-  margin-bottom: 32px;
-}
-
-/* column padding and max width so columns don't jam */
-.footer-column {
-  padding-right: 24px;
-  max-width: 320px; /* prevents a column from stretching too wide and keeps look neat */
-}
-
-/* title style */
-.title {
-  font-size: 15px;
-  margin-bottom: 18px;
-  letter-spacing: 0.2px;
-}
-
-/* list spacing — comfortable vertical rhythm */
-.footer-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  line-height: 2.05; /* ~32px if base font 15-16px */
-  color: #4b4b4b;
-  font-size: 15px;
-}
-
-/* each item spacing */
-.footer-links li {
-  margin-bottom: 10px;
-  white-space: normal;
-}
-
-/* smaller screens: reduce max-width and spacing so layout fits */
-@media (max-width: 991.98px) {
-  .footer-column {
-    max-width: 100%;
-    padding-right: 12px;
-  }
-}
-
-/* bottom bar */
-.bottom-bar {
-  margin-top: 36px;
-  padding: 20px;
-  /* background: #E9DEFD; */
-  border-radius: 4px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
-}
-
-/* small links spacing */
-.small-links span {
-  margin: 0 10px;
-  color: #6c757d;
-  font-size: 14px;
-}
-
-/* icons vertical alignment on small screens */
-@media (max-width: 575.98px) {
-  .icons { justify-content: center; width: 100%; }
-  .small-links { font-size: 13px; }
-}
-
-/* optional subtle hover */
-.footer-links li:hover { color: #840be0; cursor: pointer; }
-.small-links span:hover { text-decoration: underline; cursor: pointer; }
-
-
-/* GO TO TOP BUTTON */
-
-.site-footer {
+.footer-wrapper {
+  background: #16165f;
+  margin-top: 160px;
   position: relative;
 }
 
-/* Go to Top Button */
-.go-top-btn {
-  position: absolute;
-  right: 30px;
-  bottom: 30px;
-  background: linear-gradient(135deg, #6B5BFF, #9D4CF5);
-  color: #fff;
-  border: none;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  font-size: 18px;
-  font-weight: 700;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  z-index: 10;
+/* ================= CTA CARD ================= */
+
+.cta-card {
+  background: linear-gradient(90deg, #3b4bff, #5d6dff);
+  padding: 45px 60px;
+  border-radius: 25px;
+  position: relative;
+  margin-top: -120px;
+  z-index: 5;
+  overflow: hidden;
 }
 
-.go-top-btn:hover {
-  transform: translateY(-4px);
-  opacity: 0.9;
+.cta-image {
+  height: 170px;
+  margin-right: 30px;
+}
+
+.cta-title {
+  color: white;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.4;
+}
+
+.cta-btn {
+  background: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* ================= MAIN FOOTER ================= */
+
+.footer-main {
+  padding-top: 120px;
+}
+
+.logo-text {
+  color: white;
+  font-weight: 700;
+}
+
+.footer-desc {
+  color: #cfd3ff;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.footer-heading {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  color: #cfd3ff;
+  margin-bottom: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.footer-links li:hover {
+  color: white;
+}
+
+.recent-post .post-date {
+  color: #8ea2ff;
+  font-size: 13px;
+}
+
+.recent-post .post-title {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.contact-text {
+  color: #cfd3ff;
+  font-size: 14px;
+}
+
+/* Newsletter */
+
+.newsletter-box {
+  display: flex;
+  background: #2a2a85;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.newsletter-box input {
+  border: none;
+  padding: 10px;
+  background: transparent;
+  color: white;
+  flex: 1;
+}
+
+.newsletter-box input:focus {
+  outline: none;
+}
+
+.newsletter-box button {
+  background: #4c5dff;
+  border: none;
+  color: white;
+  padding: 0 15px;
+}
+
+.privacy-text {
+  font-size: 12px;
+  color: #cfd3ff;
+}
+
+/* ================= BOTTOM BAR ================= */
+
+.footer-bottom {
+  background: linear-gradient(90deg, #3949ff, #5f6dff);
+  padding: 12px 0;
+  color: white;
+  font-size: 14px;
 }

@@ -2,6 +2,8 @@
 import Hero from '../../component/hero/Hero'
 import ComparisonSlider from '../../component/slider/ComparisonSlider';
 import Blog from '../../component/blog/Blog';
+import Core_Features from '../../component/core_features/Core_Features'
+import Slider from '../../component/new_slider/Slider'
 import './Home.css';
 import Events from '../../component/event/Events';
 import Demo from '../../assets/images/home/demo.png'
@@ -16,8 +18,19 @@ import Activity from '../../component/Activity/Activity';
 import VectorImg1 from '../../assets/images/home/vector2.jpeg';
 import VectorImg2 from '../../assets/images/home/vector3.jpeg';
 import { Link} from 'react-router-dom';
+// react - icons
+import { FaPlay } from "react-icons/fa";
+import { FaLaptopCode, FaCloud, FaShieldAlt, FaDatabase } from "react-icons/fa";
+import { FaSearch, FaPuzzlePiece, FaLightbulb, FaCogs } from "react-icons/fa";
+
+// IMAGES
+import Img1 from '../../assets/images/Ourservices/1.png'
+import Img2 from '../../assets/images/Ourservices/2.png'
+import Img3 from '../../assets/images/Ourservices/3.png'
+import Img4 from '../../assets/images/Ourservices/4.png'
 
 import { motion } from "framer-motion";
+import Testimonial from '../../component/Testimonial/Testimonial';
 // import ScrollBoxes from "../../component/ScrollBoxes/ScrollBoxes";
 export default function Home() {
 
@@ -29,6 +42,31 @@ export default function Home() {
     height: "auto",
   };
 
+  // OUR SERVICE SECTION
+
+  const services = [
+  {
+    title: "Cloud Services",
+    desc: "Easy mind life fact with see Chatty can elinor direct for former. Up as meant.",
+    img: Img1
+  },
+  {
+    title: "Risk Management",
+    desc: "Easy mind life fact with see Chatty can elinor direct for former. Up as meant.",
+    img: Img2
+  },
+  {
+    title: "Infrastructure Plan",
+    desc: "Easy mind life fact with see Chatty can elinor direct for former. Up as meant.",
+    img: Img3
+  },
+  {
+    title: "Cloud Computing",
+    desc: "Easy mind life fact with see Chatty can elinor direct for former. Up as meant.",
+    img: Img4
+  }
+];
+
   return (
     <>
 
@@ -39,10 +77,301 @@ export default function Home() {
       
       {/* <HeroSection /> */}
       
-                  {/* SECTION=====2 */}
+                  {/*ABOUT SECTION=====2 */}
 
 
-<section
+       <section className="about-section py-5">
+      <div className="container">
+        {/* Top Header */}
+        <div className="row mb-5 align-items-center">
+          <div className="col-lg-8">
+            <p className="about-small-title">About Your Company</p>
+            <h1 className="about-main-title">
+              We Execute Ideas From <br />
+              Start to Finish
+            </h1>
+          </div>
+
+          <div className="col-lg-4 text-lg-end text-start mt-3 mt-lg-0">
+            <button className="btn btn-outline-primary px-4 py-2 rounded-pill">
+              Know More
+            </button>
+          </div>
+        </div>
+
+        {/* Content Section */}
+        <div className="row ">
+          {/* Left Content */}
+          <div className="col-lg-5">
+            {/* Item 1 */}
+            <div className="d-flex mb-4">
+              <div className="icon-box me-3">
+                <i className="bi bi-bullseye"></i>
+              </div>
+              <div>
+                <h5 className="fw-bold">Our Mission</h5>
+                <p className="text-muted">
+                  Our mission is to push boundaries, engage audiences,
+                  and drive innovation through strategy.
+                </p>
+              </div>
+            </div>
+
+            {/* Item 2 */}
+            <div className="d-flex mb-4">
+              <div className="icon-box me-3">
+                <i className="bi bi-currency-dollar"></i>
+              </div>
+              <div>
+                <h5 className="fw-bold">Our Vision</h5>
+                <p className="text-muted">
+                  Our vision is to transform ideas into impactful digital
+                  experiences that inspire growth.
+                </p>
+              </div>
+            </div>
+
+            {/* Item 3 */}
+            <div className="d-flex">
+              <div className="icon-box me-3">
+                <i className="bi bi-star"></i>
+              </div>
+              <div>
+                <h5 className="fw-bold">Our Awards</h5>
+                <p className="text-muted">
+                  Recognized for excellence and innovation in delivering
+                  world-class solutions.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Middle Image */}
+          <div className="col-lg-3 mt-lg-0">
+            <img
+              src="https://images.pexels.com/photos/7640790/pexels-photo-7640790.jpeg"
+              alt="team"
+              className="img-fluid shadow-sm round-diagonal middle-img"
+            />
+            <p className="text-muted small">
+              Repellendus autem quibusdam et aut officiis debitis aut re
+              necessitatibus saepe eveniet ut et repudiandae sint.
+              Repellendus autem quibusdam et aut officiis debitis aut re
+              necessitatibus saepe eveniet ut et repudiandae sint.
+            </p>
+          </div>
+
+          {/* Right Image */}
+          <div className="col-lg-4 mt-4 mt-lg-0">
+            <img
+              src="https://images.pexels.com/photos/5922204/pexels-photo-5922204.jpeg"
+              alt="office"
+              className="img-fluid shadow-sm right-image round-diagonal"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    {/* CORE FEATURES SECTION ===== 3 */}
+
+    <Core_Features />
+
+    {/* SLIDER ANMATION CARDS */}
+
+    <Slider />
+
+    {/* WHY CHOOSE USm ========= 4 */}
+
+    <section className="why-section py-5">
+      <div className="container">
+        <div className="row align-items-center">
+
+          {/* LEFT SIDE */}
+          <div className="col-lg-6 mb-4 mb-lg-0">
+            <p className="section-subtitle">— WHY CHOOSE US</p>
+
+            <h2 className="section-title">
+              Custom IT Solutions for <br /> Your Business
+            </h2>
+
+            <p className="section-text mt-3">
+              Carried nothing on am warrant towards. Polite in of in oh needed
+              itself silent course. Assistance travelling so especially do
+              prosperous appearance mr no celebrated.
+            </p>
+
+            <div className="d-flex align-items-center mt-4">
+              <div className="play-btn">
+                <FaPlay />
+              </div>
+              <span className="ms-3 fw-semibold">VIDEO SHOWCASE</span>
+            </div>
+          </div>
+
+          {/* RIGHT SIDE */}
+          <div className="col-lg-6">
+            <div className="row g-4">
+
+              {/* Card 1 */}
+              <div className="col-md-6">
+                <div className="service-card active">
+                  <FaLaptopCode className="service-icon" />
+                  <h5>IT Consultancy</h5>
+                  <p>Astonished set expression solicitude way admiration</p>
+                </div>
+              </div>
+
+              {/* Card 2 */}
+              <div className="col-md-6">
+                <div className="service-card">
+                  <FaCloud className="service-icon" />
+                  <h5>Cloud Computing</h5>
+                  <p>Astonished set expression solicitude way admiration</p>
+                </div>
+              </div>
+
+              {/* Card 3 */}
+              <div className="col-md-6">
+                <div className="service-card">
+                  <FaShieldAlt className="service-icon" />
+                  <h5>Cyber Security</h5>
+                  <p>Astonished set expression solicitude way admiration</p>
+                </div>
+              </div>
+
+              {/* Card 4 */}
+              <div className="col-md-6">
+                <div className="service-card">
+                  <FaDatabase className="service-icon" />
+                  <h5>Backup & Recovery</h5>
+                  <p>Astonished set expression solicitude way admiration</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    {/* OUR PROCESS ========= 5 */}
+
+    <section className="process-section py-5 text-white">
+      <div className="container">
+
+        <p className="small-title text-center text-white"> OUR PROCESS</p>
+
+        <h2 className="main-title mb-5 text-center text-white">
+          Helping You Reach Your <br /> Innovative
+        </h2>
+
+        <div className="row">
+
+          {/* STEP 1 */}
+          <div className="col-lg-3 col-md-6 process-box">
+            <div className="icon-circle">
+              <FaSearch />
+            </div>
+            <h5>Researching Grow</h5>
+            <p>Muchas variaciones de los pasajes de Lorem se le agregó</p>
+            <a href="#">Read More →</a>
+          </div>
+
+          {/* STEP 2 */}
+          <div className="col-lg-3 col-md-6 process-box">
+            <div className="icon-circle">
+              <FaPuzzlePiece />
+            </div>
+            <h5>Strategic Planning</h5>
+            <p>Muchas variaciones de los pasajes de Lorem se le agregó</p>
+            <a href="#">Read More →</a>
+          </div>
+
+          {/* STEP 3 */}
+          <div className="col-lg-3 col-md-6 process-box">
+            <div className="icon-circle">
+              <FaLightbulb />
+            </div>
+            <h5>Customizable Solutions</h5>
+            <p>Muchas variaciones de los pasajes de Lorem se le agregó</p>
+            <a href="#">Read More →</a>
+          </div>
+
+          {/* STEP 4 */}
+          <div className="col-lg-3 col-md-6 process-box last">
+            <div className="icon-circle">
+              <FaCogs />
+            </div>
+            <h5>Implementation Execution</h5>
+            <p>Muchas variaciones de los pasajes de Lorem se le agregó</p>
+            <a href="#">Read More →</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    {/* OUR SERVICE SECTION ======== 6 */}
+
+
+  <section className="services-section text-center">
+      <div className="container">
+
+        {/* Small Title */}
+        <p className="services-subtitle">OUR SERVICES</p>
+
+        {/* Main Title */}
+        <h2 className="services-title">
+          We provide IT & <br /> Business solutions
+        </h2>
+
+        {/* Line */}
+        <div className="title-line"></div>
+
+        {/* Description */}
+        <p className="services-desc">
+          Outlived no dwelling denoting in peculiar as he believed. Behaviour
+          excellent middleton be as it curiosity departure ourselves very extreme.
+        </p>
+
+        {/* Cards */}
+        <div className="row mt-5">
+
+          {services.map((service, index) => (
+            <div className="col-lg-3 col-md-6 mb-4" key={index}>
+              <div className="service-card">
+
+                <img src={service.img} alt="" className="service-img" />
+
+                <h5 className="mt-3">{service.title}</h5>
+
+                <p>{service.desc}</p>
+
+              </div>
+            </div>
+          ))}
+
+        </div>
+
+      </div>
+    </section>
+
+
+{/* BLOG SECTION ========7 */}
+
+ <Blog />
+
+    {/* FINAL TESTIMONIAL SECTION */}
+
+    <Testimonial />
+
+
+{/* <section
   className="d-flex flex-column align-items-center py-5"
   style={{
     background: theme === "dark" ? "#000000" : "#ffff",
@@ -65,7 +394,7 @@ export default function Home() {
         },
       }}
     >
-      {/* Title */}
+      
       <motion.h1
         className="hero-title"
         style={{ color: theme === "dark" ? "#ffff" : "" }}
@@ -78,10 +407,10 @@ export default function Home() {
           },
         }}
       >
-        Welcome to FrecX
+        About Your Company
       </motion.h1>
 
-      {/* Subtitle */}
+      
       <motion.p
         className="hero-subtitle mt-3"
         style={{
@@ -103,7 +432,7 @@ export default function Home() {
         id!
       </motion.p>
 
-      {/* Button */}
+     
       <motion.div
         className="text-center"
         variants={{
@@ -115,29 +444,18 @@ export default function Home() {
           },
         }}
       >
-        {/* <motion.button
-          className=" events-cta mt-4"
-          style={{
-            background: theme === "dark" ? "#fff" : "#000",
-            color: theme === "dark" ? "#000" : "#ffff",
-            transition: "0.3s",
-          }}
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          Learn More
-        </motion.button> */}
+      
       </motion.div>
     </motion.div>
   </div>
-</section>
+</section> */}
 
                         {/* SECTION ---------  3 */}
 
-<section>
+{/* <section>
    <div className="container-fluid text-center pb-5">
 
-    {/* Timeline Animation Wrapper */}
+    
     <motion.div
       className="row mt-5 justify-content-center"
       variants={{
@@ -151,7 +469,7 @@ export default function Home() {
       viewport={{ once: true }}
     >
 
-      {/* 1. Pick a wallet */}
+     
       <motion.div
         className="col-12 col-sm-6 col-lg-3 mb-4"
         variants={{
@@ -185,7 +503,7 @@ export default function Home() {
         </div>
       </motion.div>
 
-      {/* 2. Get ETH */}
+      
       <motion.div
         className="col-12 col-sm-6 col-lg-3 mb-4"
         variants={{
@@ -219,7 +537,7 @@ export default function Home() {
         </div>
       </motion.div>
 
-      {/* 3. Try apps */}
+      
       <motion.div
         className="col-12 col-sm-6 col-lg-3 mb-4"
         variants={{
@@ -253,7 +571,7 @@ export default function Home() {
         </div>
       </motion.div>
 
-      {/* 4. Start Building */}
+     
       <motion.div
         className="col-12 col-sm-6 col-lg-3 mb-4"
         variants={{
@@ -289,7 +607,7 @@ export default function Home() {
 
     </motion.div>
   </div>
-</section>
+</section> */}
 
                    {/* SECTION=====4 */}
 
@@ -955,143 +1273,14 @@ export default function Home() {
 </section>
 
 
-   <Blog />
+  
    <Events />
 
-    {/* OUR PRODUCT COMPONENT */}
-
-            {/* <ScrollBoxes /> */}
-
-                           {/* JOIN FRECX SECTION */}
 
 
 
- <section className="py-5 gradient-box"
-      // style={{
-      //   background: "linear-gradient(180deg, #E8DDFD 0%, white 100%)",
-      //   borderRadius: "24px",
-      // }}
-    >
-      <div className="container text-center">
 
-        {/* Title */}
-        <h1 className="fw-bold mb-4 hero-title" >
-          Join frequencychain.org
-        </h1>
 
-        <p className="mb-5" style={{ fontSize: "17px", maxWidth: "700px", margin: "0 auto" }}>
-          This website is open source with hundreds of community contributors.
-          You can propose edits to any of the content on this site.
-        </p>
-
-        {/* Content Grid */}
-        <div className="row justify-content-center gy-5 mt-4">
-
-          {/* How to Contribute */}
-          <div className="col-md-5 d-flex">
-            <div className="d-flex align-items-start gap-3 text-start">
-              <div
-                
-                className="d-flex justify-content-center align-items-center topic-icon" 
-                >
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-                  alt="icon"
-                  width="38"
-                />
-              </div>
-
-              <div>
-                <h5 className="fw-bold text-success">How to contribute</h5>
-                <p className=" mb-0"
-                 style={{
-           color: theme === "dark" ? "#ffff" : "#766464ff",
-          transition: "0.3s",
-        }}>
-                  Find out all the different ways you can help ethereum.org grow and be better.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* GitHub */}
-          <div className="col-md-5 d-flex">
-            <div className="d-flex align-items-start gap-3 text-start">
-              <div
-                className="d-flex justify-content-center align-items-center topic-icon"
-                >
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-                  alt="github"
-                  width="38"
-                />
-              </div>
-
-              <div>
-                <h5 className="fw-bold" style={{color:'#4371F2'}}>GitHub</h5>
-                <p className="mb-0"
-                 style={{
-           color: theme === "dark" ? "#ffff" : "#766464ff",
-          transition: "0.3s",
-        }}>
-                  Contribute to code, design, articles, etc.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Discord */}
-          <div className="col-md-5 d-flex">
-            <div className="d-flex align-items-start gap-3 text-start">
-              <div className="d-flex justify-content-center align-items-center topic-icon">
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png"
-                  alt="discord"
-                  width="38"
-                />
-              </div>
-
-              <div>
-                <h5 className="fw-bold" style={{color:'#9357F4'}}>Discord</h5>
-                <p className=" mb-0" 
-                 style={{
-           color: theme === "dark" ? "#ffff" : "#766464ff",
-          transition: "0.3s",
-        }}>
-                  To ask questions, coordinate contribution and join community calls.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* X (Twitter) */}
-          <div className="col-md-5 d-flex">
-            <div className="d-flex align-items-start gap-3 text-start">
-              <div className="d-flex justify-content-center align-items-center topic-icon">
-                <img
-                  src={X}
-                  loading="lazy" decoding="async" 
-                  alt="x"
-                  width="38"
-                />
-              </div>
-
-              <div>
-                <h5 className="fw-bold" style={{color:'#FF52BD'}}>X</h5>
-                <p className=" mb-0" 
-                 style={{
-           color: theme === "dark" ? "#ffff" : "#766464ff",
-          transition: "0.3s",
-        }}>
-                  To keep up with our updates and important news.
-                </p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
     </>
   );
 }
