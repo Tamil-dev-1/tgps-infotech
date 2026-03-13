@@ -1,13 +1,11 @@
-
 import "bootstrap/dist/css/bootstrap.min.css";
-import './ComparisonSlider.css';
+import "./ComparisonSlider.css";
 import React, { useContext } from "react";
 import { ThemeContext } from "../../ThemeContext";
 
-
 export default function ComparisonSlider() {
 
-   const {theme} = useContext(ThemeContext); 
+  const { theme } = useContext(ThemeContext);
 
   const topItems = [
     "Equal Access",
@@ -26,19 +24,26 @@ export default function ComparisonSlider() {
   ];
 
   return (
-    <div className="container py-5" 
-     style={{
-          background: theme === "dark" ? "#3D4CEB" : "#ffff",
-          transition: "0.3s",
-        }}>
+    <div
+      className="container py-5 comparison-section"
+      style={{
+        transition: "0.3s",
+      }}
+    >
 
-      {/* TOP ROW (→ scroll) */}
+      {/* TOP ROW */}
       <div className="overflow-hidden mb-4">
         <div className="scroll-row scroll-left">
           {[...topItems, ...topItems].map((item, i) => (
             <div key={i} className="pill">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                stroke="currentColor" strokeWidth="3" fill="none">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                stroke="currentColor"
+                strokeWidth="3"
+                fill="none"
+              >
                 <path d="M20 6 9 17l-5-5"></path>
               </svg>
               {item}
@@ -47,13 +52,19 @@ export default function ComparisonSlider() {
         </div>
       </div>
 
-      {/* BOTTOM ROW (← scroll) */}
+      {/* BOTTOM ROW */}
       <div className="overflow-hidden">
         <div className="scroll-row scroll-right">
           {[...bottomItems, ...bottomItems].map((item, i) => (
             <div key={i} className="pill">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                stroke="currentColor" strokeWidth="3" fill="none">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                stroke="currentColor"
+                strokeWidth="3"
+                fill="none"
+              >
                 <path d="M20 6 9 17l-5-5"></path>
               </svg>
               {item}

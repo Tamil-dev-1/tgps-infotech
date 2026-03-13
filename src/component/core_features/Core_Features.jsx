@@ -1,76 +1,94 @@
 import React from "react";
 import "./FeaturesSection.css";
-import ServicesImg from '../../assets/images/Core_Features/services.png'
+import ServicesImg from "../../assets/images/Core_Features/services.png";
 
-const FeatureCard = ({ icon, title, desc }) => {
+const FeatureCard = ({ icon, title, desc, shape }) => {
   return (
-    <div className="feature-card p-4 shadow-sm rounded-4 mb-4">
-      <div className="icon-box mb-3">
+    <div className={`feature-card ${shape}`}>
+      <div className="icon-box">
         <i className={`bi ${icon}`}></i>
       </div>
-      <h5 className="fw-bold mb-2">{title}</h5>
-      <p className="text-muted small mb-0">{desc}</p>
+
+      <h5>{title}</h5>
+      <p>{desc}</p>
     </div>
   );
 };
 
 const FeaturesSection = () => {
   return (
-    <section className="features-section py-5">
+    <section className="service-section py-5">
       <div className="container">
 
-        {/* Header */}
         <div className="text-center mb-5">
           <span className="badge feature-badge px-3 py-2 mb-3">
             Core Features
           </span>
+
           <h1 className="feature-title">
             Innovative IT Strategies <br /> and Solutions
           </h1>
         </div>
 
-        {/* Content */}
         <div className="row align-items-center">
 
-          {/* Left Features */}
-          <div className="col-lg-3">
+          {/* Left */}
+          <div className="col-lg-3 d-flex flex-column gap-4">
+
             <FeatureCard
               icon="bi-cloud"
-              title="Cloud Solutions Management"
-              desc="IT Infrastructure Including Network Installation"
+              title="Cloud-First Architecture"
+              desc="Scalable and resilient cloud environments."
+              shape="shape-1"
             />
 
             <FeatureCard
               icon="bi-bar-chart"
-              title="Analytics Business Intelligence"
-              desc="Comprehensive Analytics Services Providing"
+              title="AI Automation"
+              desc="Smart systems that automate workflows."
+              shape="shape-2"
             />
+
+            <FeatureCard
+              icon="bi-link-45deg"
+              title="Blockchain"
+              desc="Secure decentralized infrastructure."
+              shape="shape-3"
+            />
+
           </div>
 
           {/* Center Image */}
           <div className="col-lg-6 text-center my-4 my-lg-0">
             <div className="center-image-wrapper mx-auto">
-              <img
-                src={ServicesImg}
-                alt="center"
-                className="img-fluid"
-              />
+              <img src={ServicesImg} alt="services"/>
             </div>
           </div>
 
-          {/* Right Features */}
-          <div className="col-lg-3">
+          {/* Right */}
+          <div className="col-lg-3 d-flex flex-column gap-4">
+
             <FeatureCard
               icon="bi-lightbulb"
-              title="Custom Software Development"
-              desc="Our Services Build Reliable, Scalable, And Innovative"
+              title="Data Intelligence"
+              desc="Turn data into actionable insights."
+              shape="shape-4"
+            />
+
+            <FeatureCard
+              icon="bi-shield-lock"
+              title="Cyber Security"
+              desc="Security embedded into architecture."
+              shape="shape-5"
             />
 
             <FeatureCard
               icon="bi-cpu"
-              title="Machine Learning Implementation"
-              desc="Harnessing The Power Of Artificial Intelligence"
+              title="DevOps"
+              desc="CI/CD pipelines for innovation."
+              shape="shape-6"
             />
+
           </div>
 
         </div>

@@ -1,120 +1,214 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Link } from "react-router-dom";
 
 import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
-import "./Blog.css";
-import BlogThumb1 from "../../assets/images/Blog/blogThumb1.jpg";
-import BlogThumb2 from "../../assets/images/Blog/blogThumb2.jpg";
-import BlogThumb3 from "../../assets/images/Blog/blogThumb3.jpg";
-
-const posts = [
-  {
-    id: 1,
-    category: "Shared Hosting",
-    date: "March 24, 2024",
-    title: "Attentive Was Born In 2015 Help Sales Teams",
-    image: BlogThumb1,
-  },
-  {
-    id: 2,
-    category: "Uncategorized",
-    date: "March 14, 2024",
-    title: "Best And Fastest Data Server Ever",
-    image: BlogThumb2,
-  },
-  {
-    id: 3,
-    category: "Technology",
-    date: "March 29, 2024",
-    title: "Life Won’t One Beast Air Over Above All",
-    image: BlogThumb3,
-  },
-  {
-    id: 4,
-    category: "Cloud",
-    date: "April 01, 2024",
-    title: "Modern Cloud Hosting Platform",
-    image: BlogThumb2,
-  },
-  {
-    id: 5,
-    category: "Security",
-    date: "April 10, 2024",
-    title: "Advanced Server Security Solutions",
-    image: BlogThumb3,
-  },
-];
-
-export default function BlogCarousel() {
+const BlogCarousel = () => {
   return (
-    <div className="blog-section py-5">
-      <div className="container">
+    <div style={{ padding: "60px 0", backgroundColor: "#111111" }}>
+      <div className="container text-center">
 
-        {/* Section Heading */}
-        <div className="text-center mb-5">
-          <h6 className="blog-subtitle">LATEST BLOG</h6>
-          <h2 className="blog-title">Our Blogs</h2>
-        </div>
+        <h2 style={{ fontWeight: "700", color: "#ffffff" }}>
+          Our Blogs
+        </h2>
 
-       <div className="blog-carousel-wrapper">
-         <Swiper
-          modules={[Autoplay]}
-          spaceBetween={40}
-          slidesPerView={3}
-          loop={true}
-          speed={800}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
+        <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
+          spaceBetween={30}
+          slidesPerView={1}
+          navigation
+          pagination={{ clickable: true }}
+          autoplay={{ delay: 2500, disableOnInteraction: false }}
           breakpoints={{
-            0: { slidesPerView: 1 },
             768: { slidesPerView: 2 },
-            992: { slidesPerView: 3 },
+            1024: { slidesPerView: 3 },
+            1400: { slidesPerView: 4 },
           }}
+          className="mt-5"
         >
-          {posts.map((post) => (
-            <SwiperSlide key={post.id}>
-              <div className="blog-card">
 
-                <div className="blog-image">
-                  <img src={post.image} alt={post.title} />
+          {/* SLIDE 1 */}
+          <SwiperSlide>
+            <Link to="/blog-1" className="text-decoration-none">
+              <div
+                className="card border-0"
+                style={{
+                  backgroundColor: "#C6FF00",
+                  borderRadius: "10px",
+                  boxShadow: "0 4px 10px rgba(0,0,0,0.3)",
+                }}
+              >
+                <img
+                  src="https://images.pexels.com/photos/2473183/pexels-photo-2473183.jpeg"
+                  alt="Blog"
+                  className="card-img-top"
+                  style={{
+                    borderTopLeftRadius: "10px",
+                    borderTopRightRadius: "10px",
+                    height: "220px",
+                    objectFit: "cover",
+                  }}
+                />
+                <div className="card-body">
+                  <h6 style={{ fontWeight: "600", color: "#111111" }}>
+                    Blockchain’s Role <br /> in Renewable Energy
+                  </h6>
                 </div>
-
-                <div className="blog-content-box">
-                  <div className="blog-meta">
-                    <span className="blog-category">
-                      {post.category}
-                    </span>
-                    <span className="blog-date">
-                      {post.date}
-                    </span>
-                  </div>
-
-                  <h5 className="blog-heading">
-                    {post.title}
-                  </h5>
-
-                  <div className="blog-footer">
-                    <div>
-                      <div className="author-name">Admin</div>
-                      <small className="author-role">
-                        Co, Founder
-                      </small>
-                    </div>
-                    <button className="blog-btn">→</button>
-                  </div>
-                </div>
-
               </div>
-            </SwiperSlide>
-          ))}
+            </Link>
+          </SwiperSlide>
+
+          {/* SLIDE 2 */}
+          <SwiperSlide>
+            <Link to="/blog-2" className="text-decoration-none">
+              <div
+                className="card border-0"
+                style={{
+                  backgroundColor: "#C6FF00",
+                  borderRadius: "10px",
+                  boxShadow: "0 4px 10px rgba(0,0,0,0.3)",
+                }}
+              >
+                <img
+                  src="https://images.pexels.com/photos/669996/pexels-photo-669996.jpeg"
+                  alt="Blog"
+                  className="card-img-top"
+                  style={{
+                    borderTopLeftRadius: "10px",
+                    borderTopRightRadius: "10px",
+                    height: "220px",
+                    objectFit: "cover",
+                  }}
+                />
+                <div className="card-body">
+                  <h6 style={{ fontWeight: "600", color: "#111111" }}>
+                    Decentralized Energy: <br /> Benefits and Challenges
+                  </h6>
+                </div>
+              </div>
+            </Link>
+          </SwiperSlide>
+
+          {/* SLIDE 3 */}
+          <SwiperSlide>
+            <Link to="/blog-3" className="text-decoration-none">
+              <div
+                className="card border-0"
+                style={{
+                  backgroundColor: "#C6FF00",
+                  borderRadius: "10px",
+                  boxShadow: "0 4px 10px rgba(0,0,0,0.3)",
+                }}
+              >
+                <img
+                  src="https://images.pexels.com/photos/248526/pexels-photo-248526.jpeg"
+                  alt="Blog"
+                  className="card-img-top"
+                  style={{
+                    borderTopLeftRadius: "10px",
+                    borderTopRightRadius: "10px",
+                    height: "220px",
+                    objectFit: "cover",
+                  }}
+                />
+                <div className="card-body">
+                  <h6 style={{ fontWeight: "600", color: "#111111" }}>
+                    How Smart Grids Are Shaping the Future of Energy Distribution
+                  </h6>
+                </div>
+              </div>
+            </Link>
+          </SwiperSlide>
+
+          {/* SLIDE 4 */}
+          <SwiperSlide>
+            <Link to="/blog-4" className="text-decoration-none">
+              <div
+                className="card border-0"
+                style={{
+                  backgroundColor: "#C6FF00",
+                  borderRadius: "10px",
+                  boxShadow: "0 4px 10px rgba(0,0,0,0.3)",
+                }}
+              >
+                <img
+                  src="https://images.pexels.com/photos/38639/mockup-psd-ipad-iphone-38639.jpeg"
+                  alt="Blog"
+                  className="card-img-top"
+                  style={{
+                    borderTopLeftRadius: "10px",
+                    borderTopRightRadius: "10px",
+                    height: "220px",
+                    objectFit: "cover",
+                  }}
+                />
+                <div className="card-body">
+                  <p style={{ fontWeight: "600", color: "#111111" }}>
+                    Sustainable Energy Practices for Businesses
+                  </p>
+                </div>
+              </div>
+            </Link>
+          </SwiperSlide>
+
+          {/* SLIDE 5 */}
+          <SwiperSlide>
+            <Link to="/blog-5" className="text-decoration-none">
+              <div
+                className="card border-0"
+                style={{
+                  backgroundColor: "#C6FF00",
+                  borderRadius: "10px",
+                  boxShadow: "0 4px 10px rgba(0,0,0,0.3)",
+                }}
+              >
+                <img
+                  src="https://images.pexels.com/photos/414781/pexels-photo-414781.jpeg"
+                  alt="Blog"
+                  className="card-img-top"
+                  style={{
+                    borderTopLeftRadius: "10px",
+                    borderTopRightRadius: "10px",
+                    height: "220px",
+                    objectFit: "cover",
+                  }}
+                />
+                <div className="card-body">
+                  <h6 style={{ fontWeight: "600", color: "#111111" }}>
+                    The Importance of Energy Transparency in Building Trust
+                  </h6>
+                </div>
+              </div>
+            </Link>
+          </SwiperSlide>
+
         </Swiper>
-       </div>
+
+        {/* VIEW MORE BUTTON */}
+        <div className="mt-5 text-center">
+          <Link to="/blogs">
+            <button
+              className="btn px-5 py-2 fw-semibold"
+              style={{
+                backgroundColor: "#C6FF00",
+                color: "#111111",
+                borderRadius: "30px",
+                border: "none",
+                transition: "all 0.3s ease",
+              }}
+            >
+              View More Blogs
+            </button>
+          </Link>
+        </div>
 
       </div>
     </div>
   );
-}
+};
+
+export default BlogCarousel;

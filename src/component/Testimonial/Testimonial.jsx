@@ -10,7 +10,7 @@ export default function Testimonial() {
   const swiperRef = useRef(null);
 
   return (
-    <section className="testimonial-section py-5">
+    <section className="testimonial-section">
       <div className="container">
         <div className="row align-items-center">
 

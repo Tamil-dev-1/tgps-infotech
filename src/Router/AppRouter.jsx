@@ -31,14 +31,23 @@ import Event1 from '../pages/Eventpages/Event1';
 import FrecxGuid from '../pages/frecxGuidPage/FrecxGuid';
 import CreateFrec from '../pages/createFrecPage/CreateFrecx';
 import UseAWallet from '../pages/createFrecPage/useAwallet/UseAWallet';
-import FcCommunityHub  from '../pages/fcCommunityHub/FcCommunityHub';
+import Blockchain from '../pages/blockchain/Blockchain';
+import AI from '../pages/Ai/AI';
+
 const AppRouter = () => {
   return (
     <>
     <ScrollToTop />
       <Header />
+      <main className="page-content">
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/blockchain' element={<Blockchain />} />
+        <Route path='/Ai' element={<AI />} />
+
+
+
+
        <Route path= 'about-frecx' element={<Aboutfrec />} />
        <Route path= '/governance' element={<Governance/>} />
        <Route path= '/developer' element={<Developer />} />
@@ -66,9 +75,10 @@ const AppRouter = () => {
         <Route path="/frecx-guid" element={<FrecxGuid />} />
         <Route path="/create-accound" element={<CreateFrec />} />
         <Route path="/use-wallet" element={<UseAWallet />} />
-        <Route path="/communityhub" element={<FcCommunityHub />} />
+        
        
       </Routes>
+      </main>
       <Footer />
     </>
   )

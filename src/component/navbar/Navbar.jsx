@@ -1,5 +1,7 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
+
 
 export default function MegaNavbar() {
 
@@ -7,16 +9,42 @@ export default function MegaNavbar() {
   const [activeMenu, setActiveMenu] = useState(null);
   const [mobileMenu, setMobileMenu] = useState(false);
   const [mobileSubMenu, setMobileSubMenu] = useState(null);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 992);
+
+
+  useEffect(() => {
+  const handleResize = () => {
+    setIsMobile(window.innerWidth < 992);
+  };
+  window.addEventListener("resize", handleResize);
+  return () => window.removeEventListener("resize", handleResize);
+}, []);
+
+// useEffect(()=>{
+//   const handleScroll = () =>{
+//     const nav=document.querySelector(".mega-navbar");
+
+//     if(window.scrollY>50){
+//       nav.classList.add("scrolled")
+//     }else{
+//       nav.classList.remove("scrolled")
+//     }
+//   }
+
+
+//   window.addEventListener("scroll",handleScroll)
+//   return () => window.removeEventListener("scroll",handleScroll)
+// },[])
 
   return (
-    <nav
-      className="navbar navbar-expand-lg bg-white shadow-sm mega-navbar"
+    <nav style={{backgroundColor:"#C6FF00"}}
+      className="navbar navbar-expand-lg shadow-sm mega-navbar"
       onMouseLeave={() => setActiveNav(null)}
     >
       <div className="container-fluid px-4">
 
         {/* Logo */}
-        <a className="navbar-brand fw-bold fs-3">LOGO</a>
+        <Link to={'/'} className="navbar-brand fw-bold fs-3 text-white">LOGO</Link>
 
         {/* Mobile Toggle */}
         <button
@@ -36,6 +64,8 @@ export default function MegaNavbar() {
               onMouseEnter={() => {
                 setActiveNav(nav);
                 setActiveMenu(Object.keys(fullMenuData[nav])[0]);
+
+                
               }}
             >
 
@@ -50,14 +80,23 @@ export default function MegaNavbar() {
               </div>
 
               {/* MOBILE ACCORDION */}
-              {mobileSubMenu === nav && (
+              {isMobile && mobileSubMenu === nav && (
                 <div className="mobile-submenu">
                   {Object.keys(fullMenuData[nav]).map((item, idx) => (
                     <div key={idx} className="mobile-submenu-item">
                       <h6>{item}</h6>
+
                       {fullMenuData[nav][item].cards.map((card, c) => (
-                        <p key={c}>{card.title}</p>
+                        <Link
+                          key={c}
+                          to={card.path || "#"}
+                          className="d-block text-decoration-none"
+                          onClick={() => setMobileMenu(false)}
+                        >
+                          {card.title}
+                        </Link>
                       ))}
+
                     </div>
                   ))}
                 </div>
@@ -69,9 +108,9 @@ export default function MegaNavbar() {
         </ul>
 
         {/* Buttons */}
-        <div className="d-flex gap-2 desktop-btns">
+        <div className="d-none d-lg-flex gap-2 desktop-btns">
           <button className="btn btn-warning">Get in touch</button>
-          <button className="btn btn-outline-dark">Partner With Us</button>
+          <button className="btn btn-outline-dark text-white bg-black">Partner With Us</button>
         </div>
 
       </div>
@@ -104,11 +143,11 @@ export default function MegaNavbar() {
               <div className="row">
                 {fullMenuData[activeNav][activeMenu].cards.map((card, i) => (
                   <div key={i} className="col-md-6 mb-4">
-                    <div className="menu-card">
+                    <Link to ={card.path} className="menu-card text-decoration-none">
                       <div className="line"></div>
                       <h6>{card.title}</h6>
                       <p>{card.desc}</p>
-                    </div>
+                    </Link>
                   </div>
                 ))}
               </div>
@@ -127,7 +166,7 @@ const fullMenuData = {
     Blockchain:{
       description:"Navigate your journey towards blockchain",
       cards:[
-        {title:"Blockchain Development",desc:"Strategic services"},
+        {title:"Blockchain Development",desc:"Strategic services",path:"/blockchain"},
         {title:"Identity Management",desc:"Secure identity"},
         {title:"Depin Development",desc:"Future apps"},
         {title:"Offshore Center",desc:"Build teams"}
@@ -145,10 +184,10 @@ const fullMenuData = {
     }
   },
   AI:{
-    "AI Development":{
+    "Our Offerings":{
       description:"AI solutions",
       cards:[
-        {title:"ML Apps",desc:"Machine learning"},
+        {title:"AI Agents",desc:"Machine learning",path:"/Ai"},
         {title:"Chatbots",desc:"Assistants"},
         {title:"Vision AI",desc:"Image AI"},
         {title:"Automation",desc:"Process AI"}
@@ -188,17 +227,6 @@ const fullMenuData = {
       ]
     }
   },
-  // Industries:{
-  //   "Industry Solutions":{
-  //     description:"Industry tech",
-  //     cards:[
-  //       {title:"Finance",desc:"Bank tech"},
-  //       {title:"Retail",desc:"Commerce"},
-  //       {title:"Logistics",desc:"Supply"},
-  //       {title:"Education",desc:"EdTech"}
-  //     ]
-  //   }
-  // },
   "About Us":{
     "Company":{
       description:"Know us",
