@@ -390,7 +390,7 @@ export default function Home() {
 
  {/* FUTURE TECHNOLOGY VISION --------- 14 */}
 
-<section className="hero-section d-flex align-items-center">
+<section className="bottom-section d-flex align-items-center">
       <div className="container">
         <div className="row align-items-center">
 
@@ -398,7 +398,7 @@ export default function Home() {
           <div className="col-lg-4 text-white">
             <span className="hero-label">FUTURE TECHNOLOGY</span>
 
-            <h1 className="tech-title mt-3">
+            <h1 className="tech-titles mt-3">
               Future 
               Technology <br />
               Vision

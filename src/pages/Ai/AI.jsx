@@ -9,6 +9,7 @@ import AiStacked from '../../assets/images/ai/aiStacked.png'
 import { FaRobot, FaCogs, FaChartPie } from "react-icons/fa";
 import { FaChartLine, FaLightbulb } from "react-icons/fa";
 import { FaRocket, FaCubes, FaUsers } from "react-icons/fa";
+import { Cpu, Layers, Database, GitBranch } from "lucide-react";
 import { useEffect } from "react";
 import Particles from "react-tsparticles";
 import VanillaTilt from "vanilla-tilt";
@@ -158,6 +159,29 @@ desc: "Ongoing AI strategic advisory and portfolio oversight."
     }
   ]
 
+
+  // SECTION ------ 17
+
+
+const serviceses = [
+    {
+      icon: <Cpu size={42} />,
+      text: "AI model governance services for versioning, approvals and ownership"
+    },
+    {
+      icon: <Layers size={42} />,
+      text: "AI governance platform development customized to enterprise structures"
+    },
+    {
+      icon: <Database size={42} />,
+      text: "Centralized AI inventory and risk classification"
+    },
+    {
+      icon: <GitBranch size={42} />,
+      text: "Governance workflows aligned with leadership and compliance teams"
+    }
+  ];
+
   return (
     <>
 
@@ -292,7 +316,8 @@ desc: "Ongoing AI strategic advisory and portfolio oversight."
 
 {/* SECTION ------- 4 */}
 
-  <section className="ai-hero-section">
+ <section>
+   <div className="ai-hero-section">
       <div className="container">
         <div className="row align-items-center">
 
@@ -344,14 +369,14 @@ desc: "Ongoing AI strategic advisory and portfolio oversight."
 
         </div>
       </div>
-    </section>
+    </div>
 
-
+    
     {/* SECTION ------ 5 */}
 
 
 
-     <section className="conversation-section">
+     <div className="conversation-section">
       <div className="container">
 
         <div className="row align-items-center">
@@ -389,7 +414,10 @@ desc: "Ongoing AI strategic advisory and portfolio oversight."
         </div>
 
       </div>
-    </section>
+    </div>
+ </section>
+
+
 
 
     {/* SECTION ------- 6 */}
@@ -916,6 +944,79 @@ rapid discovery to ongoing strategic oversight.
             ))}
 
           </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    {/* SECTION ---- 16 */}
+
+    <section className="hero-section">
+      <div className="container">
+        <div className="row align-items-center">
+
+          {/* LEFT SIDE */}
+          <div className="col-lg-6 col-md-12 hero-left">
+            <h1 className="title">
+              AI Security and Governance <br />
+              Designed for Enterprise Risk Control
+            </h1>
+
+            <p className="hero-desc">
+              Our AI security services and enterprise AI governance solutions
+              help organizations deploy compliant, auditable and responsible AI
+              without slowing innovation.
+            </p>
+
+            <ul className="hero-list">
+              <li>Secure AI Systems</li>
+              <li>Regulatory-Ready Governance</li>
+              <li>Responsible AI at Scale</li>
+            </ul>
+          </div>
+
+          {/* RIGHT SIDE IMAGE */}
+          <div className="col-lg-6 col-md-12 text-center">
+            <img src={AiStacked} alt="AI Security" className="hero-img img-fluid"/>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    {/* SECTION ------- 17 */}
+
+   <section className="ai-governance">
+      <div className="container text-center">
+
+        <h2 className="title">
+          Enterprise AI Governance Services That
+          <br />
+          Create Control and Clarity
+        </h2>
+
+        <p className="subtitle">
+          We design enterprise AI governance solutions that give organizations
+          full visibility, accountability and lifecycle control over every AI system.
+        </p>
+
+        <div className="row governance-row mt-5">
+
+          {serviceses.map((item, index) => (
+            <div className="col-lg-3 col-md-6 col-12 governance-col" key={index}>
+              <div className="governance-card">
+
+                <div className="icon-box">
+                  {item.icon}
+                </div>
+
+                <p>{item.text}</p>
+
+              </div>
+            </div>
+          ))}
 
         </div>
 

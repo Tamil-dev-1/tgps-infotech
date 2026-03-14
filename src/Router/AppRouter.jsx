@@ -33,6 +33,7 @@ import CreateFrec from '../pages/createFrecPage/CreateFrecx';
 import UseAWallet from '../pages/createFrecPage/useAwallet/UseAWallet';
 import Blockchain from '../pages/blockchain/Blockchain';
 import AI from '../pages/Ai/AI';
+import Consulting from '../pages/consulting/Consulting';
 
 const AppRouter = () => {
   return (
@@ -44,6 +45,7 @@ const AppRouter = () => {
         <Route path='/' element={<Home />} />
         <Route path='/blockchain' element={<Blockchain />} />
         <Route path='/Ai' element={<AI />} />
+        <Route path='/consulting' element={<Consulting />} />
 
 
 

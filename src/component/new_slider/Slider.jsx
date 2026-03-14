@@ -29,7 +29,7 @@ return(
 
 <section className="web3-section">
 
-<h2 className="title">
+<h2 className="titles">
 Blockchain
 </h2>
 

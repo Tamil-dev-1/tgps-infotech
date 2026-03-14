@@ -4,7 +4,7 @@ color:white;
 padding:80px 10%; /* left & right space */
 }
 
-.title{
+.titles{
 text-align:center;
 margin-bottom:50px;
 font-size:clamp(24px,4vw,36px);
@@ -28,7 +28,7 @@ flex:1;
 position:relative;
 transition:all .6s ease;
 cursor:pointer;
-border-right:1px solid rgba(255,255,255,0.2);
+border-right:1px solid #A7D505;
 border-radius:10px;
 overflow:hidden;
 }

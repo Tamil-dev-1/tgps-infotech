@@ -1,6 +1,7 @@
 import { useState,useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import { path } from "framer-motion/client";
 
 
 export default function MegaNavbar() {
@@ -109,7 +110,7 @@ export default function MegaNavbar() {
 
         {/* Buttons */}
         <div className="d-none d-lg-flex gap-2 desktop-btns">
-          <button className="btn btn-warning">Get in touch</button>
+          <button className="btn fw-bold" style={{backgroundColor:"#C6FF00"}}>Get in touch</button>
           <button className="btn btn-outline-dark text-white bg-black">Partner With Us</button>
         </div>
 
@@ -168,20 +169,20 @@ const fullMenuData = {
       cards:[
         {title:"Blockchain Development",desc:"Strategic services",path:"/blockchain"},
         {title:"Identity Management",desc:"Secure identity"},
-        {title:"Depin Development",desc:"Future apps"},
-        {title:"Offshore Center",desc:"Build teams"}
+        // {title:"Depin Development",desc:"Future apps"},
+        // {title:"Offshore Center",desc:"Build teams"}
       ]
     },
 
-    "Demo":{
-      description:"Navigate your journey towards blockchain",
-      cards:[
-        {title:"Blockchain2 Development",desc:"Strategic services"},
-        {title:"Identity2 Management",desc:"Secure identity"},
-        {title:"Depin2 Development",desc:"Future apps"},
-        {title:"Offshore2 Center",desc:"Build teams"}
-      ]
-    }
+    // "Demo":{
+    //   description:"Navigate your journey towards blockchain",
+    //   cards:[
+    //     {title:"Blockchain2 Development",desc:"Strategic services"},
+    //     {title:"Identity2 Management",desc:"Secure identity"},
+    //     {title:"Depin2 Development",desc:"Future apps"},
+    //     {title:"Offshore2 Center",desc:"Build teams"}
+    //   ]
+    // }
   },
   AI:{
     "Our Offerings":{
@@ -189,8 +190,8 @@ const fullMenuData = {
       cards:[
         {title:"AI Agents",desc:"Machine learning",path:"/Ai"},
         {title:"Chatbots",desc:"Assistants"},
-        {title:"Vision AI",desc:"Image AI"},
-        {title:"Automation",desc:"Process AI"}
+        // {title:"Vision AI",desc:"Image AI"},
+        // {title:"Automation",desc:"Process AI"}
       ]
     }
   },
@@ -198,10 +199,10 @@ const fullMenuData = {
     "Game Development":{
       description:"Gaming solutions",
       cards:[
-        {title:"Unity",desc:"3D games"},
-        {title:"Unreal",desc:"AAA games"},
-        {title:"Web3",desc:"Blockchain games"},
-        {title:"AR/VR",desc:"Immersive"}
+        {title:"Unity",desc:"lorem"},
+        {title:"Unreal",desc:"lorem"},
+        // {title:"Web3",desc:"Blockchain games"},
+        // {title:"AR/VR",desc:"Immersive"}
       ]
     }
   },
@@ -209,32 +210,32 @@ const fullMenuData = {
     "Tech Consulting":{
       description:"Strategic help",
       cards:[
-        {title:"Architecture",desc:"System design"},
+        {title:"Architecture",desc:"System design", path:"/consulting"},
         {title:"Security",desc:"Risk audit"},
-        {title:"Cloud",desc:"Infra"},
-        {title:"Scaling",desc:"Growth"}
+        // {title:"Cloud",desc:"Infra"},
+        // {title:"Scaling",desc:"Growth"}
       ]
     }
   },
-  Solutions:{
-    "Business Solutions":{
-      description:"Digital tools",
-      cards:[
-        {title:"ERP",desc:"Enterprise"},
-        {title:"CRM",desc:"Customer"},
-        {title:"Fintech",desc:"Finance"},
-        {title:"Healthcare",desc:"Medical"}
-      ]
-    }
-  },
+  // Solutions:{
+  //   "Business Solutions":{
+  //     description:"Digital tools",
+  //     cards:[
+  //       {title:"ERP",desc:"Enterprise"},
+  //       {title:"CRM",desc:"Customer"},
+  //       {title:"Fintech",desc:"Finance"},
+  //       {title:"Healthcare",desc:"Medical"}
+  //     ]
+  //   }
+  // },
   "About Us":{
     "Company":{
       description:"Know us",
       cards:[
         {title:"Our Story",desc:"Journey"},
         {title:"Team",desc:"Leadership"},
-        {title:"Careers",desc:"Join"},
-        {title:"Contact",desc:"Reach us"}
+        // {title:"Careers",desc:"Join"},
+        // {title:"Contact",desc:"Reach us"}
       ]
     }
   }

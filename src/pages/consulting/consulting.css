@@ -1,0 +1,316 @@
+.text-info {
+  color: #00dfd8 !important; /* Matches the checkmark color */
+}
+
+/* Adds a subtle hover animation to the button */
+.btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+  transition: all 0.2s ease;
+}
+
+
+.ai-brain-img{
+max-width:420px;
+width:100%;
+filter: drop-shadow(0 0 20px rgba(0,124,240,0.3));
+}
+
+
+/* SECTION ------- 2 */
+
+/* SECTION */
+
+.ai-consult-section{
+background:#000;
+color:#fff;
+padding:60px 0;
+}
+
+
+/* HEADER */
+
+.ai-consult-header{
+margin-bottom:40px;
+}
+
+.ai-consult-title{
+font-size:30px;
+font-weight:700;
+margin-bottom:8px;
+color: #fff;
+}
+
+.ai-consult-subtitle{
+font-size:13px;
+color:#bfbfbf;
+max-width:650px;
+margin:auto;
+}
+
+
+/* GRID SPACING */
+
+.ai-consult-grid{
+row-gap:18px;
+}
+
+
+/* CARD */
+
+.ai-consult-card{
+background:linear-gradient(145deg,#000000,#0c0c0c);
+border:1px solid rgba(167,213,5,0.25);
+border-radius:8px;
+padding:20px;
+height:100%;
+transition:0.35s ease;
+}
+
+
+/* CARD TITLE */
+
+.ai-consult-card-title{
+font-size:16px;
+font-weight:600;
+margin-bottom:10px;
+color:#fff;
+}
+
+
+/* CARD TEXT */
+
+.ai-consult-card-text{
+font-size:13px;
+color:#bdbdbd;
+line-height:1.5;
+margin-bottom:0;
+}
+
+
+/* HOVER */
+
+.ai-consult-card:hover{
+transform:translateY(-4px);
+border-color:#A7D505;
+box-shadow:0 0 12px rgba(167,213,5,0.45);
+background:linear-gradient(145deg,#000,#A7D50515);
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width:768px){
+
+.ai-consult-title{
+font-size:24px;
+}
+
+.ai-consult-card{
+padding:18px;
+}
+
+}
+
+
+/* SECTION ------ 3 */
+
+/* SECTION */
+
+.web3-sections{
+background:#000;
+padding:80px 0;
+color:#fff;
+}
+
+
+/* IMAGE */
+
+.web3-image-wrapper{
+position:relative;
+}
+
+.web3-image{
+max-width:90%;
+filter: drop-shadow(0 0 20px rgba(167,213,5,0.45));
+}
+
+
+/* TITLE */
+
+.web3-title{
+font-size:28px;
+font-weight:700;
+margin-bottom:18px;
+color:#fff;
+}
+
+
+/* TEXT */
+
+.web3-text{
+font-size:14px;
+color:#cfcfcf;
+line-height:1.7;
+margin-bottom:14px;
+}
+
+
+/* ACCENT LINE */
+
+/* .web3-title::after{
+content:"";
+display:block;
+width:70px;
+height:3px;
+background:#A7D505;
+margin-top:10px;
+} */
+
+
+/* RESPONSIVE */
+
+@media (max-width:991px){
+
+.web3-section{
+text-align:center;
+}
+
+.web3-content{
+margin-top:30px;
+}
+
+.web3-title::after{
+margin-left:auto;
+margin-right:auto;
+}
+
+}
+
+
+@media (max-width:576px){
+
+.web3-title{
+font-size:24px;
+}
+
+.web3-text{
+font-size:13px;
+}
+
+}
+
+
+/* SECTION ---- 4 */
+
+/* SECTION */
+
+.web3-why-section{
+background:#000;
+padding:80px 0;
+color:#fff;
+}
+
+
+/* HEADER */
+
+.web3-why-header{
+margin-bottom:50px;
+}
+
+.web3-why-title{
+font-size:28px;
+font-weight:700;
+margin-bottom:10px;
+color: #fff;
+}
+
+.web3-why-subtitle{
+max-width:750px;
+margin:auto;
+font-size:14px;
+color:#bfbfbf;
+}
+
+
+/* CARD */
+
+.web3-why-card{
+background:#0a0a0a;
+border:1px solid rgba(255,255,255,0.08);
+padding:30px 22px;
+border-radius:8px;
+transition:0.35s ease;
+height:100%;
+}
+
+
+/* ICON */
+
+.web3-why-icon{
+width:45px;
+height:45px;
+margin:auto;
+margin-bottom:15px;
+border-radius:50%;
+background:#111;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:18px;
+color:#A7D505;
+border:1px solid rgba(167,213,5,0.5);
+}
+
+
+/* CARD TITLE */
+
+.web3-why-card-title{
+font-size:16px;
+font-weight:600;
+margin-bottom:10px;
+}
+
+
+/* CARD TEXT */
+
+.web3-why-card-text{
+font-size:13px;
+color:#c9c9c9;
+line-height:1.6;
+margin-bottom:0;
+}
+
+
+/* HOVER EFFECT */
+
+.web3-why-card:hover{
+transform:translateY(-6px);
+border-color:#A7D505;
+box-shadow:0 0 20px rgba(167,213,5,0.45);
+background:#050505;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width:991px){
+
+.web3-why-title{
+font-size:26px;
+}
+
+}
+
+
+@media (max-width:576px){
+
+.web3-why-title{
+font-size:22px;
+}
+
+.web3-why-card{
+padding:24px 18px;
+}
+
+}
