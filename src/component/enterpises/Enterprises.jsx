@@ -20,7 +20,7 @@ export default function EnterpriseStats() {
         </p>
 
         <h2 className="enterprise-stats-title">
-          Why Enterprises Choose Us
+          Why Enterprises <span style={{color:"#C6FF00"}}>Choose Us</span>
         </h2>
 
         <div className="row g-4 mt-4">

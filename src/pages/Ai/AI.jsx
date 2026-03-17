@@ -988,10 +988,10 @@ rapid discovery to ongoing strategic oversight.
 
     {/* SECTION ------- 17 */}
 
-   <section className="ai-governance">
+   <section className="ai-governance pb-5">
       <div className="container text-center">
 
-        <h2 className="title">
+        <h2 className="title-bottom">
           Enterprise AI Governance Services That
           <br />
           Create Control and Clarity

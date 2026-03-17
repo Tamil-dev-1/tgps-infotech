@@ -13,7 +13,7 @@ const BlogCarousel = () => {
       <div className="container text-center">
 
         <h2 style={{ fontWeight: "700", color: "#ffffff" }}>
-          Our Blogs
+          Our <span style={{color:"#C6FF00"}}>Blogs</span>
         </h2>
 
         <Swiper

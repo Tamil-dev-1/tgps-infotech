@@ -447,7 +447,7 @@ font-size:14px;
 /* Parallelogram card */
 
 .para-card{
-  background:linear-gradient(135deg,#000,#1a1a1a,#C6FF00);
+  background:linear-gradient(45deg,#000,#1a1a1a,#C6FF00);
   transform:skew(-15deg);
   border-radius:12px;
   padding:25px;
@@ -1282,10 +1282,11 @@ padding:10px 0;
 color:#fff;
 }
 
-.title{
+.title-bottom{
 font-size:28px;
 font-weight:700;
 margin-bottom:15px;
+color: #fff;
 }
 
 .subtitle{

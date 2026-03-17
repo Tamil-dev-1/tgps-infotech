@@ -80,7 +80,7 @@ const services = [
                     <span>Company </span>
                   </h3>
                   
-                  <p className="lead mb-4 text-secondary" style={{ fontSize: '1rem' }}>
+                  <p className="lead mb-4" style={{ fontSize: '1rem',color:"#bfbfbf" }}>
                     Unlock data-driven decision-making across your workflows, systems and business 
                     operations with advanced Data & AI.
                   </p>

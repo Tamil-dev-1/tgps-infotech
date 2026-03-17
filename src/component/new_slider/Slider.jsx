@@ -30,7 +30,7 @@ return(
 <section className="web3-section">
 
 <h2 className="titles">
-Blockchain
+Block<span style={{color:"#C6FF00"}}>chain</span> 
 </h2>
 
 <ul className="panel-list">

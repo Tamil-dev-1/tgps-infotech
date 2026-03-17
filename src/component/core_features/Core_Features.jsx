@@ -26,7 +26,7 @@ const FeaturesSection = () => {
           </span>
 
           <h1 className="feature-title">
-            Innovative IT Strategies <br /> and Solutions
+            Innovative IT <span style={{color:"#C6FF00"}}>Strategies <br /> and Solutions</span>
           </h1>
         </div>
 

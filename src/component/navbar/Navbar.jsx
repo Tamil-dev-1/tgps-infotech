@@ -196,8 +196,8 @@ const fullMenuData = {
     }
   },
   Web2:{
-    "Game Development":{
-      description:"Gaming solutions",
+    "Web2 Development":{
+      description:"Web2 solutions",
       cards:[
         {title:"Unity",desc:"lorem"},
         {title:"Unreal",desc:"lorem"},
@@ -232,7 +232,7 @@ const fullMenuData = {
     "Company":{
       description:"Know us",
       cards:[
-        {title:"Our Story",desc:"Journey"},
+        {title:"Our Story",desc:"Journey",path:"/aboutus"},
         {title:"Team",desc:"Leadership"},
         // {title:"Careers",desc:"Join"},
         // {title:"Contact",desc:"Reach us"}

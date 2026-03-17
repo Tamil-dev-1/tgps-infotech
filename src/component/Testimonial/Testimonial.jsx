@@ -20,7 +20,7 @@ export default function Testimonial() {
             <p className="small-title">Testimonial</p>
 
             <h2 className="main-title">
-              What Our Clients <br /> Say About Us
+              What Our Clients <br /> <span style={{color:"#C6FF00"}}>Say About Us</span>
             </h2>
 
             <p className="desc">

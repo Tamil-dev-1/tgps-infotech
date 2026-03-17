@@ -62,7 +62,7 @@ const ScrollBox = () => {
   return (
     <section className="pt-5" style={{backgroundColor:"#0B0B0B"}}>
       <h1 className="fw-bold text-center mb-4 text-white">
-        Why Choose Us
+        Why <span style={{color:"#C6FF00"}}>Choose Us</span>
       </h1>
 
       <div className="stack-wrapper">

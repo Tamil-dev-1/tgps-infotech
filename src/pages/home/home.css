@@ -134,7 +134,7 @@
 /* Title */
 
 .studio-title {
-  font-size: clamp(28px, 6vw, 55px);
+  font-size: clamp(28px, 6vw, 45px);
   font-weight: 700;
   letter-spacing: 2px;
   margin-bottom: 20px;
@@ -165,7 +165,7 @@
   padding: 8px 18px;
   border-radius: 30px;
   font-size: 14px;
-  background: #EFFE00;
+  background: #C6FF00;
   color: #111111;
   font-weight: 500;
 }
@@ -301,7 +301,7 @@
 }
 
 .ai-btn {
-  background-color: #EFFE00;
+  background-color: #C6FF00;
   color: #000;
   border: none;
   padding: 12px 28px;
@@ -1082,7 +1082,7 @@
 }
 
 .hero-label {
-  color: #EFFE00;
+  color: #C6FF00;
   font-size: 13px;
   letter-spacing: 2px;
   font-weight: 600;

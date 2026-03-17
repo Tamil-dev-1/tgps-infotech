@@ -127,7 +127,7 @@ export default function Home() {
 
           {/* Left Content */}
           <div className="col-lg-7">
-            <h1 className="studio-title">TGPSINFOTECH</h1>
+            <h1 className="studio-title">TGPS<span style={{color:"#C6FF00"}}>INFOTECH</span></h1>
 
             <p className="studio-text">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -186,7 +186,7 @@ export default function Home() {
             <span className="ai-label">FUTURE TECHNOLOGY</span>
 
             <h1 className="ai-title mt-3">
-              AI Offerings
+              AI <span style={{color:"#C6FF00"}}>Offerings</span>
             </h1>
 
             <p className="ai-text mt-3">
@@ -340,7 +340,7 @@ export default function Home() {
     <span
       className="px-3 py-1"
       style={{
-        background: "#EFFE00",
+        background: "#C6FF00",
         color: "#111111",
         borderRadius: "20px",
         fontSize: "12px",
@@ -355,13 +355,13 @@ export default function Home() {
     <h1
       className="fw-bold mt-3 "
       style={{
-        fontSize: "52px",
+        fontSize: "45px",
         lineHeight: "1.2",
         fontWeight: "800",
         color: "#FFFFFF",
       }}
     >
-      The internet is changing
+      The internet is <span style={{color:"#C6FF00"}}>changing</span>
     </h1>
 
     {/* Subtitle */}
@@ -401,7 +401,7 @@ export default function Home() {
             <h1 className="tech-titles mt-3">
               Future 
               Technology <br />
-              Vision
+              <span style={{color:"#C6FF00"}}>Vision</span>
             </h1>
 
             <p className="hero-text mt-3">
