@@ -1,0 +1,194 @@
+.marquee-section {
+  background: #0b0b0b;
+  padding: 60px 0;
+}
+
+/* ROW SPACING */
+.marquee-row {
+  margin-bottom: 40px;
+}
+
+/* HEADING */
+.marquee-heading {
+  color: #C6FF00;
+  font-size: clamp(22px, 3vw, 32px);
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+}
+
+/* LINE */
+.vertical-line {
+  width: 2px;
+  height: 70px;
+  background: #C6FF00;
+  opacity: 0.6;
+}
+
+/* MARQUEE */
+.marquee {
+  overflow: hidden;
+}
+
+.marquee-track {
+  display: flex;
+  gap: 50px;
+  width: max-content;
+  animation: scrollLeft linear infinite;
+}
+
+/* PAUSE ON HOVER */
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+/* TEXT */
+.marquee-text {
+  color: #fff;
+  font-size: 18px;
+  white-space: nowrap;
+  position: relative;
+  padding-right: 35px;
+}
+
+.marquee-text::after {
+  content: "•";
+  position: absolute;
+  right: 10px;
+  color: #C6FF00;
+}
+
+/* ANIMATION */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* SPEED BUTTONS */
+.speed-btn {
+  background: transparent;
+  border: 1px solid #C6FF00;
+  color: #C6FF00;
+  padding: 6px 14px;
+  margin: 0 6px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.speed-btn:hover,
+.speed-btn.active {
+  background: #C6FF00;
+  color: #000;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .heading-col {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .vertical-line {
+    display: none;
+  }
+
+  .marquee-text {
+    font-size: 15px;
+  }
+}
+
+
+/* CONTAINER WIDTH CONTROL */
+.marquee-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* SECTION SPACING */
+.marquee-section {
+  background: #0b0b0b;
+  padding: 80px 20px; /* reduced side stretch */
+}
+
+/* EACH ROW */
+.marquee-row {
+  margin-bottom: 35px;
+  
+}
+
+/* MARQUEE WRAPPER (IMPORTANT FOR FADE) */
+.marquee {
+  position: relative;
+  overflow: hidden;
+}
+
+/* EDGE FADE EFFECT */
+.marquee::before,
+.marquee::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* LEFT FADE */
+.marquee::before {
+  left: 0;
+  background: linear-gradient(to right, #0b0b0b 20%, transparent);
+}
+
+/* RIGHT FADE */
+.marquee::after {
+  right: 0;
+  background: linear-gradient(to left, #0b0b0b 20%, transparent);
+}
+
+/* TRACK */
+.marquee-track {
+  display: flex;
+  gap: 50px;
+  width: max-content;
+  animation: scrollLeft linear infinite;
+}
+
+/* HOVER PAUSE */
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+/* TEXT */
+.marquee-text {
+  color: #fff;
+  font-size: 18px;
+  white-space: nowrap;
+  position: relative;
+  padding-right: 35px;
+}
+
+/* DOT */
+.marquee-text::after {
+  content: "•";
+  position: absolute;
+  right: 10px;
+  color: #C6FF00;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .marquee-section {
+    padding: 60px 15px;
+  }
+
+  .marquee::before,
+  .marquee::after {
+    width: 40px; /* smaller fade on mobile */
+  }
+}

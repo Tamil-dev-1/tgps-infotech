@@ -1,7 +1,7 @@
 import { useState,useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import { path } from "framer-motion/client";
+// import TGPS_LOGO from '../../assets/images/home/infotech.png'
 
 
 export default function MegaNavbar() {
@@ -42,10 +42,12 @@ export default function MegaNavbar() {
       className="navbar navbar-expand-lg shadow-sm mega-navbar"
       onMouseLeave={() => setActiveNav(null)}
     >
-      <div className="container-fluid px-4">
+      <div className="container px-4 d-flex align-items-center justify-content-between">
 
         {/* Logo */}
-        <Link to={'/'} className="navbar-brand fw-bold fs-3 text-white">LOGO</Link>
+        <Link to={'/'} className="navbar-brand">
+  <img src="/infotech_logo2.png" alt="logo" className="navbar-logo" />
+</Link>
 
         {/* Mobile Toggle */}
         <button
@@ -56,7 +58,7 @@ export default function MegaNavbar() {
         </button>
 
         {/* NAV */}
-        <ul className={`navbar-nav gap-4 mobile-nav ${mobileMenu ? "show" : ""}`}>
+        <ul className={`navbar-nav gap-4 ms-auto mobile-nav ${mobileMenu ? "show" : ""}`}>
 
           {Object.keys(fullMenuData).map((nav, i) => (
             <li
@@ -109,10 +111,10 @@ export default function MegaNavbar() {
         </ul>
 
         {/* Buttons */}
-        <div className="d-none d-lg-flex gap-2 desktop-btns">
-          <button className="btn fw-bold" style={{backgroundColor:"#C6FF00"}}>Get in touch</button>
+        {/* <div className="d-none d-lg-flex gap-2 desktop-btns">
+          <button className="btn fw-bold" style={{backgroundColor:"#92B025"}}>Get in touch</button>
           <button className="btn btn-outline-dark text-white bg-black">Partner With Us</button>
-        </div>
+        </div> */}
 
       </div>
 
@@ -199,7 +201,7 @@ const fullMenuData = {
     "Web2 Development":{
       description:"Web2 solutions",
       cards:[
-        {title:"Unity",desc:"lorem"},
+        {title:"Unity",desc:"lorem",path:"/web2"},
         {title:"Unreal",desc:"lorem"},
         // {title:"Web3",desc:"Blockchain games"},
         // {title:"AR/VR",desc:"Immersive"}

@@ -76,7 +76,7 @@ function Card() {
         years only can say this is best in every level use it for
         my reviews that I have already are company and the reviews
         that I have already are all excellent. Not only the design
-        but the code
+        but the code.
       </p>
 
       <div className="client-info">

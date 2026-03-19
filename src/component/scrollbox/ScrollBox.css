@@ -91,3 +91,38 @@ body {
     width: 100%;
   }
 }
+
+/* No animation for mobile screen */
+
+/* @media (max-width: 768px) {
+
+  .stack-section {
+    height: auto; 
+    display: block;
+  }
+
+  .stack-card {
+    position: relative; 
+    margin-bottom: 20px;
+    transform: none !important;
+  }
+
+} */
+
+@media (max-width: 767px) {
+
+  .stack-section {
+    height: auto;
+    display: block;
+    padding: 0 12px;
+  }
+
+  .stack-card {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 20px auto;
+    transform: none !important;
+  }
+
+}

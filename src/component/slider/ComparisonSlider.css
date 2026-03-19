@@ -60,3 +60,44 @@
   margin-right: 8px;
   color:#111111;
 }
+
+
+/* Responsiveness code */
+
+
+@media (max-width: 768px) {
+
+  .comparison-section {
+    padding: 40px 10px !important;
+  }
+
+  /* Reduce animation speed (better UX on mobile) */
+  .scroll-left {
+    animation: scroll-left 18s linear infinite;
+  }
+
+  .scroll-right {
+    animation: scroll-right 18s linear infinite;
+  }
+
+  /* Pills smaller */
+  .pill {
+    padding: 5px 12px;
+    font-size: 12px;
+    margin-right: 12px;
+    font-weight: 500;
+  }
+
+  /* Icon smaller */
+  .pill svg {
+    width: 14px;
+    height: 14px;
+    margin-right: 6px;
+  }
+
+}
+
+
+.scroll-row:hover {
+  animation-play-state: paused;
+}

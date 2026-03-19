@@ -580,7 +580,6 @@
 
 
 
-
 /* Welcome to FrecX ==== section */
 .bottom-section {
   padding: 100px 0;
@@ -684,6 +683,7 @@
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
+
 .feature-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 30px rgba(0,0,0,0.15);
@@ -699,6 +699,7 @@
   border-radius: 50%;
   margin: 0 auto;
 }
+
 
 
 
@@ -1073,7 +1074,7 @@
 
 
 
-      /* FUTURE TECHNOLOGY VISION */
+   /* FUTURE TECHNOLOGY VISION */
 
  .hero-section {
   background-color: #111111;
@@ -1354,9 +1355,11 @@ font-size:26px;
 .digital-hero-desc{
 font-size:13px;
 }
-
 }
 
 .heros{
   margin-top:-70px;
 }
+
+
+

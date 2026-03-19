@@ -2,6 +2,49 @@
   padding-top:70px;
 }
 
+/* SPARK EFFECTS */
+
+/* 🎇 PREMIUM TRAIL */
+.spark {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+
+  background: radial-gradient(circle, #B4E701 0%, rgba(180,231,1,0.4) 40%, transparent 70%);
+  filter: blur(1px);
+
+  animation: sparkFade 0.8s ease-out forwards;
+}
+
+/* soft fade */
+@keyframes sparkFade {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+}
+
+.spark::after {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  background: rgba(180,231,1,0.2);
+  filter: blur(6px);
+}
+
+
+
+
+
+
 
 
 /* DEFAULT (LIGHT THEME) */

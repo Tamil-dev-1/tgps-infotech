@@ -35,6 +35,7 @@ import Blockchain from '../pages/blockchain/Blockchain';
 import AI from '../pages/Ai/AI';
 import Consulting from '../pages/consulting/Consulting';
 import AboutUs from '../pages/AboutUs/AboutUs';
+import Web2 from '../pages/web2/Web2';
 
 const AppRouter = () => {
   return (
@@ -48,6 +49,7 @@ const AppRouter = () => {
         <Route path='/Ai' element={<AI />} />
         <Route path='/consulting' element={<Consulting />} />
         <Route path='/aboutus' element={<AboutUs />} />
+        <Route path='/web2' element={<Web2 />} />
 
 
 

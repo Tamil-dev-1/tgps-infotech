@@ -23,7 +23,11 @@ const ScrollBox = () => {
   const panelRefs = useRef([]);
   const { theme } = useContext(ThemeContext);
 
-  useLayoutEffect(() => {
+  
+    useLayoutEffect(() => {
+  const mm = gsap.matchMedia();
+
+  mm.add("(min-width: 768px)", () => {
     const ctx = gsap.context(() => {
       const panelsEl = panelRefs.current;
 
@@ -42,7 +46,6 @@ const ScrollBox = () => {
           pin: true,
           scrub: true,
           anticipatePin: 1,
-          pinSpacing: true,
         },
       }).to(
         panelsEl.slice(1),
@@ -51,13 +54,13 @@ const ScrollBox = () => {
       );
     }, sectionRef);
 
-    return () => {
-      // 🔥 HARD CLEANUP (THIS FIXES STICKY)
-      ScrollTrigger.getAll().forEach(st => st.kill());
-      ctx.revert();
-      ScrollTrigger.refresh();
-    };
-  }, []);
+    return () => ctx.revert();
+  });
+
+  return () => {
+    mm.revert(); // 🔥 auto kills ScrollTrigger on mobile
+  };
+}, []);
 
   return (
     <section className="pt-5" style={{backgroundColor:"#0B0B0B"}}>

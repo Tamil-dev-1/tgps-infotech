@@ -1,6 +1,7 @@
 import React from "react";
 import "./AboutUs.css";
 import Infotech_diff from '../../assets/images/about/infotech_diff.png'
+import Gallery from "../../component/Gallery_section/Gallery";
 
 export default function AboutUs() {
   return (
@@ -119,20 +120,20 @@ export default function AboutUs() {
 
     {/* SECTION ----- 3 */}
 
-     <section className="cta-section">
+     {/* <section className="cta-section">
   <div className="container">
 
-    {/* TOP ROW */}
+    
     <div className="row align-items-center top-row">
 
-      {/* LEFT HEADING */}
+      
       <div className="col-lg-4 col-md-5 text-md-start text-center mb-3 mb-md-0 left-box">
         <h3 className="cta-heading">
           Meet The Sparks <span style={{color:"#B4E701"}}>Behind Our Magic</span>
         </h3>
       </div>
 
-      {/* RIGHT BUTTON */}
+    
       <div className="col-lg-8 col-md-7 text-md-end text-center right-box">
         <button className="cta-btn d-inline-flex align-items-center justify-content-center gap-2">
           org.<i class="bi bi-arrow-right"></i>
@@ -141,7 +142,7 @@ export default function AboutUs() {
 
     </div>
 
-    {/* BOTTOM BUTTON */}
+    
     <div className="bottom-cta">
       <button className="cta-btn full-btn">
         Join Us Now
@@ -149,7 +150,11 @@ export default function AboutUs() {
     </div>
 
   </div>
-</section>
+</section> */}
+
+{/* GALLERY SECTION */}
+
+<Gallery />
     </>
   );
 }

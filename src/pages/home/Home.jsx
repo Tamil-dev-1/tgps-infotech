@@ -328,7 +328,7 @@ export default function Home() {
 
     {/* VALUES SECTION ---------- 12 */}
    <section
-  className="py-5"
+  className="pt-5"
   style={{
     background: "#111111",
     transition: "0.3s",
@@ -355,7 +355,7 @@ export default function Home() {
     <h1
       className="fw-bold mt-3 "
       style={{
-        fontSize: "45px",
+        fontSize: "clamp(24px, 5vw, 45px)",
         lineHeight: "1.2",
         fontWeight: "800",
         color: "#FFFFFF",
@@ -370,7 +370,7 @@ export default function Home() {
       style={{
         color: "#FFFFFF",
         transition: "0.3s",
-        fontSize: "20px",
+       fontSize: "clamp(14px, 2.5vw, 20px)"
       }}
     >
       Be part of the digital revolution

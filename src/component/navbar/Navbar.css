@@ -3,6 +3,16 @@
   z-index: 10000;
 }
 
+.mega-navbar .container-fluid {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.navbar-logo {
+  height: clamp(50px, 8vw, 100px); /* 🔥 responsive height */
+  width: auto;
+  object-fit: contain;
+}
 .mega-navbar .nav-link {
   color: #ffffff;
   font-weight: 500;
@@ -176,7 +186,7 @@
 
   .navbar-toggler {
     display: block;
-    font-size: 35px;
+    font-size: 27px;
     color: #fff;
     z-index: 10001;
     position: relative;

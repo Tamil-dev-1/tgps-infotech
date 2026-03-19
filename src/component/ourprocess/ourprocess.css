@@ -134,3 +134,43 @@
   align-items: center;
   margin-top: 140px;   /* FIX: push process line down */
 }
+
+
+
+@media (max-width: 992px) {
+
+  .wf-track {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px; /* reduce extra space */
+  }
+
+  /* Remove line */
+  .wf-line-bar {
+    display: none;
+  }
+
+  /* Each item center */
+  .wf-node {
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  /* Remove dot */
+  .wf-point {
+    display: none;
+  }
+
+  /* Box normal flow */
+  .wf-box {
+    position: static;
+    transform: none;
+    width: 100%;
+    background: rgba(255,255,255,0.03); /* subtle card feel */
+    padding: 15px;
+    border-radius: 12px;
+  }
+
+}
