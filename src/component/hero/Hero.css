@@ -96,10 +96,10 @@
 /* ================= BACKGROUND ================= */
 
 .hero1 {
-  background-image: url("/src/assets/images/home/banner1.png");
-  /* background-size:contain;
-background-repeat:no-repeat;
-background-position:center; */
+  background-image: url("/src/assets/images/home/demo.png");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
 }
 
 .hero2 {

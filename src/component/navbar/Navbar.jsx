@@ -87,13 +87,14 @@ export default function MegaNavbar() {
                 <div className="mobile-submenu">
                   {Object.keys(fullMenuData[nav]).map((item, idx) => (
                     <div key={idx} className="mobile-submenu-item">
-                      <h6>{item}</h6>
+                      <h6 style={{color:"#C6FF00"}}>{item}</h6>
 
                       {fullMenuData[nav][item].cards.map((card, c) => (
                         <Link
                           key={c}
                           to={card.path || "#"}
                           className="d-block text-decoration-none"
+                          style={{color:'#fff'}}
                           onClick={() => setMobileMenu(false)}
                         >
                           {card.title}
@@ -120,15 +121,15 @@ export default function MegaNavbar() {
 
       {/* DESKTOP MEGA MENU */}
       {activeNav && (
-        <div className="mega-menu shadow-lg">
+        <div className="mega-menu shadow-lg bg-activeNav">
           <div className="row g-0">
 
             {/* LEFT SIDEBAR */}
-            <div className="col-md-3 sidebar">
+            <div className="col-md-3 sidebar bg-sidebar">
               {Object.keys(fullMenuData[activeNav]).map((item, i) => (
                 <div
                   key={i}
-                  className={`sidebar-item ${activeMenu === item ? "active" : ""}`}
+                  className={`sidebar-item bg-white ${activeMenu === item ? "active" : ""}`}
                   onClick={() => setActiveMenu(item)}
                 >
                   {item} <span>›</span>
@@ -138,7 +139,7 @@ export default function MegaNavbar() {
 
             {/* RIGHT CONTENT */}
             <div className="col-md-9 content-area">
-              <h5 className="fw-bold mb-4">{activeMenu}</h5>
+              <h5 className="fw-bold activemenu mb-4">{activeMenu}</h5>
               <p className="text-muted mb-4">
                 {fullMenuData[activeNav][activeMenu].description}
               </p>
@@ -148,7 +149,7 @@ export default function MegaNavbar() {
                   <div key={i} className="col-md-6 mb-4">
                     <Link to ={card.path} className="menu-card text-decoration-none">
                       <div className="line"></div>
-                      <h6>{card.title}</h6>
+                      <h6 className="text-white">{card.title}</h6>
                       <p>{card.desc}</p>
                     </Link>
                   </div>

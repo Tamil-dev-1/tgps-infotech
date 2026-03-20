@@ -282,7 +282,6 @@ const CryptoEventsHero = () => {
           className="mb-4"
           style={{
             fontSize: "1rem",
-            color: "#cfcfcf",
             maxWidth: "700px",
             color: theme === "dark" ? "#C8AAAA" : "#574964",
           }}

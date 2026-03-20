@@ -142,7 +142,7 @@ export default function Home() {
               <span className="tag">Our Awards</span>
               <span className="tag">Our Values</span>
               <span className="tag">Our Vision</span>
-              <span className="tag">Our Awards</span>
+              {/* <span className="tag">Our Awards</span> */}
             </div>
           </div>
 

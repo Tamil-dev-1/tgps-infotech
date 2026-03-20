@@ -23,7 +23,7 @@ border-radius:40px;
 
 .feature-card{
 
-background:linear-gradient(135deg,#EFFE00,#c6ff00);
+background:linear-gradient(135deg,#CEFF00,#c6ff00);
 
 color:#111;
 
@@ -43,6 +43,13 @@ animation: blobMorph 18s infinite ease-in-out;
 
 will-change: border-radius, transform;
 transform: translateZ(0);
+
+/* newly added for center */
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 
 }
 
