@@ -141,7 +141,7 @@ export default function Home() {
               <span className="tag">Our Vision</span>
               <span className="tag">Our Awards</span>
               <span className="tag">Our Values</span>
-              <span className="tag">Our Vision</span>
+              {/* <span className="tag">Our Vision</span> */}
               {/* <span className="tag">Our Awards</span> */}
             </div>
           </div>
@@ -174,6 +174,12 @@ export default function Home() {
 
      <section className="ai-section d-flex align-items-center">
       <div className="container">
+
+        <div className="text-center mb-5">
+  <h2 className="ai-main-heading">
+    Our AI Solutions
+  </h2>
+</div>
         <div className="row align-items-center">
 
           {/* Left Image */}
@@ -185,7 +191,7 @@ export default function Home() {
           <div className="col-12 col-lg-4 text-white text-center text-lg-start mt-5 mt-lg-0 order-1 order-lg-2">
             <span className="ai-label">FUTURE TECHNOLOGY</span>
 
-            <h1 className="ai-title mt-3">
+            <h1 className="ai-titles mt-3">
               AI <span style={{color:"#C6FF00"}}>Offerings</span>
             </h1>
 
@@ -293,6 +299,20 @@ export default function Home() {
     {/* CTA SECTION --------- 10  */}
 
    <section className="overlap-section py-5">
+
+    {/* ANIMATION */}
+
+    <div className="bubbles">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
       <div className="container">
         <div className="row align-items-center">
 
@@ -305,6 +325,10 @@ export default function Home() {
             <p className="section-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto a vel eaque inventore voluptatum iure? Suscipit modi quas quo quia.
             </p>
+
+            <button className="overlap-btn mt-3">
+            Get Started
+          </button>
           </div>
 
           {/* RIGHT IMAGES */}
@@ -390,37 +414,37 @@ export default function Home() {
 
  {/* FUTURE TECHNOLOGY VISION --------- 14 */}
 
-<section className="bottom-section d-flex align-items-center">
-      <div className="container">
-        <div className="row align-items-center">
+<section className="ft-section d-flex align-items-center">
+  <div className="container">
+    <div className="row align-items-center">
 
-          {/* Left Content */}
-          <div className="col-lg-4 text-white">
-            <span className="hero-label">FUTURE TECHNOLOGY</span>
+      {/* Left Content */}
+      <div className="col-lg-4 text-white">
+        <span className="ft-label">FUTURE TECHNOLOGY</span>
 
-            <h1 className="tech-titles mt-3">
-              Future 
-              Technology <br />
-              <span style={{color:"#C6FF00"}}>Vision</span>
-            </h1>
+        <h1 className="ft-title mt-3">
+          Future 
+          Technology <br />
+          <span style={{color:"#C6FF00"}}>Vision</span>
+        </h1>
 
-            <p className="hero-text mt-3">
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nam magni, pariatur illo vel soluta!
-            </p>
+        <p className="ft-text mt-3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nam magni, pariatur illo vel soluta!
+        </p>
 
-            <button className="tech-btn mt-4">
-              Learn more
-            </button>
-          </div>
-
-          {/* Right Image */}
-          <div className="col-lg-8 text-center">
-            <img src={globleImg} alt="Globe" className="hero-image img-fluid" />
-          </div>
-
-        </div>
+        <button className="ft-btn mt-4">
+          Learn more
+        </button>
       </div>
-    </section>
+
+      {/* Right Image */}
+      <div className="col-lg-8 text-center">
+        <img src={globleImg} alt="Globe" className="ft-image img-fluid" />
+      </div>
+
+    </div>
+  </div>
+</section>
 
 
     </>

@@ -227,7 +227,10 @@ transparent
 
 .ai-hero-section{
 
-padding:10px 0;
+padding-top: 30px;
+padding-bottom: 50px;
+padding-left: 0;
+padding-right: 0;
 color:#fff;
 position:relative;
 overflow:hidden;
@@ -236,11 +239,12 @@ overflow:hidden;
 
 /* TITLE */
 
-.ai-hero-title{
-font-size: clamp(23px,4vw,30px);
+.ai-cta-title{
+font-size: clamp(23px,4vw,35px);
 font-weight:700;
 margin-bottom:20px;
 line-height:1.2;
+color: #fff;
 }
 
 
@@ -1368,4 +1372,132 @@ min-height:120px;
 padding:18px;
 }
 
+}
+
+
+/* CTA SECTION */
+
+/* Wrapper */
+.hero-wrappers {
+  background: #000;
+  /* min-height: 100vh; */
+  margin-top: 70px;
+  margin-bottom: 50px;
+  display: flex;
+}
+
+/* Main rectangle */
+.hero-box {
+  background: linear-gradient(135deg, #0a0a0a, #111);
+  border-radius: 16px;
+  padding: 60px 50px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(198, 255, 0, 0.15);
+}
+
+/* subtle dotted pattern */
+.hero-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    rgba(198, 255, 0, 0.15) 1px,
+    transparent 1px
+  );
+  background-size: 18px 18px;
+  opacity: 0.2;
+}
+
+/* Content above pattern */
+.hero-box > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Title */
+.hero-title {
+  color: #fff;
+  font-size: 2.7rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* Subtitle */
+.hero-subtitle {
+  color: #aaa;
+  margin-top: 15px;
+  font-size: 1rem;
+}
+
+/* Buttons */
+.btn-accent {
+  background: #c6ff00;
+  color: #000;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-weight: 500;
+  border: none;
+}
+
+.btn-accent:hover {
+  background: #b2e600;
+}
+
+/* Link style button */
+.btn-link-custom {
+  color: #c6ff00;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn-link-custom:hover {
+  text-decoration: underline;
+}
+
+/* Image */
+/* .hero-image {
+  max-width: 100%;
+  filter: brightness(1.1) contrast(1.1);
+} */
+
+.hero-image {
+  max-width: 280px;   /* control size */
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: brightness(1.1) contrast(1.1);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .hero-box {
+    padding: 40px 30px;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-wrapper {
+    padding: 20px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .hero-image {
+    max-width: 200px;
+  }
+}
+
+.hero-image-wrapper {
+  max-width: 350px;
+  width: 100%;
 }

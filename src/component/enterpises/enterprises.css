@@ -1,108 +1,136 @@
 /* section */
 
-.enterprise-stats-section{
-background:#0b0b0b;
-padding-top: 120px;
-padding-bottom: 90px;
-padding-left: 15%;
-padding-right: 15%;
-color:#fff;
+.statss-section{
+  background:#0b0b0b;
+  padding-top: 120px;
+  padding-bottom: 90px;
+  padding-left: 8%;
+  padding-right: 8%;
+  color:#fff;
+  
 }
 
 /* subtitle */
 
-.enterprise-stats-subtitle{
-color:#c6ff00;
-font-size:12px;
-letter-spacing:2px;
-margin-bottom:10px;
+.stats-subtitle{
+  color:#c6ff00;
+  font-size:12px;
+  letter-spacing:2px;
+  margin-bottom:10px;
 }
 
 /* title */
 
-.enterprise-stats-title{
-font-size: clamp(24px, 3vw, 34px);
-font-weight:600;
-color:#ffffff;
+.stats-title{
+  font-size: clamp(24px, 3vw, 34px);
+  font-weight:600;
+  color:#ffffff;
 }
 
 /* card */
 
-.enterprise-stats-card{
-background:#111;
-border-radius:0; /* square shape */
-padding:28px;
-text-align:left;
-border:1px solid rgba(255,255,255,0.05);
-transition:all 0.4s ease;
+.stats-cards{
+  background:#111;
+  border-radius:0;
+  padding:28px;
+  text-align:left;
+  border:1px solid rgba(255,255,255,0.05);
+  transition:all 0.4s ease;
+  height:100%;
 }
 
 /* number */
 
-.enterprise-stats-number{
-font-size:26px;
-font-weight:700;
-margin-bottom:6px;
+.stats-number{
+  font-size:26px;
+  font-weight:700;
+  margin-bottom:6px;
 }
 
 /* text */
 
-.enterprise-stats-text{
-font-size:13px;
-color:#9aa0a6;
+.stats-text{
+  font-size:13px;
+  color:#9aa0a6;
 }
 
-/* highlight card */
+/* highlight */
 
-.enterprise-stats-highlight{
-border:1px solid #d4ff00;
-box-shadow:0 0 15px rgba(212,255,0,0.25);
+.stats-highlight{
+  border:1px solid #d4ff00;
+  box-shadow:0 0 15px rgba(212,255,0,0.25);
 }
 
-/* hover gradient */
+/* hover */
 
-.enterprise-stats-card:hover{
-transform:translateY(-6px);
-background:linear-gradient(135deg,#000000,#c6ff00);
-color:#000;
+.stats-cards:hover{
+  transform:translateY(-6px);
+  background:linear-gradient(135deg,#000000,#c6ff00);
+  color:#000;
 }
 
-/* text change on hover */
-
-.enterprise-stats-card:hover .enterprise-stats-number{
-color:#000;
+.stats-cards:hover .stats-number{
+  color:#000;
 }
 
-.enterprise-stats-card:hover .enterprise-stats-text{
-color:#000;
+.stats-cards:hover .stats-text{
+  color:#000;
 }
 
 /* responsive */
 
 @media(max-width:992px){
-
-.enterprise-stats-section{
-padding:80px 8%;
-}
-
+  .stats-section{
+    padding:80px 8%;
+  }
 }
 
 @media(max-width:768px){
+  .stats-section{
+    padding:70px 5%;
+  }
 
-.enterprise-stats-section{
-padding:70px 5%;
+  .stats-title{
+    font-size:26px;
+  }
+
+  .stats-card{
+    padding:24px;
+  }
+
+  .stats-number{
+    font-size:22px;
+  }
 }
 
-.enterprise-stats-title{
-font-size:26px;
+/* fix equal height */
+
+.stats-section .col-lg-3{
+  display:flex;
 }
 
-.enterprise-stats-card{
-padding:24px;
+/* make column flex */
+.stats-section .col-lg-3,
+.stats-section .col-md-6,
+.stats-section .col-12{
+  display: flex;
 }
 
-.enterprise-stats-number{
-font-size:22px;
+/* make card fill full width */
+.stats-card{
+  width: 100%;
+  height: 100%;
 }
 
+/* make column flex */
+.stats-section .col-lg-3,
+.stats-section .col-md-6,
+.stats-section .col-12{
+  display: flex;
+}
+
+/* make card fill full width */
+.stats-card{
+  width: 100%;
+  height: 100%;
 }

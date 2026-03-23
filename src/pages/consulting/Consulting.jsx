@@ -250,6 +250,55 @@ const services = [
       </div>
     </section>
 
+
+
+    {/* CTA SECTION --- CONSULTING */}
+
+
+   <section className="cta-section container">
+      <div className="row align-items-center">
+
+        {/* LEFT */}
+        <div className="col-lg-6 col-12 cta-text">
+          <span className="badge">Get Started</span>
+
+          <h1>
+            Build your personal brand <br />
+            which is owned by you!
+          </h1>
+
+          <p>
+            Our product & services are fully dedicated on helping each creator
+            on each stage of their growth life-cycle.
+          </p>
+
+          <div className="cta-buttons">
+            <button className="btn-primary">Schedule a Demo</button>
+          </div>
+        </div>
+
+        {/* RIGHT DIAGONAL STACK */}
+        <div className="col-lg-6 col-12 cta-images">
+          <div className="stack-wrapper">
+
+            <div className="img-card card-1">
+              <img src="https://images.pexels.com/photos/4389465/pexels-photo-4389465.jpeg" alt="" />
+            </div>
+
+            <div className="img-card card-2">
+              <img src="https://images.pexels.com/photos/7562249/pexels-photo-7562249.jpeg" alt="" />
+            </div>
+
+            <div className="img-card card-3">
+              <img src="https://images.pexels.com/photos/6476270/pexels-photo-6476270.jpeg" alt="" />
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
           
     </>
   )

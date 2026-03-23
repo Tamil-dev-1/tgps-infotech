@@ -27,7 +27,7 @@ export default function TextMarquee() {
 
             {/* LEFT HEADING */}
             <div className="col-md-3 col-12 heading-col">
-              <h2 className="marquee-heading">
+              <h2 className="text-marquee-heading">
                 {["Frontend", "AI", "Blockchain", "Cloud"][i]}
               </h2>
             </div>

@@ -33,7 +33,7 @@ const BlogCarousel = () => {
 
           {/* SLIDE 1 */}
           <SwiperSlide>
-            <Link to="/blog-1" className="text-decoration-none">
+            <Link to="" className="text-decoration-none">
               <div
                 className="card border-0"
                 style={{
@@ -64,7 +64,7 @@ const BlogCarousel = () => {
 
           {/* SLIDE 2 */}
           <SwiperSlide>
-            <Link to="/blog-2" className="text-decoration-none">
+            <Link to="" className="text-decoration-none">
               <div
                 className="card border-0"
                 style={{
@@ -95,7 +95,7 @@ const BlogCarousel = () => {
 
           {/* SLIDE 3 */}
           <SwiperSlide>
-            <Link to="/blog-3" className="text-decoration-none">
+            <Link to="" className="text-decoration-none">
               <div
                 className="card border-0"
                 style={{
@@ -126,7 +126,7 @@ const BlogCarousel = () => {
 
           {/* SLIDE 4 */}
           <SwiperSlide>
-            <Link to="/blog-4" className="text-decoration-none">
+            <Link to="" className="text-decoration-none">
               <div
                 className="card border-0"
                 style={{
@@ -157,7 +157,7 @@ const BlogCarousel = () => {
 
           {/* SLIDE 5 */}
           <SwiperSlide>
-            <Link to="/blog-5" className="text-decoration-none">
+            <Link to="" className="text-decoration-none">
               <div
                 className="card border-0"
                 style={{
@@ -190,7 +190,7 @@ const BlogCarousel = () => {
 
         {/* VIEW MORE BUTTON */}
         <div className="mt-5 text-center">
-          <Link to="/blogs">
+          <Link to="">
             <button
               className="btn px-5 py-2 fw-semibold"
               style={{

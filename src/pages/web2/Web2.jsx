@@ -46,6 +46,33 @@ const Web2 = () => {
 
      {/* TEXT MARQUEE SECTION -------- 4 */}
      <WebMarqueeText />
+
+
+     {/* CTA SECTION  */}
+
+     <section className="web2-cta-section">
+  <div className="web2-cta-overlay"></div>
+
+  <div className="container">
+    <div className="web2-cta-content text-center">
+
+      <h2 className="web2-cta-title">
+        Transform Your Digital Presence <br />
+        <span>with Next-Gen Web Solutions</span>
+      </h2>
+
+      <p className="web2-cta-text">
+        Build scalable, secure, and high-performance applications
+        tailored for modern businesses.
+      </p>
+
+      <button className="web2-cta-btn">
+        Get Started Now →
+      </button>
+
+    </div>
+  </div>
+</section>
     </div>
   );
 };

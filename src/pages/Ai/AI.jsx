@@ -14,6 +14,7 @@ import { useEffect } from "react";
 import Particles from "react-tsparticles";
 import VanillaTilt from "vanilla-tilt";
 import { HiH2 } from 'react-icons/hi2';
+import CTA_pattern_img from '../../assets/images/ai/cta-patternImg.png'
 
 const AI = () => {
 
@@ -287,7 +288,7 @@ const serviceses = [
 
 {/* SECTION ------ 3 */}
 
-<section className="ai-stats-wrapper">
+{/* <section className="ai-stats-wrapper">
   <section className="ai-stats-banner">
 
     <div className="container-fluid">
@@ -311,7 +312,7 @@ const serviceses = [
     </div>
 
   </section>
-</section>
+</section> */}
 
 
 {/* SECTION ------- 4 */}
@@ -927,7 +928,7 @@ rapid discovery to ongoing strategic oversight.
           <div className="col-lg-6">
 
             <h2 className="production-ai-title mb-3">
-              Why Antier’s AI & GenAI Approach Works in Production
+              Why AI & GenAI Approach Works in Production
             </h2>
 
             <p className="production-ai-description mb-4">
@@ -988,7 +989,7 @@ rapid discovery to ongoing strategic oversight.
 
     {/* SECTION ------- 17 */}
 
-   <section className="ai-governance pb-5">
+   <section className="ai-governance pb-2">
       <div className="container text-center">
 
         <h2 className="title-bottom">
@@ -1022,6 +1023,45 @@ rapid discovery to ongoing strategic oversight.
 
       </div>
     </section>
+
+
+    {/* CTA SECTION  */}
+
+     <div className="hero-wrappers d-flex align-items-center">
+      <div className="container">
+        <div className="hero-box row align-items-center">
+
+          {/* LEFT CONTENT */}
+          <div className="col-lg-6 col-md-7 col-12">
+            <h1 className="ai-cta-title">
+              Build AI Agents with control
+            </h1>
+
+            <p className="hero-subtitle">
+              Ready to explore how Voiceflow can help your team? Let’s talk.
+            </p>
+
+            <div className="d-flex gap-3 flex-wrap mt-4">
+              <button className="btn btn-accent">
+                Get started, it’s free →
+              </button>
+            </div>
+          </div>
+
+          {/* RIGHT IMAGE */}
+          <div className="col-lg-6 col-md-5 col-12 d-flex justify-content-center align-items-center mt-5 mt-md-0">
+           <div className='hero-image-wrapper'>
+             <img
+              src={CTA_pattern_img}
+              alt="AI visual"
+              className="hero-image img-fluid"
+            />
+           </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
 
     
     </>

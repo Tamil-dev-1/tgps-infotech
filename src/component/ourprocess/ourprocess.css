@@ -1,6 +1,9 @@
 .wf-wrapper {
   background: #0B0B0B;
-  padding: 120px 0;
+ padding-top: 30px;
+padding-bottom: 120px;
+padding-left: 0;
+padding-right: 0;
   color: #fff;
   overflow: hidden;
 }

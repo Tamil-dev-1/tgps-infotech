@@ -40,8 +40,9 @@
 /* ABOUT SECTION */
 
 .about-studio {
-  background: #111111;
+  background: #0B0B0B;
   padding: 80px 0;
+  margin-top: 50px;
   position: relative;
   overflow: hidden;
 }
@@ -290,8 +291,8 @@
   font-weight: 600;
 }
 
-.ai-title {
-  font-size: 48px;
+.ai-titles {
+  font-size: 42px;
   font-weight: 700;
 }
 
@@ -356,6 +357,22 @@
     max-width: 300px;
   }
 }
+
+
+.ai-main-heading {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+@media (max-width: 576px) {
+  .ai-main-heading {
+    font-size: 26px;
+  }
+}
+
+
+
 
 /* WHY CHOOSE US SECTION */
 
@@ -1073,36 +1090,36 @@
 
 
 
+/* FUTURE TECHNOLOGY VISION SECTION */
 
-   /* FUTURE TECHNOLOGY VISION */
 
- .hero-section {
+/* FUTURE TECHNOLOGY VISION */
+
+.ft-section {
   background-color: #111111;
-  /* min-height: 100vh; */
   padding: 80px 0;
 }
 
-.hero-label {
+.ft-label {
   color: #C6FF00;
   font-size: 13px;
   letter-spacing: 2px;
   font-weight: 600;
 }
 
-.tech-title {
-  /* font-size: 55px; */
+.ft-title {
   font-size: clamp(28px, 5vw, 45px);
   font-weight: 700;
   line-height: 1.2;
 }
 
-.hero-text {
+.ft-text {
   color: #cccccc;
   max-width: 450px;
 }
 
-.tech-btn {
-  background-color: #EFFE00;
+.ft-btn {
+  background-color: #C6FF00;
   color: #000;
   border: none;
   padding: 12px 28px;
@@ -1111,17 +1128,14 @@
   transition: 0.3s;
 }
 
-.hero-btn:hover {
+.ft-btn:hover {
   background-color: #EFFE00;
 }
 
-.hero-image {
+.ft-image {
   width: 100%;
   height: auto;
   filter: drop-shadow(0 0 40px rgba(158, 255, 0, 0.5));
-}
-
-.hero-image {
   animation: glow 3s infinite alternate;
 }
 
@@ -1134,25 +1148,24 @@
   }
 }
 
-
-/* RESPONSIVE STYLES */
+/* RESPONSIVE */
 
 @media (max-width: 991px) {
 
-  .hero-section {
+  .ft-section {
     padding: 60px 20px;
     text-align: center;
   }
 
-  .tech-title {
+  .ft-title {
     font-size: 38px;
   }
 
-  .hero-text {
+  .ft-text {
     margin: 0 auto;
   }
 
-  .hero-image {
+  .ft-image {
     max-width: 450px;
     margin-top: 40px;
   }
@@ -1160,28 +1173,31 @@
 
 @media (max-width: 576px) {
 
-  .tech-title {
+  .ft-title {
     font-size: 30px;
     line-height: 1.3;
   }
 
-  .hero-label {
+  .ft-label {
     font-size: 11px;
   }
 
-  .hero-text {
+  .ft-text {
     font-size: 14px;
   }
 
-  .hero-image {
+  .ft-image {
     max-width: 320px;
   }
 
-  .tech-btn {
+  .ft-btn {
     padding: 10px 22px;
     font-size: 14px;
   }
 }
+
+
+
 
 
 /* CTS   SECTION  */
@@ -1189,6 +1205,13 @@
 .overlap-section{
 background:#111111;
 color:#ffffff;
+ position:relative;
+  overflow:hidden;
+}
+
+.overlap-section .container{
+  position:relative;
+  z-index:2;
 }
 
 .section-title{
@@ -1269,6 +1292,76 @@ left:180px;
 }
 
 }
+
+
+.overlap-btn{
+  background:#C6FF00;
+  color:#000;
+  border:none;
+  padding:10px 22px;
+  font-size:14px;
+  font-weight:600;
+  border-radius:4px;
+  transition:0.3s ease;
+}
+
+.overlap-btn:hover{
+  background:#d4ff00;
+}
+
+/* ANIMATION STYLES */
+
+/* BUBBLE BACKGROUND */
+
+.bubbles{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  z-index:0;
+}
+
+.bubbles span{
+  position:absolute;
+  bottom:-50px;
+  width:20px;
+  height:20px;
+  background:rgba(198,255,0,0.25);
+  border-radius:50%;
+  animation: bubbleMove 10s linear infinite;
+}
+
+/* RANDOM POSITIONS */
+
+.bubbles span:nth-child(1){ left:10%; animation-duration:8s; width:30px; height:30px;}
+.bubbles span:nth-child(2){ left:25%; animation-duration:12s; width: 70px; height: 70px;}
+.bubbles span:nth-child(3){ left:40%; animation-duration:9s; width:50px; height:50px;}
+.bubbles span:nth-child(4){ left:55%; animation-duration:11s; width: 100px; height: 100px;}
+.bubbles span:nth-child(5){ left:70%; animation-duration:7s; width:36px; height:36px;}
+.bubbles span:nth-child(6){ left:80%; animation-duration:13s; width: 80px; height: 80px;}
+.bubbles span:nth-child(7){ left:90%; animation-duration:10s; width:44px; height:44px;}
+.bubbles span:nth-child(8){ left:60%; animation-duration:14s; width: 50px; height: 50px;}
+
+/* ANIMATION */
+
+@keyframes bubbleMove{
+  0%{
+    transform:translateY(0) scale(1);
+    opacity:0;
+  }
+  30%{
+    opacity:1;
+  }
+  100%{
+    transform:translateY(-600px) scale(1.5);
+    opacity:0;
+  }
+}
+
+
+
 
 /* DIGITAL REVOLUTION SECTION */
 

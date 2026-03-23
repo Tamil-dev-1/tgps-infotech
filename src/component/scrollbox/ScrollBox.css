@@ -1,123 +1,109 @@
+/* GLOBAL */
+
 html,
 body {
   overflow-x: hidden;
 }
 
-.stack-wrapper {
+/* WRAPPER */
+
+.sb-wrapper {
   position: relative;
-  overflow: visible;   /* 🔥 MUST */
+  overflow: visible;
 }
 
+/* STACK SECTION */
 
-
-.page-spacer {
-  height: 120vh;
-  padding: 80px;
-  background: #f3f3f3;
-}
-
-/* Sticky wrapper */
-.stack-section {
+.sb-stack-section {
   position: relative;
   height: 100vh;
   width: 100%;
-  /* background: red;  */
   display: flex;
   align-items: center;
   justify-content: center;
-  /* overflow: hidden; */
-  /* overflow-y: visible; */
 }
 
-/* Card (NOT full width) */
-.stack-card {
+/* CARD */
+
+.sb-card {
   position: absolute;
-  background:linear-gradient(135deg,#000000,#c6ff00);
-  width: 820px;
-  max-width: 88%;
-  height: 360px;
-  /* background: #ffffff; */
+  background: linear-gradient(135deg,#000000,#c6ff00);
+  width: 920px;
+  max-width: 92%;
+  height: 320px;
   border-radius: 20px;
   display: flex;
   gap: 24px;
   padding: 24px;
-  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+   will-change: transform;
+  transform: translateZ(0);
 }
 
-/* Left image */
-.card-image {
-  width: 55%;
+/* IMAGE */
+
+.sb-card-image {
+  width: 100%;
   height: 100%;
   border-radius: 18px;
   overflow: hidden;
+  object-fit: cover;
+  transform: scale(1.01);
   background: #f5f5f5;
 }
 
-.card-image img {
+.sb-card-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* Right text */
-.card-content {
+/* CONTENT */
+
+.sb-card-content {
   width: 45%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.card-content h2 {
+.sb-card-content h2 {
   font-size: 28px;
   font-weight: 600;
   margin-bottom: 12px;
 }
 
-.card-content p {
+.sb-card-content p {
   font-size: 14px;
   line-height: 1.5;
   opacity: 0.8;
 }
 
-/* Mobile */
+/* MOBILE */
+
 @media (max-width: 768px) {
-  .stack-card {
+  .sb-card {
     flex-direction: column;
     height: auto;
   }
 
-  .card-image,
-  .card-content {
+  .sb-card-image,
+  .sb-card-content {
     width: 100%;
   }
 }
 
-/* No animation for mobile screen */
-
-/* @media (max-width: 768px) {
-
-  .stack-section {
-    height: auto; 
-    display: block;
-  }
-
-  .stack-card {
-    position: relative; 
-    margin-bottom: 20px;
-    transform: none !important;
-  }
-
-} */
+/* MOBILE STACK FIX */
 
 @media (max-width: 767px) {
 
-  .stack-section {
+  .sb-stack-section {
     height: auto;
     display: block;
     padding: 0 12px;
   }
 
-  .stack-card {
+  .sb-card {
     position: relative;
     width: 100%;
     max-width: 100%;

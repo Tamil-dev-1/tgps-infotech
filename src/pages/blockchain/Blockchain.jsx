@@ -227,6 +227,47 @@ export default function BlockchainHero() {
 
     <Ourprocess />
 
+    {/* CTA SECTION  */}
+
+    <section className="cta-section">
+      <div className="container">
+        <div className="cta-box">
+
+          <div className="row align-items-center">
+
+            {/* LEFT CONTENT */}
+            <div className="col-lg-6 text-center text-lg-start">
+              <h2 className="cta-title">
+                Let’s Get In Touch.
+              </h2>
+
+              <p className="cta-text">
+                Your digital solutions should work for you, not the other way around.
+                We’re here to help you scale and grow.
+              </p>
+
+              <div className="cta-buttons">
+                <button className="cta-btn">
+                  Get in Touch <span>●</span>
+                </button>
+
+                {/* <button className="cta-btn">
+                  Start Project <span>●</span>
+                </button> */}
+              </div>
+            </div>
+
+            {/* RIGHT DESIGN */}
+            <div className="col-lg-6 d-none d-lg-block">
+              <div className="cta-circle"></div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     </>
   );
 

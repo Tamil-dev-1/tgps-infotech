@@ -16,7 +16,7 @@
   .heroSwiper,
   .heroSwiper .swiper-wrapper,
   .heroSwiper .swiper-slide {
-    height: 100dvh;
+    height: 80dvh;
   }
 }
 
@@ -71,7 +71,8 @@
 }
 
 .hero-content h1 {
-  font-size: 60px;
+  margin-top: 30px;
+  font-size: 50px;
   margin-bottom: 20px;
 }
 

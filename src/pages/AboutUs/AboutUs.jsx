@@ -2,7 +2,8 @@ import React from "react";
 import "./AboutUs.css";
 import Infotech_diff from '../../assets/images/about/infotech_diff.png'
 import Gallery from "../../component/Gallery_section/Gallery";
-
+import globleImg from '../../assets/images/home/global.png';
+import AboutTest from '../../component/aboutTestimonial/AboutTest'
 export default function AboutUs() {
   return (
     <>
@@ -155,6 +156,47 @@ export default function AboutUs() {
 {/* GALLERY SECTION */}
 
 <Gallery />
+
+
+
+<AboutTest />
+
+
+
+
+{/* FUTURE TECHNOLOGY VISION --------- 14 */}
+
+<section className="ft-section d-flex align-items-center">
+  <div className="container">
+    <div className="row align-items-center">
+
+      {/* Left Content */}
+      <div className="col-lg-4 text-white">
+        <span className="ft-label">FUTURE TECHNOLOGY</span>
+
+        <h1 className="ft-title mt-3">
+          Future 
+          Technology <br />
+          <span style={{color:"#C6FF00"}}>Vision</span>
+        </h1>
+
+        <p className="ft-text mt-3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nam magni, pariatur illo vel soluta!
+        </p>
+
+        <button className="ft-btn mt-4">
+          Learn more
+        </button>
+      </div>
+
+      {/* Right Image */}
+      <div className="col-lg-8 text-center">
+        <img src={globleImg} alt="Globe" className="ft-image img-fluid" />
+      </div>
+
+    </div>
+  </div>
+</section>
     </>
   );
 }

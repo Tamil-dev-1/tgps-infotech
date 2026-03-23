@@ -4,18 +4,18 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ThemeContext } from "../../ThemeContext";
 import "./ScrollBox.css";
 
-import Prouduct1 from "../../assets/images/ourproduct/product1.jpg";
-import Prouduct2 from "../../assets/images/ourproduct/product2.jpg";
-import Prouduct3 from "../../assets/images/ourproduct/product3.jpg";
-import Prouduct4 from "../../assets/images/ourproduct/product4.jpg";
+// import Prouduct1 from "../../assets/images/ourproduct/product1.jpg";
+// import Prouduct2 from "../../assets/images/ourproduct/product2.jpg";
+// import Prouduct3 from "../../assets/images/ourproduct/product3.jpg";
+// import Prouduct4 from "../../assets/images/ourproduct/product4.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const panels = [
-  { title: "IT Consultancy", desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy", img: Prouduct1 },
-  { title: "Cloud Computing", desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy", img: Prouduct2 },
-  { title: "Cyber Security", desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy", img: Prouduct3 },
-  { title: "Backup & Recovery", desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy", img: Prouduct4 },
+  { title: "IT Consultancy", desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy", img:"" },
+  { title: "Cloud Computing", desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy", img:"" },
+  { title: "Cyber Security", desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy", img:"" },
+  { title: "Backup & Recovery", desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy", img:"" },
 ];
 
 const ScrollBox = () => {
@@ -42,14 +42,15 @@ const ScrollBox = () => {
         scrollTrigger: {
           trigger: sectionRef.current,
           start: "top top",
-          end: `+=${panelsEl.length * 100}%`,
+          end: `+=${panelsEl.length * 120}%`,
           pin: true,
-          scrub: true,
+          scrub: 1.5,
           anticipatePin: 1,
+          fastScrollEnd: true,
         },
       }).to(
         panelsEl.slice(1),
-        { y: "0%", ease: "none", stagger: 1 },
+        { y: "0%", ease: "power2.out", stagger: 1 },
         0
       );
     }, sectionRef);
@@ -63,32 +64,31 @@ const ScrollBox = () => {
 }, []);
 
   return (
-    <section className="pt-5" style={{backgroundColor:"#0B0B0B"}}>
-      <h1 className="fw-bold text-center mb-4 text-white">
-        Why <span style={{color:"#C6FF00"}}>Choose Us</span>
-      </h1>
+   <section className="sb-section pt-5" style={{backgroundColor:"#0B0B0B"}}>
+  <h1 className="fw-bold text-center mb-4 text-white">
+    Why <span style={{color:"#C6FF00"}}>Choose Us</span>
+  </h1>
 
-      <div className="stack-wrapper">
-        <section className="stack-section" ref={sectionRef}>
-          {panels.map((panel, i) => (
-            <div
-              key={i}
-              ref={(el) => (panelRefs.current[i] = el)}
-              className="stack-card"
-             
-            >
-              <div className="card-image">
-                <img src={panel.img} alt={panel.title} />
-              </div>
-              <div className="card-content">
-                <h2>{panel.title}</h2>
-                <p>{panel.desc}</p>
-              </div>
-            </div>
-          ))}
-        </section>
-      </div>
+  <div className="sb-wrapper">
+    <section className="sb-stack-section" ref={sectionRef}>
+      {panels.map((panel, i) => (
+        <div
+          key={i}
+          ref={(el) => (panelRefs.current[i] = el)}
+          className="sb-card"
+        >
+          <div className="sb-card-image">
+            <img src={panel.img} alt={panel.title} />
+          </div>
+          <div className="sb-card-content">
+            <h2>{panel.title}</h2>
+            <p>{panel.desc}</p>
+          </div>
+        </div>
+      ))}
     </section>
+  </div>
+</section>
   );
 };
 

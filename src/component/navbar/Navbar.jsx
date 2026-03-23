@@ -83,7 +83,7 @@ export default function MegaNavbar() {
               </div>
 
               {/* MOBILE ACCORDION */}
-              {isMobile && mobileSubMenu === nav && (
+              {isMobile && mobileSubMenu === nav && ( 
                 <div className="mobile-submenu">
                   {Object.keys(fullMenuData[nav]).map((item, idx) => (
                     <div key={idx} className="mobile-submenu-item">
@@ -147,7 +147,11 @@ export default function MegaNavbar() {
               <div className="row">
                 {fullMenuData[activeNav][activeMenu].cards.map((card, i) => (
                   <div key={i} className="col-md-6 mb-4">
-                    <Link to ={card.path} className="menu-card text-decoration-none">
+                    <Link to ={card.path} className="menu-card text-decoration-none"
+                    onClick={()=>{
+                      setActiveNav(null);
+                      setActiveMenu(null);
+                    }}>
                       <div className="line"></div>
                       <h6 className="text-white">{card.title}</h6>
                       <p>{card.desc}</p>
