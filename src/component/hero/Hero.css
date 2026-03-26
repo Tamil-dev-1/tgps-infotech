@@ -104,11 +104,11 @@
 }
 
 .hero2 {
-  background-image: url("/src/assets//images/home//banner2.jpg");
+  background-image: url("/src/assets/images/home/demo.png");
 }
 
 .hero3 {
-  background-image: url("https://images.pexels.com/photos/27141313/pexels-photo-27141313.jpeg");
+  background-image: url("/src/assets/images/home/demo.png");
 }
 
 /* ================= LAPTOP ================= */

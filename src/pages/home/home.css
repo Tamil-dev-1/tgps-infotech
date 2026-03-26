@@ -1095,8 +1095,8 @@
 
 /* FUTURE TECHNOLOGY VISION */
 
-.ft-section {
-  background-color: #111111;
+.ft-future-section {
+  background-color: #0B0B0B;
   padding: 80px 0;
 }
 
@@ -1203,7 +1203,7 @@
 /* CTS   SECTION  */
 
 .overlap-section{
-background:#111111;
+background:#0B0B0B;
 color:#ffffff;
  position:relative;
   overflow:hidden;

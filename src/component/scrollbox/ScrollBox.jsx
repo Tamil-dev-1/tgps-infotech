@@ -1,95 +1,104 @@
-import React, { useLayoutEffect, useRef, useContext } from "react";
+import React, { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ThemeContext } from "../../ThemeContext";
 import "./ScrollBox.css";
-
-// import Prouduct1 from "../../assets/images/ourproduct/product1.jpg";
-// import Prouduct2 from "../../assets/images/ourproduct/product2.jpg";
-// import Prouduct3 from "../../assets/images/ourproduct/product3.jpg";
-// import Prouduct4 from "../../assets/images/ourproduct/product4.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const panels = [
-  { title: "IT Consultancy", desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy", img:"" },
-  { title: "Cloud Computing", desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy", img:"" },
-  { title: "Cyber Security", desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy", img:"" },
-  { title: "Backup & Recovery", desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy", img:"" },
+  {
+    title: "IT Consultancy",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    img: "",
+  },
+  {
+    title: "Cloud Computing",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    img: "",
+  },
+  {
+    title: "Cyber Security",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    img: "",
+  },
+  {
+    title: "Backup & Recovery",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    img: "",
+  },
 ];
 
-const ScrollBox = () => {
+export default function ScrollBox() {
   const sectionRef = useRef(null);
   const panelRefs = useRef([]);
-  const { theme } = useContext(ThemeContext);
 
-  
-    useLayoutEffect(() => {
-  const mm = gsap.matchMedia();
+  useLayoutEffect(() => {
+    const panelsEl = panelRefs.current;
 
-  mm.add("(min-width: 768px)", () => {
     const ctx = gsap.context(() => {
-      const panelsEl = panelRefs.current;
-
+      // Initial state (hide all except first)
       panelsEl.forEach((panel, i) => {
-        gsap.set(panel, {
-          y: i === 0 ? 0 : "120%",
-          zIndex: i + 1,
-        });
+        if (i === 0) return;
+        gsap.set(panel, { y: "120%", opacity: 0 });
       });
 
-      gsap.timeline({
+      // Responsive scroll distance
+      const scrollAmount = panelsEl.length * window.innerHeight * 0.9;
+
+      const tl = gsap.timeline({
         scrollTrigger: {
           trigger: sectionRef.current,
           start: "top top",
-          end: `+=${panelsEl.length * 120}%`,
+          end: `+=${scrollAmount}`,
           pin: true,
-          scrub: 1.5,
+          scrub: 1,
           anticipatePin: 1,
-          fastScrollEnd: true,
+          invalidateOnRefresh: true,
         },
-      }).to(
-        panelsEl.slice(1),
-        { y: "0%", ease: "power2.out", stagger: 1 },
-        0
-      );
+      });
+
+      // Animate cards one by one
+      panelsEl.forEach((panel, i) => {
+        if (i === 0) return;
+
+        tl.to(panel, {
+          y: "0%",
+          opacity: 1,
+          duration: 1,
+          ease: "power2.out",
+        });
+      });
     }, sectionRef);
 
     return () => ctx.revert();
-  });
-
-  return () => {
-    mm.revert(); // 🔥 auto kills ScrollTrigger on mobile
-  };
-}, []);
+  }, []);
 
   return (
-   <section className="sb-section pt-5" style={{backgroundColor:"#0B0B0B"}}>
-  <h1 className="fw-bold text-center mb-4 text-white">
-    Why <span style={{color:"#C6FF00"}}>Choose Us</span>
-  </h1>
+    <section className="sb-section">
+      <h1 className="title">
+        Why <span>Choose Us</span>
+      </h1>
 
-  <div className="sb-wrapper">
-    <section className="sb-stack-section" ref={sectionRef}>
-      {panels.map((panel, i) => (
-        <div
-          key={i}
-          ref={(el) => (panelRefs.current[i] = el)}
-          className="sb-card"
-        >
-          <div className="sb-card-image">
-            <img src={panel.img} alt={panel.title} />
-          </div>
-          <div className="sb-card-content">
-            <h2>{panel.title}</h2>
-            <p>{panel.desc}</p>
-          </div>
-        </div>
-      ))}
+      <div className="sb-wrapper">
+        <section className="sb-stack-section" ref={sectionRef}>
+          {panels.map((panel, i) => (
+            <div
+              key={i}
+              ref={(el) => (panelRefs.current[i] = el)}
+              className="sb-card"
+            >
+              <div className="sb-card-image">
+                <img src={panel.img} alt={panel.title} />
+              </div>
+
+              <div className="sb-card-content">
+                <h2>{panel.title}</h2>
+                <p>{panel.desc}</p>
+              </div>
+            </div>
+          ))}
+        </section>
+      </div>
     </section>
-  </div>
-</section>
   );
-};
-
-export default ScrollBox;
+}

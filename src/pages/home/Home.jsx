@@ -354,7 +354,7 @@ export default function Home() {
    <section
   className="pt-5"
   style={{
-    background: "#111111",
+    background: "#0B0B0B",
     transition: "0.3s",
   }}
 >
@@ -414,7 +414,7 @@ export default function Home() {
 
  {/* FUTURE TECHNOLOGY VISION --------- 14 */}
 
-<section className="ft-section d-flex align-items-center">
+<section className="ft-future-section d-flex align-items-center">
   <div className="container">
     <div className="row align-items-center">
 

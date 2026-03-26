@@ -69,7 +69,7 @@ const services = [
   return (
     <>
       {/* SECTION ----1 */}
-       <section className="text-white py-5 d-flex align-items-center" style={{ backgroundColor: '#0B0B0B' }}>
+       <section className="text-white py-5 d-flex align-items-center" style={{ backgroundColor: '#0B0B0B',marginTop:"60px" }}>
             <div className="container">
               <div className="row align-items-center g-5">
                 

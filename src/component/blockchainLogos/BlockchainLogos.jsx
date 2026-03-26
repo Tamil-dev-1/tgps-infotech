@@ -1,24 +1,32 @@
 import React from 'react';
 import BlockchainLogo from '../../assets/images/blockchain/blockchainLogo.png'
+import EthereumLogo from '../../assets/images/blockchain/ethereum.png'
+import SolanaLogo from '../../assets/images/blockchain/solana_logo.png'
+import PolygonLogo from '../../assets/images/blockchain/polygonlogo.png'
+import BinanceLogo from '../../assets/images/blockchain/binancelogo.png'
+import AvalancheLogo from '../../assets/images/blockchain/avalanchelogo.webp'
+import CordaLogo from '../../assets/images/blockchain/cordalogo.png'
+import TezosLogo from '../../assets/images/blockchain/tezoslogo.png'
+import ZetachainLogo from '../../assets/images/blockchain/zetachainlogo.png'
 
 const BlockchainLogos = () => {
   // Data array to keep the code clean
   const platforms = [
-    { name: "Ethereum", logo: BlockchainLogo },
-    { name: "Solana", logo: BlockchainLogo },
-    { name: "Polygon", logo: BlockchainLogo },
-    { name: "Binance", logo: BlockchainLogo },
+    { name: "Ethereum", logo: EthereumLogo },
+    { name: "Solana", logo: SolanaLogo },
+    { name: "Polygon", logo: PolygonLogo },
+    { name: "Binance", logo: BinanceLogo },
     { name: "Cardano", logo: BlockchainLogo },
-    { name: "Avalanche", logo: BlockchainLogo },
+    { name: "Avalanche", logo: AvalancheLogo },
     { name: "sKALE", logo: BlockchainLogo },
     { name: "Tron", logo: BlockchainLogo },
     { name: "polkadot", logo: BlockchainLogo },
     { name: "cosmos", logo: BlockchainLogo },
-    { name: "corda", logo: BlockchainLogo },
+    { name: "corda", logo: CordaLogo },
     { name: "Near", logo: BlockchainLogo },
     { name: "Harmony", logo: BlockchainLogo },
-    { name: "Tezos", logo: BlockchainLogo },
-    { name: "Zetachain", logo: BlockchainLogo },
+    { name: "Tezos", logo: TezosLogo },
+    { name: "Zetachain", logo: ZetachainLogo },
     { name: "Hyperledger Fabric", logo: BlockchainLogo },
     { name: "ICP", logo: BlockchainLogo },
     { name: "ton", logo: BlockchainLogo },

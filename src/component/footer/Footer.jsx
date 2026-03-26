@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 import {
   FaPhone,
@@ -23,11 +24,13 @@ export default function Footer() {
           <div className="col-lg-3 col-md-6">
             <h5 className="footer-title text-white">Quick Links</h5>
             <ul className="footer-links footer-text-color">
-              <li>Link1</li>
-              <li>Link2</li>
-              <li>Link3</li>
-              <li>Link4</li>
-              <li>Link5</li>
+              <li><Link to ="/blockchain">
+              Blockchain Development
+              </Link></li>
+              <li>AI Agents</li>
+              <li>Unity</li>
+              <li>Architecture</li>
+              <li>Our Story</li>
               <li>Link6</li>
               <li>Link7</li>
             </ul>

@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 
 const BlogCarousel = () => {
   return (
-    <div style={{ padding: "60px 0", backgroundColor: "#111111" }}>
+    <div style={{ padding: "60px 0", backgroundColor: "#0B0B0B" }}>
       <div className="container text-center">
 
         <h2 style={{ fontWeight: "700", color: "#ffffff" }}>
