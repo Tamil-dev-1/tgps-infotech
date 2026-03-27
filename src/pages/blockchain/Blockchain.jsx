@@ -4,58 +4,58 @@ import Ourprocess from '../../component/ourprocess/OurProcess';
 
 export default function BlockchainHero() {
 
-  // THIRD SECTION - SERVICE SECTION 
+  // THIRD SECTION 3 - SERVICE SECTION 
 
   const services = [
   {
-    title: "Custom Blockchain Development",
-    desc: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the",
+    title: "Secure & Automated Smart Contract Engineering",
+    desc: "Develop reliable and tamper-proof smart contracts that automate processes, reduce risks, and eliminate the need for intermediaries.",
     icon: "bi bi-sliders"
   },
   {
-    title: "NFT Marketplace Development",
-    desc: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the.",
+    title: "Decentralized Physical Infrastructure (DePIN) Development",
+    desc: "Build blockchain-powered infrastructure networks that connect physical assets with digital systems, enabling transparency and operational efficiency.",
     icon: "bi bi-shop"
   },
   {
-    title: "Smart Contract Development",
-    desc: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the.",
+    title: "AI-Integrated Blockchain Application Development",
+    desc: "Leverage the power of artificial intelligence combined with blockchain to build intelligent, adaptive, and self-optimizing decentralized applications.",
     icon: "bi bi-file-earmark-text"
   },
   {
-    title: "DePIN Development",
-    desc: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the",
+    title: "Strategic Blockchain Consulting & System Integration Services",
+    desc: "Get expert guidance to adopt blockchain technology and seamlessly integrate it into your existing infrastructure for accelerated digital transformation.",
     icon: "bi bi-diagram-3"
   },
   {
-    title: "AI-Powered Blockchain Development",
-    desc: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the.",
+    title: "Delivering Innovation Through Cutting-Edge Blockchain Expertise",
+    desc: "We build scalable, secure, and future-ready blockchain solutions that help businesses stay ahead in the rapidly evolving digital economy.",
     icon: "bi bi-lightbulb"
   },
   {
-    title: "Exchange Development",
-    desc: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the",
+    title: "Empowering Businesses with Reliable and Scalable Web3 Technologies",
+    desc: "Our solutions are designed to enhance efficiency, trust, and growth by leveraging the full potential of decentralized technologies.",
     icon: "bi bi-arrow-left-right"
   },
   {
-    title: "Crypto Wallet Development",
-    desc: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the.",
+    title: "High-Performance Crypto Exchange Development",
+    desc: "Develop secure and scalable cryptocurrency exchanges with advanced trading features, liquidity solutions, and robust security mechanisms.",
     icon: "bi bi-currency-bitcoin"
   },
    {
-    title: "Enterprise Blockchain Development",
-    desc: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the.",
+    title: "Multi-Asset Crypto Wallet Development Solutions",
+    desc: "Create secure, user-friendly wallets that support multiple digital assets with seamless transactions and enhanced user control.",
     icon: "bi bi-building"
   },
     {
-    title: "Blockchain Consultation & Integration",
-    desc: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the.",
+    title: "Enterprise-Grade Blockchain Transformation Solutions",
+    desc: "Empower enterprises with blockchain systems that improve data integrity, streamline workflows, and enhance operational transparency.",
     icon: "bi bi-link-45deg"
   }
 ];
   return (
     <>
-       <section className="bc-hero-section pt-5">
+       <section className="bc-hero-section">
       <div className="container">
 
         <div className="bc-hero-flex">
@@ -64,14 +64,12 @@ export default function BlockchainHero() {
           <div className="bc-hero-left">
 
             <h1 className="bc-hero-title">
-              <span style={{ color: "#C6FF00" }}>Blockchain</span> Development <br />
+              <span style={{ color: "#C6FF00" }}>Advanced Blockchain Solutions </span> & Web3 Development Company<br />
               Company
             </h1>
 
             <p className="bc-hero-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-              reiciendis voluptate quibusdam, eos maxime voluptatum distinctio
-              esse non cumque accusamus.
+              Build next-generation digital ecosystems with scalable, secure, and high-performance blockchain solutions tailored for modern businesses.
             </p>
 
           </div>
@@ -124,24 +122,19 @@ export default function BlockchainHero() {
       <div className="enterprise-right">
 
         <h2 className="enterprise-title">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quam
-          tempore molestias modi nostrum? Facilis.
+          We empower businesses to evolve and scale by unlocking the full potential of blockchain technology, delivering intelligent decentralized solutions that enhance transparency, efficiency, and trust across industries
         </h2>
 
         <p className="enterprise-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-          quaerat aperiam doloribus quas ex eos ipsum dolores qui labore veniam!
+          Our approach focuses on building high-performance blockchain infrastructure that is fast, cost-effective, and energy-efficient, enabling seamless global scalability and real-world integration.
         </p>
 
         <p className="enterprise-text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga placeat
-          animi dolorum possimus, repellat vitae a ducimus ipsam amet maxime.
+           By combining blockchain with advanced technologies like artificial intelligence and real-world data systems, we create powerful decentralized ecosystems that drive innovation, automation, and measurable business value. 
         </p>
 
         <p className="enterprise-text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident
-          quidem dolore fuga libero culpa? Nulla possimus, libero tempora quis
-          omnis delectus culpa sequi ipsam voluptate quo nostrum dolore in neque.
+           From startups to large enterprises, we provide end-to-end blockchain development services designed to help organizations build secure, scalable, and future-ready Web3 solutions that accelerate growth and digital transformation.
         </p>
 
       </div>
@@ -158,11 +151,9 @@ export default function BlockchainHero() {
 
     {/* Heading */}
     <div className="dev-heading">
-      <h2 className="dev-main-title">Our Blockchain Development Services</h2>
+      <h2 className="dev-main-title">Comprehensive Blockchain Development Services for Every Business Need</h2>
       <p className="dev-sub-text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-        doloribus quod deserunt adipisci laborum sapiente velit, quidem
-        facere aperiam veniam.
+        Tailored Blockchain Network Development Solutions: We build customized public, private, or hybrid blockchain architectures aligned with business goals, ensuring scalability, security, and performance. Next-Gen NFT Marketplace Development: Create advanced NFT platforms with seamless minting, trading, and engaging user experiences designed for creators, brands, and enterprises.
       </p>
     </div>
 
@@ -238,12 +229,11 @@ export default function BlockchainHero() {
             {/* LEFT CONTENT */}
             <div className="col-lg-6 text-center text-lg-start">
               <h2 className="cta-title">
-                Let’s Get In Touch.
+                Let’s Build Scalable Digital Solutions Together
               </h2>
 
               <p className="cta-text">
-                Your digital solutions should work for you, not the other way around.
-                We’re here to help you scale and grow.
+                Your technology should accelerate your growth, not limit it. Partner with us to create powerful blockchain solutions that drive innovation and long-term success.
               </p>
 
               <div className="cta-buttons">

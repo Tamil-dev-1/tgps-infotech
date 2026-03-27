@@ -12,28 +12,28 @@ const Consulting = () => {
 
 const services = [
   {
-    title: "Strategic AI Consulting",
-    desc: "Our strategic artificial intelligence consulting services are perfectly suited to provide businesses with an in-depth understanding of AI technology and the way to implement the same in different business processes to achieve the planned goals."
+    title: "Strategic AI Advisory",
+    desc: "Our AI strategy services provide organizations with a clear understanding of AI capabilities, along with actionable roadmaps to effectively integrate AI into business processes and achieve defined objectives"
   },
   {
-    title: "Defining Use Cases",
-    desc: "Professionals from our artificial intelligence consulting firm collaborate with your team to appraise, evaluate and define the use cases by assessing their applicability to your industry along with their potential impact on your business."
+    title: "Use Case Identification & Evaluation",
+    desc: "Our experts work closely with your team to identify, assess, and prioritize high-impact AI use cases based on industry relevance, feasibility, and potential business value."
   },
   {
-    title: "Setting Up AI Infrastructure",
-    desc: "Our team builds a cloud-based, robust infrastructure that is perfect for deploying and operating artificial intelligence systems without any kind of interruptions or problems along with producing the desired results."
+    title: "AI Infrastructure Setup",
+    desc: "We design and deploy secure, scalable, cloud-based infrastructure that supports seamless development, deployment, and management of AI applications without operational disruptions."
   },
   {
-    title: "Machine Learning (ML) Model Development",
-    desc: "Our proficient team of AI consultants provides a comprehensive suite of solutions & services for end-to-end training of ML models and preparing them in the right way for their integration into AI-powered solutions for enterprises."
+    title: "Machine Learning Model Development",
+    desc: "Our team delivers end-to-end ML solutions, including data preparation, model training, optimization, and integration into enterprise-grade AI systems."
   },
   {
-    title: "User Training and Support",
-    desc: "Our AI solutions consultants offer complete training and support to clients after the deployment of AI-based solutions in their business processes or operations to make sure that everything runs smoothly without interruption."
+    title: "Training, Adoption & Support",
+    desc: "We provide comprehensive training and ongoing support to ensure smooth adoption of AI solutions, enabling teams to operate systems efficiently and confidently."
   },
   {
-    title: "Artificial Intelligence Software Development",
-    desc: "We house a talented pool of AI software developers who take care of the complete software development process including all the necessary features and functionalities in the software to make it perfectly suitable for use."
+    title: "AI Software Development",
+    desc: "Our AI engineers build custom software solutions with advanced features and intelligent capabilities, tailored to meet specific business requirements and performance goals."
   }
 ];
 
@@ -43,23 +43,33 @@ const services = [
  const features = [
     {
       icon: <FaUsers />,
-      title: "Experienced Team",
-      text: "We have a team of highly trained and extensively experienced experts who develop tailored NFT marketing services enabling businesses to achieve success."
+      title: "Proven Expertise Across AI & Blockchain",
+      text: "Deep technical knowledge combined with real-world implementation experience across industries and enterprise environments."
     },
     {
       icon: <FaLightbulb />,
-      title: "Customized Solutions",
-      text: "We understand that every business has its specific requirements. Therefore our proficient team crafts tailored solutions."
+      title: "End-to-End Solution Ownership",
+      text: "From strategy and architecture to deployment and optimization, we manage the complete lifecycle of your digital transformation."
     },
     {
       icon: <FaExpandArrowsAlt />,
-      title: "High Scalability",
-      text: "The services offered by our ICO marketing firm are highly scalable and adaptable to the evolving needs of businesses."
+      title: "Scalable & Future-Ready Architecture",
+      text: "Solutions designed for performance, flexibility, and long-term growth across evolving business and technology landscapes."
     },
     {
       icon: <FaChartLine />,
-      title: "Growth Oriented Strategies",
-      text: "Our proficient team of blockchain marketers formulates strategies that drive growth and help businesses reach the next level."
+      title: "Security, Compliance & Governance First",
+      text: "Built with strong data protection, regulatory alignment, and enterprise-grade governance at every layer."
+    },
+     {
+      icon: <FaChartLine />,
+      title: "Innovation-Driven Approach",
+      text: "We leverage the latest advancements in AI, Web3, and data intelligence to deliver cutting-edge, competitive solutions"
+    },
+     {
+      icon: <FaChartLine />,
+      title: "Business-Centric Execution",
+      text: "Every solution is aligned with your business goals, ensuring measurable outcomes, ROI, and operational efficiency"
     }
   ];
 
@@ -76,21 +86,20 @@ const services = [
                 {/* Left Column: Content */}
                 <div className="col-lg-6 order-2 order-lg-1">
                   <h3 className=" text-white fw-bold mb-4">
-                    Blockchain Consulting <br />
-                    <span>Company </span>
+                    Blockchain Consulting & Advisory Services, Enabling Intelligent,  <br />
+                    <span>Scalable Web3 Transformation </span>
                   </h3>
                   
                   <p className="lead mb-4" style={{ fontSize: '1rem',color:"#bfbfbf" }}>
-                    Unlock data-driven decision-making across your workflows, systems and business 
-                    operations with advanced Data & AI.
+                   Unlock smarter, data-driven decision-making across your digital ecosystems with advanced blockchain and AI-powered solutions designed for modern enterprises.
                   </p>
       
                   <ul className="list-unstyled mb-5">
                     {[
-                      "Rapid data-driven insights to accelerate business decision cycles",
-                      "Precise predictive analytics solutions with anomaly detection",
-                      "Complete end-to-end visibility through enterprise decision intelligence",
-                      "Agentic layer delivers the insights to the users where they are"
+                      " Real-time insights to accelerate strategic and operational decision-making",
+                      "Advanced analytics with predictive intelligence and anomaly detection",
+                      " End-to-end transparency across systems with unified data visibility",
+                      "Intelligent agent layer delivering insights directly within user workflows"
                     ].map((text, index) => (
                       <li key={index} className="d-flex align-items-start mb-3">
                         <span className="me-3 text-info">✔</span>
@@ -134,11 +143,9 @@ const services = [
       <div className="container">
 
         <div className="text-center ai-consult-header">
-          <h2 className="ai-consult-title">Our AI Consulting Services</h2>
+          <h2 className="ai-consult-title">Our AI Consulting & Implementation Services</h2>
           <p className="ai-consult-subtitle">
-            Antier houses a team of proficient AI consultants who offer
-            result-oriented AI strategy consulting services that enable businesses
-            to implement the most suitable AI solutions into various processes.
+            We bring together a team of experienced AI specialists who deliver outcome-focused consulting services, helping businesses identify, adopt, and scale the right AI solutions across their operations.
           </p>
         </div>
 
@@ -155,6 +162,9 @@ const services = [
 
       </div>
     </section>
+
+
+
 
     {/* SECTION ----- 3 */}
 
@@ -177,22 +187,15 @@ const services = [
           <div className="col-lg-7 col-md-12">
             <div className="web3-content">
               <h2 className="web3-title">
-                Best Web 3 Consultants at Your Service
+                Expert Web3 Consulting Services for Future-Ready Businesses
               </h2>
 
               <p className="web3-text">
-                There has been a lot of hype around web 3 and many are still
-                wondering what it is all about. To state it in simple terms,
-                web 3 is nothing but the present-day internet integrated with
-                blockchain-based infrastructure.
+                Web3 is transforming the digital landscape, yet many organizations are still exploring how it applies to their business. In simple terms, Web3 represents the evolution of the internet powered by decentralized technologies and blockchain-based infrastructure.
               </p>
 
               <p className="web3-text">
-                Web 3 brings with it a wide range of opportunities for various
-                industries. It is exactly the situation where Antier, one of the
-                top web 3 consulting companies, comes to the rescue of
-                businesses by lending a helping hand to explore the
-                opportunities efficiently and effectively.
+                Web3 unlocks new possibilities across industries—from digital ownership to decentralized applications and tokenized ecosystems. This is where our Web3 consulting expertise helps businesses identify opportunities, define clear strategies, and successfully adopt decentralized solutions with confidence and efficiency.
               </p>
             </div>
           </div>
@@ -211,12 +214,12 @@ const services = [
         {/* Heading */}
         <div className="text-center web3-why-header">
           <h2 className="web3-why-title">
-            Why Choose Antier’s Web 3 Marketing Services
+            Why Choose TGPS Info Tech
           </h2>
 
           <p className="web3-why-subtitle">
-            Antier is a name you can trust when it comes to selecting the best ICO marketing firm.
-            We cater to the varied needs of blockchain businesses in the best possible manner.
+           At TGPS Info Tech, we go beyond technology delivery—we partner with businesses to build scalable, future-ready digital ecosystems powered by AI, blockchain, and next-generation innovations.
+
           </p>
         </div>
 
@@ -263,13 +266,11 @@ const services = [
           <span className="badge">Get Started</span>
 
           <h1>
-            Build your personal brand <br />
-            which is owned by you!
+          Build a Personal Brand
           </h1>
 
           <p>
-            Our product & services are fully dedicated on helping each creator
-            on each stage of their growth life-cycle.
+Our products and services are designed to support creators at every stage of their journey—empowering them to grow, scale, and take full control of their digital presence and long-term success.
           </p>
 
           <div className="cta-buttons">

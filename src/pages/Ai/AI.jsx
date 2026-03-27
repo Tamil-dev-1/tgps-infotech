@@ -56,33 +56,33 @@ const AI = () => {
 
   const models = [
     {
-      title: "",
-      description: "Rapid proof-of-concept delivering immediate value through targeted predictive analytics solutions.",
+      title: "AI Discovery Sprint",
+      description: "Quickly validate use cases and unlock immediate value through focused AI and data-driven solution exploration.",
       icon: "🔄" // You can replace these with SVG or FontAwesome icons
     },
     {
-      title: "",
-      description: "End-to-end delivery of a production-ready minimum viable predictive analytics product.",
+      title: "Full-Scale Solution Delivery",
+      description: "End-to-end implementation of production-ready AI and analytics systems designed for scalability and performance.",
       icon: "⚙️"
     },
     {
-      title: "",
-      description: "Ongoing development, optimization and scaling of enterprise decision intelligence services.",
+      title: "Managed AI Services",
+      description: "Continuous monitoring, enhancement, and scaling of AI-driven decision intelligence across enterprise operations.",
       icon: "🛡️"
     },
     {
-      title: "",
-      description: "Ongoing development, optimization and scaling of enterprise decision intelligence services.",
-      icon: "🛡️"
+      title: "Innovation Acceleration",
+      description: "Drive faster experimentation and rollout of advanced AI capabilities across business units.",
+      icon: "🚀 "
     },
     {
-      title: "",
-      description: "Ongoing development, optimization and scaling of enterprise decision intelligence services.",
-      icon: "🛡️"
+      title: "System Integration & Expansion",
+      description: "Seamlessly extend existing platforms with AI-powered features and intelligent automation..",
+      icon: "🔗"
     },{
-      title: "",
-      description: "Ongoing development, optimization and scaling of enterprise decision intelligence services.",
-      icon: "🛡️"
+      title: "Continuous Optimization & Growth",
+      description: "Enhance performance, improve accuracy, and scale solutions with ongoing data-driven refinements.",
+      icon: "📈"
     }
   ];
 
@@ -91,12 +91,12 @@ const AI = () => {
 
 
   const features = [
-    { title: "Deep AI Expertise", desc: "Skilled in ML, Generative AI and agentic AI deployments" },
-    { title: "Production-First Approach", desc: "Designed for reliability, observability and scalable operations" },
-    { title: "Model-Agnostic Solutions", desc: "Integrates OpenAI, Anthropic, LLaMA 3, or custom AI" },
-    { title: "Infrastructure & MLOps Obsessed", desc: "Continuous monitoring to prevent drift or downtime" },
-    { title: "Business Outcome Focused", desc: "AI integrations designed to deliver measurable ROI" },
-    { title: "Enterprise-Grade Security", desc: "Data sovereignty and robust access control for all workflows" }
+    { title: "Advanced AI Capabilities", desc: "Expertise across machine learning, generative AI, and intelligent agent-based systems" },
+    { title: "Deployment-Ready Architecture", desc: "Engineered for scalability, stability, and seamless production environments" },
+    { title: "Flexible AI Model Integration", desc: "Compatible with multiple AI frameworks and adaptable to custom-built models" },
+    { title: "Robust Infrastructure & MLOps", desc: "Continuous monitoring, optimization, and lifecycle management for AI systems" },
+    { title: "Results-Driven Implementation", desc: "Solutions designed to deliver tangible outcomes and business growth" },
+    { title: "Enterprise-Level Security & Compliance", desc: "Strong data protection, governance, and access control across all systems" }
   ];
 
 
@@ -105,15 +105,15 @@ const AI = () => {
    const items = [
     {
       icon: <FaRobot />,
-      text: "Strategic clarity"
+      text: "Clear strategic direction and actionable AI roadmaps"
     },
     {
       icon: <FaCogs />,
-      text: "ROI-aligned AI investments"
+      text: "Outcome-driven investments aligned with measurable ROI "
     },
     {
       icon: <FaChartPie />,
-      text: "Enterprise control"
+      text: "Strong governance, ownership, and enterprise-level control"
     }
   ];
 
@@ -123,40 +123,40 @@ const AI = () => {
   const services = [
 {
 icon: <FaChartLine />,
-title: "AI Strategy Sprint",
-desc: "Rapid discovery, prioritization and roadmap definition."
+title: "AI Discovery Sprint",
+desc: "Focused assessment, use-case identification, and strategic roadmap creation"
 },
 {
 icon: <FaLightbulb />,
-title: "Strategy-to-MVP Advisory",
-desc: "Strategy support through early execution and validation."
+title: "Strategy-to-Execution Advisory",
+desc: "Guidance from strategy formulation through early-stage implementation and validation"
 },
 {
 icon: <FaCogs />,
-title: "Dedicated AI Strategy Pod",
-desc: "Ongoing AI strategic advisory and portfolio oversight."
+title: "Dedicated AI Strategy Team",
+desc: "Continuous advisory, performance tracking, and enterprise-wide AI portfolio management"
 }
 ];
 
 
-// SECTION ---- 14
+// SECTION ---- 15
 
  const aiFeatures = [
     {
-      title: "AI Designed Around Enterprise Data Realities",
-      desc: "Models are grounded in governed, structured and unstructured enterprise datasets."
+      title: "Built on Enterprise-Grade Data Foundations",
+      desc: "AI models are trained and deployed using well-managed, structured, and unstructured enterprise data sources"
     },
     {
-      title: "Governance-First GenAI System Architecture",
-      desc: "Guardrails, access controls and auditability are embedded from day one."
+      title: "Governance-Centric GenAI Architecture",
+      desc: "Security controls, compliance frameworks, and full auditability are embedded from the ground up"
     },
     {
-      title: "Proven Production Deployment Frameworks",
-      desc: "AI systems are engineered to perform reliably across real-world enterprise workloads."
+      title: "Proven Frameworks for Real-World Deployment",
+      desc: "AI solutions are engineered to deliver consistent performance across complex enterprise workloads"
     },
     {
-      title: "Deep Domain and Workflow Alignment",
-      desc: "AI solutions are mapped directly to business processes and operational decision paths."
+      title: "Aligned with Business Processes & Decisions",
+      desc: "AI systems are tightly integrated with workflows and decision-making pathways to drive real impact"
     }
   ]
 
@@ -167,19 +167,19 @@ desc: "Ongoing AI strategic advisory and portfolio oversight."
 const serviceses = [
     {
       icon: <Cpu size={42} />,
-      text: "AI model governance services for versioning, approvals and ownership"
+      text: "Structured model management with clear version control, approvals, and ownership tracking "
     },
     {
       icon: <Layers size={42} />,
-      text: "AI governance platform development customized to enterprise structures"
+      text: "Custom AI governance platforms aligned with enterprise architecture and organizational needs "
     },
     {
       icon: <Database size={42} />,
-      text: "Centralized AI inventory and risk classification"
+      text: "Unified visibility through centralized AI asset inventory and risk categorization "
     },
     {
       icon: <GitBranch size={42} />,
-      text: "Governance workflows aligned with leadership and compliance teams"
+      text: "Governance processes integrated with leadership oversight and regulatory compliance frameworks"
     }
   ];
 
@@ -193,22 +193,18 @@ const serviceses = [
           {/* LEFT CONTENT */}
           <div className="col-lg-6 col-md-12 text-white">
             <h1 className="ai-title">
-              AI Agents & Copilots <br />
-              Development Services for <br />
-              Enterprise Automation
+              Enterprise AI Agents & Copilot Solutions
+Intelligent Automation Services for <br /> Modern Businesses
             </h1>
 
             <p className="ai-desc">
-              We build Enterprise AI Agents that automate workflows and support
-              role-based decisions across core business systems. Designed to run
-              seamlessly across CRM, ERP, support platforms and enterprise data
-              environments.
+              We develop enterprise-grade AI agents that streamline operations and enable context-aware, role-based decision-making across critical business systems. Built to integrate seamlessly with CRM, ERP, customer support platforms, and enterprise data environments.
             </p>
 
             <ul className="ai-list">
-              <li>Deploy intelligent agents faster to automate routine decisions in real time.</li>
-              <li>Multi-LLM architecture with governance delivers consistent outcomes.</li>
-              <li>Human-in-the-loop oversight and real-time monitoring keep AI policy aligned.</li>
+              <li>Accelerate deployment of intelligent agents to automate repetitive tasks and real-time decision workflows.</li>
+              <li>Multi-model AI architecture with built-in governance ensures reliable and consistent performance.</li>
+              <li>Human-in-the-loop control and live monitoring maintain accuracy, compliance, and operational alignment.</li>
             </ul>
 
             {/* <button className="btn ai-btn">
@@ -266,7 +262,7 @@ const serviceses = [
         color: "#FFFFFF",
       }}
     >
-      Delivering Solutions to Market Leaders Worldwide
+     Delivering Intelligent Solutions to Global Innovators
     </h1>
 
     {/* Subtitle */}
@@ -278,7 +274,7 @@ const serviceses = [
         fontSize: "20px",
       }}
     >
-      Be part of the digital revolution
+     Be part of the future-ready digital ecosystem
     </p>
 
   </div>
@@ -326,20 +322,18 @@ const serviceses = [
           <div className="col-lg-6 col-md-12">
 
             <h1 className="ai-hero-title">
-              Build Intelligent Conversational <br /> AI That Works
+             Next-Generation Conversational. <br /> AI for Smarter Engagement
             </h1>
 
             <p className="ai-hero-desc">
-              We deliver enterprise-grade Conversational AI development solutions that enable natural,
-              contextual interactions. Chatbots, Voicebots and AI avatars are designed to work seamlessly
-              across all enterprise channels and workflows.
+              We create advanced conversational AI systems that deliver intelligent, context-aware interactions across digital touchpoints. From chat interfaces to voice assistants and virtual AI personas, our solutions integrate seamlessly into enterprise platforms and business workflows.
             </p>
 
             <ul className="ai-hero-list">
-              <li>Faster Responses, Lower Wait Times</li>
-              <li>Knowledge-Grounded, Accurate AI Answers</li>
-              <li>Seamless Human-in-the-Loop Oversight</li>
-              <li>Secure, Scalable Enterprise Deployments</li>
+              <li>Instant, efficient interactions that improve response speed and user experience</li>
+              <li>Context-driven AI responses powered by structured knowledge systems </li>
+              <li>Integrated human oversight for enhanced control and decision accuracy </li>
+              <li>Robust, secure, and scalable solutions built for enterprise environments</li>
             </ul>
 
             {/* <div className="ai-hero-buttons">
@@ -395,19 +389,15 @@ const serviceses = [
           <div className="col-lg-6 col-md-12">
 
             <h2 className="conversation-title">
-              The Intelligence Behind Every Conversation
+              The Technology Powering Intelligent Digital Interactions
             </h2>
 
             <p className="conversation-text">
-              Conversational AI development brings together NLP, large language models,
-              speech technologies, dialogue orchestration and enterprise integrations
-              to power Chatbots, Voicebots and AI avatars that understand context and intent.
+             Conversational AI combines natural language understanding, advanced AI models, speech recognition, and dialogue management frameworks with deep enterprise integrations to power chat interfaces, voice assistants, and virtual AI experiences that accurately interpret user intent and context.
             </p>
 
             <p className="conversation-text">
-              These systems improve with real usage, connect directly to enterprise data
-              and automate interactions across support, sales and internal operations,
-              enabling faster, smarter and more consistent business experiences at scale.
+             These systems continuously learn from real-world interactions, integrate seamlessly with enterprise data sources, and automate communication across customer support, sales, and internal workflows—delivering faster responses, improved decision-making, and consistent, scalable user experiences across the organization.
             </p>
 
           </div>
@@ -443,14 +433,12 @@ const serviceses = [
       <div className="container position-relative">
 
         <h1 className="main-heading">
-          Intelligent Document Processing <br />
-          Services for Enterprises
+      Intelligent Data Processing & Automation <br /> Solutions for Enterprises
         </h1>
 
         <p className="main-para">
-          Turn unstructured documents into trusted, decision-ready data using
-          enterprise-grade Intelligent Document Processing built to run across
-          workflows, systems and data platforms.
+         Convert complex, unstructured data into actionable business intelligence with advanced AI-powered processing systems designed to integrate seamlessly across enterprise workflows, platforms, and data environments.
+Leverage intelligent automation to streamline document handling, enhance accuracy, and enable faster, data-driven decision-making across your organization.
         </p>
 
         <div className="row g-4 mt-5">
@@ -459,7 +447,7 @@ const serviceses = [
             <div className="para-card">
               <div className="para-card-inner">
                 <i className="fa-solid fa-bolt icon"></i>
-                <span>Faster document processing across teams</span>
+                <span>Faster data processing across business operations</span>
               </div>
             </div>
           </div>
@@ -468,7 +456,7 @@ const serviceses = [
             <div className="para-card">
               <div className="para-card-inner">
                 <i className="fa-solid fa-circle-check icon"></i>
-                <span>Higher data accuracy with automated validation</span>
+                <span>Enhanced accuracy with AI-driven validation systems</span>
               </div>
             </div>
           </div>
@@ -477,7 +465,7 @@ const serviceses = [
             <div className="para-card">
               <div className="para-card-inner">
                 <i className="fa-solid fa-chart-line icon"></i>
-                <span>Full visibility into document workflows</span>
+                <span>Complete visibility across data and workflow pipelines</span>
               </div>
             </div>
           </div>
@@ -486,7 +474,7 @@ const serviceses = [
             <div className="para-card">
               <div className="para-card-inner">
                 <i className="fa-solid fa-shield-halved icon"></i>
-                <span>Controlled exception handling and governance</span>
+                <span>Controlled exception management with built-in governance</span>
               </div>
             </div>
           </div>
@@ -515,34 +503,33 @@ const serviceses = [
           <div className="col-lg-7">
 
             <h2 className="engage-title">
-              Ways to Engage with Antier
+              Flexible Engagement Models for Enterprise AI Solutions
             </h2>
 
             <p className="engage-desc">
-              Choose the engagement model that best fits your document complexity,
-              scale and timelines.
+              Select the ideal collaboration approach tailored to your business needs, complexity, and growth timelines to accelerate intelligent automation adoption.
             </p>
 
             <div className="engage-cards">
 
               <div className="engage-card">
-                <h5>AI Sprint</h5>
-                <p>Rapid IDP assessment and solution design</p>
+                <h5>AI FastTrack</h5>
+                <p>Accelerated discovery, use-case validation, and solution blueprinting</p>
               </div>
 
               <div className="engage-card">
-                <h5>MVP Delivery</h5>
-                <p>Production-ready Intelligent Document Processing pipeline</p>
+                <h5>Production Launch</h5>
+                <p>End-to-end deployment of scalable, enterprise-ready AI processing systems</p>
               </div>
 
               <div className="engage-card">
-                <h5>Dedicated AI Pod</h5>
-                <p>Continuous optimization and scaling support</p>
+                <h5>Dedicated AI Team</h5>
+                <p>Ongoing optimization, performance tuning, and continuous innovation support</p>
               </div>
 
               <div className="engage-card">
-                <h5>AI Augmentation</h5>
-                <p>Extend existing automation and teams</p>
+                <h5>AI Capability Expansion</h5>
+                <p>Enhance existing systems and empower teams with advanced AI integration</p>
               </div>
 
             </div>
@@ -561,21 +548,20 @@ const serviceses = [
           {/* Left Column: Content */}
           <div className="col-lg-6 order-2 order-lg-1">
             <h3 className=" text-white fw-bold mb-4">
-              Predictive Analytics & <br />
-              <span>Decision Intelligence Services</span>
+              Advanced Predictive Analytics & <br /> 
+              <span>Business Intelligence Solutions</span>
             </h3>
             
             <p className="lead mb-4 text-secondary" style={{ fontSize: '1rem' }}>
-              Unlock data-driven decision-making across your workflows, systems and business 
-              operations with advanced Data & AI.
+             Enable smarter, faster decision-making across your organization by leveraging powerful data analytics and AI-driven intelligence integrated into your core systems and workflows.
             </p>
 
             <ul className="list-unstyled mb-5">
               {[
-                "Rapid data-driven insights to accelerate business decision cycles",
-                "Precise predictive analytics solutions with anomaly detection",
-                "Complete end-to-end visibility through enterprise decision intelligence",
-                "Agentic layer delivers the insights to the users where they are"
+                "Real-time insights that accelerate decision-making and business agility ",
+                "Advanced predictive models with anomaly detection for proactive actions ",
+                "End-to-end visibility across operations with unified intelligence systems",
+                "Context-aware delivery of insights directly within user workflows"
               ].map((text, index) => (
                 <li key={index} className="d-flex align-items-start mb-3">
                   <span className="me-3 text-info">✔</span>
@@ -618,10 +604,9 @@ const serviceses = [
     <section className="engagement-section py-5">
       <div className="container py-5">
         <div className="text-center mb-5">
-          <h3 className="fw-bold text-white mb-3">Our Flexible Engagement Models</h3>
+          <h3 className="fw-bold text-white mb-3">Scalable Engagement Models for AI & Data Solutions</h3>
           <p className="text-secondary mx-auto" style={{ maxWidth: '700px' }}>
-            Choose the engagement model that best fits your business goals, timelines and maturity, 
-            whether you need rapid validation, scalable delivery or continuous decision intelligence services.
+            Select the right partnership model aligned with your business stage, technical complexity, and growth roadmap—whether you need rapid validation, full-scale deployment, or continuous intelligence optimization.
           </p>
         </div>
 
@@ -650,10 +635,9 @@ const serviceses = [
       <div className="container py-5">
         {/* Header Part */}
         <div className="text-center mb-5 pb-4">
-          <h3 className="fw-bold text-white mb-3">Lorem ipsum, dolor sit amet consectetur adipisicing.</h3>
+          <h3 className="fw-bold text-white mb-3">Building Scalable AI Systems for Real-World Impact.</h3>
           <p className="text-secondary mx-auto mb-0" style={{ maxWidth: '800px' }}>
-            Antier combines deep AI expertise with enterprise-grade MLOps solutions to make your models production-ready.
-            We ensure scalable, reliable and secure AI integrations that deliver measurable business outcomes.
+            We combine advanced AI engineering with enterprise-grade deployment frameworks to turn intelligent models into reliable, production-ready solutions. Our approach ensures scalable, secure, and high-performance AI integrations that deliver measurable business value.
           </p>
         </div>
 
@@ -694,15 +678,13 @@ const serviceses = [
           {/* Right Side: Content */}
           <div className="col-lg-6">
             <h3 className="fw-bold mb-4 text-white">
-              From AI Experiments to <br />
-              <span className="">Enterprise-Grade Intelligence</span>
+             From AI Prototypes to <br />
+              <span className="">Scalable Enterprise Intelligence</span>
             </h3>
             
             <div className="content-body">
               <p className="lead-text mb-4">
-                AI Integration Services bridge the gap between standalone AI models and actionable enterprise workflows. 
-                Coupled with MLOps, they ensure your AI runs reliably, scales effortlessly and continuously learns. 
-                Together, they enable enterprises to operationalize AI safely and efficiently.
+                AI integration services transform isolated AI models into fully operational business solutions embedded within real-world workflows. Combined with robust MLOps practices, they ensure consistent performance, seamless scalability, and continuous model improvement. Together, they empower organizations to deploy, manage, and scale AI solutions with reliability, security, and measurable impact.
               </p>
               
               {/* <p className="secondary-text">
@@ -727,14 +709,11 @@ const serviceses = [
           <div className="col-lg-6">
             <h2 className="ai-titleS">
               
-AI Strategy and Consulting Services Company
+AI Strategy & Advisory Services for Enterprises
             </h2>
 
             <p className="ai-desc">
-              AI initiatives often fail not because of ambition, but because value,
-              readiness and ownership are not engineered upfront. Without structured
-              AI value engineering services and feasibility checks, even well-defined
-              strategies struggle to reach production.
+              AI initiatives don’t fail due to lack of vision—they fail when alignment, execution readiness, and ownership are not clearly defined from the start. Without structured evaluation, value mapping, and feasibility validation, even strong AI strategies struggle to translate into real business outcomes.
             </p>
           </div>
 
@@ -784,13 +763,11 @@ className="img-fluid ai-engage-img"
 <div className="col-lg-6">
 
 <h2 className="engage-title">
-Ways to Engage Our AI Strategy Services
+Engagement Models for AI Strategy & Advisory Services
 </h2>
 
 <p className="engage-desc">
-We offer flexible engagement models that let enterprises tap into AI
-strategy consulting services exactly when and how they need, from
-rapid discovery to ongoing strategic oversight.
+Choose a flexible engagement approach designed to support your AI journey at every stage—from initial exploration to continuous strategic governance and long-term value realization.
 </p>
 
 {/* SERVICE LIST */}
@@ -833,13 +810,12 @@ rapid discovery to ongoing strategic oversight.
       <div className="col-lg-6 order-2 order-lg-1">
 
         <h2 className="section-title mb-3">
-          Custom AI & GenAI Application <span>Development Services</span>
+          Custom AI & Generative AI Application
+ <span> Development Solutions</span>
         </h2>
 
         <p className="section-desc mb-4">
-          We offer flexible engagement models that allow enterprises to
-          rapidly test, build and scale AI solutions, ensuring measurable
-          outcomes, secure deployment and long-term support.
+         We provide flexible engagement models that enable enterprises to quickly experiment, build, and scale AI-driven applications—ensuring measurable business impact, secure implementation, and continuous lifecycle support.
         </p>
 
         {/* ITEM 1 */}
@@ -849,10 +825,9 @@ rapid discovery to ongoing strategic oversight.
           </div>
 
           <div>
-            <h5>AI Sprint</h5>
+            <h5>AI Acceleration Sprint</h5>
             <p>
-              Rapidly validate GenAI use cases and assess potential impact
-              within enterprise workflows.
+              Quickly explore and validate high-impact GenAI use cases within real business environments
             </p>
           </div>
         </div>
@@ -866,10 +841,9 @@ rapid discovery to ongoing strategic oversight.
           </div>
 
           <div>
-            <h5>MVP Delivery</h5>
+            <h5>Production-Ready Deployment</h5>
             <p>
-              Build and deploy production-ready AI applications across
-              enterprise systems end-to-end.
+              Design, develop, and launch end-to-end AI applications integrated across enterprise systems
             </p>
           </div>
         </div>
@@ -883,10 +857,9 @@ rapid discovery to ongoing strategic oversight.
           </div>
 
           <div>
-            <h5>Dedicated AI Pod</h5>
+            <h5>Dedicated AI Engineering Team</h5>
             <p>
-              Embed long-term AI engineering teams to continuously develop,
-              optimize and maintain systems.
+             Long-term collaboration with expert teams to enhance, scale, and maintain AI solutions continuously
             </p>
           </div>
         </div>
@@ -928,13 +901,11 @@ rapid discovery to ongoing strategic oversight.
           <div className="col-lg-6">
 
             <h2 className="production-ai-title mb-3">
-              Why AI & GenAI Approach Works in Production
+              Why Our AI & Generative AI Approach Delivers at Scale
             </h2>
 
             <p className="production-ai-description mb-4">
-              Our approach is built for enterprise reality, not experimentation,
-              combining data governance, system integration and domain alignment
-              to deliver AI that scales reliably in live environments.
+              Our methodology is designed for real-world enterprise environments—not just experimentation—integrating data governance, seamless system connectivity, and deep business alignment to ensure AI solutions perform reliably in production.
             </p>
 
             {aiFeatures.map((item, index) => (
@@ -961,20 +932,18 @@ rapid discovery to ongoing strategic oversight.
           {/* LEFT SIDE */}
           <div className="col-lg-6 col-md-12 hero-left">
             <h1 className="title">
-              AI Security and Governance <br />
-              Designed for Enterprise Risk Control
+             Enterprise AI Security & Governance <br />
+              
             </h1>
 
             <p className="hero-desc">
-              Our AI security services and enterprise AI governance solutions
-              help organizations deploy compliant, auditable and responsible AI
-              without slowing innovation.
+              Built for Risk Management and Compliance, Our AI security and governance solutions enable organizations to deploy trusted, compliant, and transparent AI systems while maintaining agility and innovation across business operations.
             </p>
 
             <ul className="hero-list">
-              <li>Secure AI Systems</li>
-              <li>Regulatory-Ready Governance</li>
-              <li>Responsible AI at Scale</li>
+              <li>Robust protection for AI systems and sensitive data environments</li>
+              <li>Compliance-ready frameworks aligned with global regulations and standards </li>
+              <li>Scalable responsible AI practices with built-in oversight and control</li>
             </ul>
           </div>
 
@@ -993,14 +962,13 @@ rapid discovery to ongoing strategic oversight.
       <div className="container text-center">
 
         <h2 className="title-bottom">
-          Enterprise AI Governance Services That
+          Enterprise AI Governance Solutions That Drive 
           <br />
-          Create Control and Clarity
+          Visibility and Operational Control
         </h2>
 
         <p className="subtitle">
-          We design enterprise AI governance solutions that give organizations
-          full visibility, accountability and lifecycle control over every AI system.
+          We build comprehensive AI governance frameworks that provide organizations with end-to-end transparency, accountability, and lifecycle management across all AI systems.
         </p>
 
         <div className="row governance-row mt-5">
@@ -1034,11 +1002,11 @@ rapid discovery to ongoing strategic oversight.
           {/* LEFT CONTENT */}
           <div className="col-lg-6 col-md-7 col-12">
             <h1 className="ai-cta-title">
-              Build AI Agents with control
+              Build Intelligent AI Agents with Full Control
             </h1>
 
             <p className="hero-subtitle">
-              Ready to explore how Voiceflow can help your team? Let’s talk.
+              Ready to discover how AI agents can transform your business operations? Let’s connect and explore the possibilities.
             </p>
 
             <div className="d-flex gap-3 flex-wrap mt-4">
