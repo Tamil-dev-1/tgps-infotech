@@ -60,7 +60,7 @@ export default function AboutUs() {
       </section> */}
 
        <section className="difference-section">
-      <div className="container-fluid">
+      <div className="container">
 
         <div className="row align-items-center difference-row">
 

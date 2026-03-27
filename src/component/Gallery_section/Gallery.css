@@ -1,303 +1,85 @@
-/* .leaders-section {
- background: #C6FF00;
-background: linear-gradient(145deg,rgba(198, 255, 0, 1) 0%, rgba(0, 0, 0, 1) 28%);
+.team-section {
+  background-color: #0B0B0B;
   color: #fff;
-} */
+}
 
-/* .leaders-section {
-  background-image: url("https://images.pexels.com/photos/7888671/pexels-photo-7888671.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+/* Heading */
+.team-subtitle {
+  color: #C6FF00;
+  letter-spacing: 2px;
+  font-size: 15px;
+}
+
+.team-title {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.team-title {
   color: #fff;
-} */
-
-.leaders-section {
-  background-image: url("../../assets//images/gallery/neonBG.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed; /* optional parallax feel */
-  color: #fff;
-  position: relative;
 }
 
-/* 🔥 dark overlay for readability */
-.leaders-section::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.7); /* adjust darkness */
-  z-index: 0;
+.team-desc {
+  color: #aaa;
+  max-width: 700px;
+  margin: 10px auto 0;
 }
 
-.leaders-section .container {
-  position: relative;
-  z-index: 1;
+/* Card */
+.team-card {
+  background: #111;
+  border: 1px solid #222;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+  height: 100%;
 }
 
-.title {
-  color: #B4E701;
-  font-weight: 700;
+/* Hover Effect */
+.team-card:hover {
+  border: 1px solid #c6ff00;
+  box-shadow: 0 0 15px rgba(198, 255, 0, 0.2);
+  transform: translateY(-5px);
 }
 
-/* GRID - 5 PER ROW */
-.leaders-grid {
+/* Icon Box */
+.icon-box {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #0B0B0B, #C6FF00);
+  border: 1px solid #333;
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: #c6ff00;
+  font-size: 24px;
 }
 
-.leader-item {
-  width: calc(20% - 16px);
+/* Text */
+.category {
+  color: #C6FF00;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.team-card h5 {
+  font-weight: 600;
+}
+
+.desc {
+  color: #aaa;
+  font-size: 14px;
 }
 
 /* Responsive */
-@media (max-width: 992px) {
-  .leader-item {
-    width: calc(33.33% - 16px);
-  }
-}
 @media (max-width: 768px) {
-  .leader-item {
-    width: calc(50% - 16px);
+  .team-title {
+    font-size: 32px;
   }
-}
-@media (max-width: 480px) {
-  .leader-item {
-    width: 100%;
-  }
-}
 
-/* CARD */
-.leader-card {
-  position: relative;
-  border-radius: 12px;
-  overflow: hidden;
-  transition: 0.4s ease;
-}
-
-/* Glow effect */
-.leader-card:hover {
-  box-shadow: 0 0 20px rgba(180, 231, 1, 0.6);
-}
-
-/* IMAGE */
-.leader-card img {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-  transition: 0.4s ease;
-}
-
-.leader-card:hover img {
-  transform: scale(1.08);
-}
-
-/* Light overlay */
-.leader-card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(180, 231, 1, 0);
-  transition: 0.4s ease;
-}
-
-.leader-card:hover::after {
-  background: rgba(180, 231, 1, 0.15);
-}
-
-/* TEXT */
-.overlay {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 12px;
-  background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
-}
-
-.overlay h6 {
-  margin: 0;
-  font-size: 15px;
-  transition: 0.3s;
-}
-
-.overlay p {
-  margin: 0;
-  font-size: 13px;
-  color: #ccc;
-}
-
-/* Text hover */
-.leader-card:hover .overlay h6 {
-  color: #B4E701;
-}
-
-/* LinkedIn Icon */
-.linkedin-icon {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background: rgba(0,0,0,0.6);
-  padding: 6px;
-  border-radius: 4px;
-  z-index: 2;
-}
-
-.linkedin-icon a {
-  color: #B4E701;
-  display: inline-block;
-  font-size: 12px;
-}
-
-/* Icon hover */
-.leader-card:hover .linkedin-icon {
-  background: #B4E701;
-}
-
-.leader-card:hover .linkedin-icon a {
-  color: #000;
-}
-
-
-/* ANIMATION _ EFFECTS */
-
-/* 🔥 ELECTRIC SPARK BACKGROUND */
-.leaders-section {
-  position: relative;
-  overflow: hidden;
-}
-
-/* animated lines layer */
-.leaders-section::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: 
-    linear-gradient(120deg, transparent 40%, rgba(180,231,1,0.15) 50%, transparent 60%),
-    linear-gradient(60deg, transparent 40%, rgba(180,231,1,0.1) 50%, transparent 60%);
-  background-size: 200% 200%;
-  animation: sparkMove 6s linear infinite;
-  z-index: 0;
-  pointer-events: none;
-}
-
-/* glowing dots (sparks) */
-.leaders-section::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: radial-gradient(circle, #B4E701 1px, transparent 1px);
-  background-size: 80px 80px;
-  opacity: 0.08;
-  animation: sparkFloat 10s linear infinite;
-  z-index: 0;
-  pointer-events: none;
-}
-
-/* keep content above animation */
-.leaders-section .container {
-  position: relative;
-  z-index: 1;
-}
-
-/* ✨ animations */
-@keyframes sparkMove {
-  0% {
-    background-position: 0% 50%, 100% 50%;
-  }
-  100% {
-    background-position: 100% 50%, 0% 50%;
-  }
-}
-
-@keyframes sparkFloat {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-50px);
-  }
-}
-
-
-
-/* ⚡ LIGHTNING FLASH */
-.leaders-section::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    120deg,
-    transparent 40%,
-    rgba(180, 231, 1, 0.25) 50%,
-    transparent 60%
-  );
-  opacity: 0;
-  animation: lightningFlash 4s infinite;
-  z-index: 0;
-}
-
-@keyframes lightningFlash {
-  0%, 90%, 100% {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-  92% {
-    opacity: 1;
-    transform: translateX(100%);
-  }
-  94% {
-    opacity: 0;
-  }
-}
-
-
-
-/* 🌌 PARTICLE EXPLOSION */
-.leader-card {
-  position: relative;
-}
-
-.leader-card span.particle {
-  position: absolute;
-  width: 4px;
-  height: 4px;
-  background: #B4E701;
-  border-radius: 50%;
-  pointer-events: none;
-  animation: explode 0.6s ease-out forwards;
-}
-
-@keyframes explode {
-  0% {
-    transform: translate(0, 0);
-    opacity: 1;
-  }
-  100% {
-    transform: translate(var(--x), var(--y));
-    opacity: 0;
-  }
-}
-
-
-
-/* 🎇 MOUSE SPARK */
-.spark {
-  position: fixed;
-  width: 6px;
-  height: 6px;
-  background: #B4E701;
-  border-radius: 50%;
-  pointer-events: none;
-  box-shadow: 0 0 10px #B4E701;
-  animation: sparkFade 0.6s linear forwards;
-  z-index: 9999;
-}
-
-@keyframes sparkFade {
-  to {
-    transform: scale(0);
-    opacity: 0;
+  .team-card {
+    padding: 15px;
   }
 }
