@@ -931,7 +931,7 @@ Choose a flexible engagement approach designed to support your AI journey at eve
 
           {/* LEFT SIDE */}
           <div className="col-lg-6 col-md-12 hero-left">
-            <h1 className="title">
+            <h1 style={{fontSize:"28px"}}>
              Enterprise AI Security & Governance <br />
               
             </h1>

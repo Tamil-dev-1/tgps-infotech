@@ -2,6 +2,7 @@
 /* background:#020b1f; */
 padding:100px 0;
 overflow:hidden;
+margin-top: 60px;
 }
 
 .ai-title{
@@ -226,7 +227,7 @@ transparent
 /* HERO SECTION */
 
 .ai-hero-section{
-
+margin-top: 60px;
 padding-top: 30px;
 padding-bottom: 50px;
 padding-left: 0;
