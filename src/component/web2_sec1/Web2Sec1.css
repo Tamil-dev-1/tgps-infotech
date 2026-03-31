@@ -1,0 +1,158 @@
+.branding-section {
+  background-color: #0b0b0b;
+  min-height: 100vh;
+  color: #ffffff;
+  padding: 80px 0;
+}
+
+/* MAIN TITLE */
+.branding-title {
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+/* HIGHLIGHT */
+.branding-highlight {
+  color: #c6ff00;
+}
+
+/* DESCRIPTION */
+.branding-description {
+  font-size: 18px;
+  color: #bdbdbd;
+  max-width: 600px;
+}
+
+/* BUTTON */
+.branding-button {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 12px 28px;
+  border-radius: 30px;
+  background: transparent;
+  transition: 0.3s;
+}
+
+.branding-button:hover {
+  background-color: #c6ff00;
+  color: #000;
+  border-color: #c6ff00;
+}
+
+/* BOTTOM SECTION */
+.branding-subtitle {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.branding-text {
+  font-size: 16px;
+  color: #bdbdbd;
+  line-height: 1.7;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .branding-title {
+    font-size: 42px;
+  }
+
+  .branding-subtitle {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 576px) {
+  .branding-title {
+    font-size: 32px;
+  }
+
+  .branding-description {
+    font-size: 16px;
+  }
+}
+
+
+
+/* SECTION ------ 2 */
+
+
+.services-section {
+  background-color: #0b0b0b;
+  padding: 80px 0;
+  color: #ffffff;
+}
+
+
+.branding-top-heading {
+  font-size: clamp(26px, 4vw, 38px);
+  font-weight: 700;
+  color: #c6ff00;
+}
+
+/* TITLE */
+.services-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* CARD */
+.service-card {
+  background: #111;
+  border: 1px solid #2a2a2a;
+  border-radius: 20px;
+  padding: 30px;
+  height: 100%;
+  transition: 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.service-card:hover {
+  border-color: #c6ff00;
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(198, 255, 0, 0.1);
+}
+
+/* CARD TITLE */
+.service-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* CARD TEXT */
+.service-desc {
+  font-size: 15px;
+  color: #bdbdbd;
+  line-height: 1.7;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .services-title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 576px) {
+  .services-title {
+    font-size: 26px;
+  }
+
+  .service-card {
+    padding: 20px;
+  }
+}
+
+/* divider */
+
+.services-divider {
+  margin-top: 60px;
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(to right, transparent, #c6ff00, transparent);
+  opacity: 0.6;
+}

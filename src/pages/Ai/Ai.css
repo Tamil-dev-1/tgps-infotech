@@ -1502,3 +1502,38 @@ padding:18px;
   max-width: 350px;
   width: 100%;
 }
+
+/* Top section  */
+
+@media (max-width: 576px) {
+  .ai-agents-section {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-box {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* TEXT CENTER */
+  .hero-box .col-lg-6:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* IMAGE CENTER BELOW */
+  .hero-box .col-lg-6:last-child {
+    margin-top: 20px;
+    justify-content: center !important;
+  }
+
+  /* BUTTON CENTER */
+  .hero-box .d-flex {
+    justify-content: center;
+  }
+}
+

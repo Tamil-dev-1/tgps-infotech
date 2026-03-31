@@ -5,7 +5,7 @@ import ServicesImg from "../../assets/images/Core_Features/services.png";
 const FeatureCard = ({ icon, title, desc, shape }) => {
   return (
     <div className={`feature-card ${shape}`}>
-      <div className="icon-box">
+      <div className="icon-boxes">
         <i className={`bi ${icon}`}></i>
       </div>
 

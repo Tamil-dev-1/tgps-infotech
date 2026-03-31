@@ -194,7 +194,7 @@ const serviceses = [
           <div className="col-lg-6 col-md-12 text-white">
             <h1 className="ai-title">
               Enterprise AI Agents & Copilot Solutions
-Intelligent Automation Services for <br /> Modern Businesses
+           Intelligent Automation Services for <br /> Modern Businesses
             </h1>
 
             <p className="ai-desc">
