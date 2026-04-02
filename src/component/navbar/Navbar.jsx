@@ -146,7 +146,7 @@ export default function MegaNavbar() {
 
               <div className="row">
                 {fullMenuData[activeNav][activeMenu].cards.map((card, i) => (
-                  <div key={i} className="col-md-6 mb-4">
+                  <div key={i} className="col-md-4 mb-4">
                     <Link to ={card.path} className="menu-card text-decoration-none"
                     onClick={()=>{
                       setActiveNav(null);
@@ -172,10 +172,13 @@ export default function MegaNavbar() {
 const fullMenuData = {
   Blockchain: {
     Blockchain:{
-      description:"Navigate your journey towards blockchain",
+      description:"",
       cards:[
-        {title:"Blockchain Development",desc:"Strategic services",path:"/blockchain"},
-        {title:"Identity Management",desc:"Secure identity"},
+        {title:"Blockchain Development",desc:"",path:"/blockchain"},
+        {title:"Identity development ",desc:"",path:"/blockchain"},
+        {title:"DePin development",desc:"",path:"/blockchain"},
+        {title:"White paper Development",desc:"",path:"/blockchain"},
+        {title:"Smart contract audit &  development",desc:"",path:"/blockchain"},
         // {title:"Depin Development",desc:"Future apps"},
         // {title:"Offshore Center",desc:"Build teams"}
       ]
@@ -193,10 +196,11 @@ const fullMenuData = {
   },
   AI:{
     "Our Offerings":{
-      description:"AI solutions",
+      description:"",
       cards:[
-        {title:"AI Agents",desc:"Machine learning",path:"/Ai"},
-        {title:"Chatbots",desc:"Assistants"},
+        {title:"Enterprise AI Solutions",desc:"",path:"/Ai"},
+        {title:"AI Application Development",desc:"",path:"/Ai"},
+        {title:"AI Security & Governance",desc:"",path:"/Ai"},
         // {title:"Vision AI",desc:"Image AI"},
         // {title:"Automation",desc:"Process AI"}
       ]
@@ -204,10 +208,13 @@ const fullMenuData = {
   },
   Web2:{
     "Web2 Development":{
-      description:"Web2 solutions",
+      description:"",
       cards:[
-        {title:"Unity",desc:"lorem",path:"/web2"},
-        {title:"Unreal",desc:"lorem"},
+        {title:"Modern Web Design Solutions",desc:"",path:"/web2"},
+        {title:"Branding",desc:"",path:"/web2"},
+        {title:"Digital Marketing Solution",desc:"",path:"/web2"},
+        {title:"Creative Design Solutions",desc:"",path:"/web2"},
+        {title:"SaaS & Product Development",desc:"",path:"/web2"},
         // {title:"Web3",desc:"Blockchain games"},
         // {title:"AR/VR",desc:"Immersive"}
       ]
@@ -215,10 +222,12 @@ const fullMenuData = {
   },
   Consulting:{
     "Tech Consulting":{
-      description:"Strategic help",
+      description:"",
       cards:[
-        {title:"Architecture",desc:"System design", path:"/consulting"},
-        {title:"Security",desc:"Risk audit"},
+        {title:"Blockchain Consulting & Advisory",desc:"", path:"/consulting"},
+        {title:"AI Future-Ready Company",desc:"",path:"/consulting"},
+        {title:"Web3 ecosystems",desc:"",path:"/consulting"},
+        {title:"DeFI consulting",desc:"",path:"/consulting"},
         // {title:"Cloud",desc:"Infra"},
         // {title:"Scaling",desc:"Growth"}
       ]
@@ -237,10 +246,11 @@ const fullMenuData = {
   // },
   "About Us":{
     "Company":{
-      description:"Know us",
+      description:"",
       cards:[
-        {title:"Our Story",desc:"Journey",path:"/aboutus"},
-        {title:"Team",desc:"Leadership"},
+        {title:"What we do",desc:"",path:"/aboutus"},
+        {title:"What we belive",desc:"",path:"/aboutus"},
+        {title:"careers",desc:"",path:"/aboutus"},
         // {title:"Careers",desc:"Join"},
         // {title:"Contact",desc:"Reach us"}
       ]

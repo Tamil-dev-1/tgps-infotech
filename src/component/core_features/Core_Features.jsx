@@ -26,8 +26,9 @@ const FeaturesSection = () => {
           </span>
 
           <h1 className="feature-title">
-            Innovative IT <span style={{color:"#C6FF00"}}>Strategies <br /> and Solutions</span>
+            Built on Modern <span style={{color:"#C6FF00"}}> Technology. <br /> Designed for What’s Next.</span>
           </h1>
+          <p>We leverage cutting-edge technologies to build systems that are intelligent, scalable, and future-ready</p>
         </div>
 
         <div className="row align-items-center">
@@ -37,22 +38,23 @@ const FeaturesSection = () => {
 
             <FeatureCard
               icon="bi-cloud"
-              title="Cloud-First Architecture"
-              desc="Scalable and resilient cloud environments."
+              title="Cloud-Native Architecture"
+              desc="Built for flexibility, scalability, and high availability across modern cloud environments."
               shape="shape-1"
             />
 
             <FeatureCard
               icon="bi-bar-chart"
-              title="AI Automation"
-              desc="Smart systems that automate workflows."
+              title="AI & Intelligent Automation"
+              desc="From workflow automation to smart decision systems — we integrate AI where it creates real impact."
               shape="shape-2"
             />
 
             <FeatureCard
               icon="bi-link-45deg"
-              title="Blockchain"
-              desc="Secure decentralized infrastructure."
+              title="Blockchain & Digital Trust"
+              desc="Decentralized systems designed for transparency, security, and next-generation digital ecosystems.
+"
               shape="shape-3"
             />
 
@@ -70,22 +72,22 @@ const FeaturesSection = () => {
 
             <FeatureCard
               icon="bi-lightbulb"
-              title="Data Intelligence"
-              desc="Turn data into actionable insights."
+              title=" Data Intelligence & Analytics"
+              desc="Transform raw data into actionable insights that drive smarter business decisions."
               shape="shape-4"
             />
 
             <FeatureCard
               icon="bi-shield-lock"
-              title="Cyber Security"
-              desc="Security embedded into architecture."
+              title=" Cybersecurity by Design"
+              desc="Security is not an add-on — it’s embedded into every layer of the system."
               shape="shape-5"
             />
 
             <FeatureCard
               icon="bi-cpu"
-              title="DevOps"
-              desc="CI/CD pipelines for innovation."
+              title="DevOps & Continuous Delivery"
+              desc="Fast, reliable deployments with automated pipelines and continuous innovation."
               shape="shape-6"
             />
 

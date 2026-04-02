@@ -23,16 +23,29 @@ export default function Footer() {
           {/* Quick Links */}
           <div className="col-lg-3 col-md-6">
             <h5 className="footer-title text-white">Quick Links</h5>
-            <ul className="footer-links footer-text-color">
-              <li><Link to ="/blockchain">
+            <ul className="footer-links footer-text-color blog-hover">
+              <li>
+                <Link className="text-decoration-none text-white" to ="/blockchain">
               Blockchain Development
-              </Link></li>
-              <li>AI Agents</li>
-              <li>Unity</li>
-              <li>Architecture</li>
-              <li>Our Story</li>
-              <li>Link6</li>
-              <li>Link7</li>
+              </Link>
+              </li>
+
+              <li>
+                <Link  to="/Ai" className="text-decoration-none text-white" >Ai</Link>
+              </li>
+              <li>
+                <Link to="/web2" className="text-decoration-none text-white">Web2</Link>
+                </li>
+              <li>
+                <Link to="/consulting" className="text-decoration-none text-white">
+                  Consulting
+                </Link>
+              </li>
+              <li>
+                <Link to="/about" className="text-decoration-none text-white">
+                  About Us
+                </Link>
+              </li>
             </ul>
           </div>
 

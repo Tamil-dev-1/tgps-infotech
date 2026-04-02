@@ -36,16 +36,18 @@ const teamData = [
 
 export default function Team() {
   return (
-    <section className="team-section py-5">
+    <section className="team">
       <div className="container">
 
         {/* Heading */}
-        <div className="text-center mb-5">
-          <p className="team-subtitle">THE PEOPLE</p>
-          <h2 className="team-title">
-            Our <span style={{color:"#C6FF00"}}>Team</span>
+        <div className="team__header text-center">
+          <p className="team__subtitle">THE PEOPLE</p>
+
+          <h2 className="team__title text-white">
+            Our <span className="team__highlight">Team</span>
           </h2>
-          <p className="team-desc">
+
+          <p className="team__description">
             A team of blockchain architects, energy specialists, AI engineers,
             and ecosystem builders united by a common mission.
           </p>
@@ -55,18 +57,18 @@ export default function Team() {
         <div className="row g-4">
           {teamData.map((item, index) => (
             <div className="col-lg-4 col-md-6" key={index}>
-              <div className="team-card d-flex align-items-center">
+              <div className="team__card d-flex align-items-center">
 
-                {/* Icon Box */}
-                <div className="icon-box">
+                {/* Icon */}
+                <div className="team__icon">
                   <i className="bi bi-shield"></i>
                 </div>
 
                 {/* Content */}
-                <div className="ms-3">
-                  <p className="category">{item.category}</p>
-                  <h5>{item.title}</h5>
-                  <p className="desc">{item.desc}</p>
+                <div className="team__content">
+                  <p className="team__category">{item.category}</p>
+                  <h5 className="team__role">{item.title}</h5>
+                  <p className="team__text">{item.desc}</p>
                 </div>
 
               </div>

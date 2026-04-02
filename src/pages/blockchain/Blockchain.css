@@ -24,7 +24,7 @@
 
 .bc-hero-title{
     /* font-size:44px; */
-    font-size: clamp(26px, 4vw, 44px);
+    font-size: clamp(22px, 4vw, 42px);
     font-weight:700;
     margin-bottom:20px;
 }
@@ -116,9 +116,9 @@
     text-align:center;
 }
 
-.bc-hero-title{
+/* .bc-hero-title{
     font-size:36px;
-}
+} */
 
 .bc-hero-visual{
     margin-top:60px;
@@ -217,7 +217,7 @@ max-width:350px;
   position:relative;
   overflow:hidden;
   border-radius:8px;
-  height:220px;
+  height:350px;
 }
 
 /* Thumbnail image */
@@ -283,7 +283,8 @@ max-width:350px;
 .dev-main-title{
   font-weight:700;
   color:#ffffff;
-  margin-bottom:15px;
+  margin-bottom:20px;
+ 
 }
 
 .dev-sub-text{
@@ -312,7 +313,7 @@ max-width:350px;
   text-align:left;
 }
 
-.icon-box{
+.icon-boxB{
   font-size:32px;
   color:#C6FF00;
   margin-bottom:15px;

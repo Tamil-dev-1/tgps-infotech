@@ -10,7 +10,8 @@ padding-right: 0;
 
 /* MAIN TITLE */
 .branding-title {
-  font-size: 38px;
+  /* font-size: 38px; */
+  font-size: clamp(14px, 3vw, 30px);
   font-weight: 800;
   line-height: 1.2;
 }
@@ -45,7 +46,8 @@ padding-right: 0;
 
 /* BOTTOM SECTION */
 .branding-subtitle {
-  font-size: 36px;
+  /* font-size: 36px; */
+  font-size: clamp(22px, 3vw, 30px);
   font-weight: 700;
   color: #ffffff;
 }
@@ -58,19 +60,19 @@ padding-right: 0;
 
 /* RESPONSIVE */
 @media (max-width: 992px) {
-  .branding-title {
+  /* .branding-title {
     font-size: 42px;
-  }
+  } */
 
-  .branding-subtitle {
+  /* .branding-subtitle {
     font-size: 28px;
-  }
+  } */
 }
 
 @media (max-width: 576px) {
-  .branding-title {
+  /* .branding-title {
     font-size: 32px;
-  }
+  } */
 
   .branding-description {
     font-size: 16px;

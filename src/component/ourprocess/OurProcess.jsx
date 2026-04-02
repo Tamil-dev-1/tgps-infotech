@@ -3,12 +3,12 @@ import "./ourprocess.css";
 
 export default function WorkflowSection() {
   const flowSteps = [
-    { id: "01", title: "Identify Challenge", desc: "Business analysis & planning" },
-    { id: "02", title: "Strategy Design", desc: "Solution architecture planning" },
-    { id: "03", title: "AI Development", desc: "Custom AI implementation" },
-    { id: "04", title: "Testing", desc: "QA & performance validation" },
-    { id: "05", title: "Deployment", desc: "Cloud integration launch" },
-    { id: "06", title: "Optimization", desc: "Monitoring & scaling" }
+    { id: "01", title: "Discover", desc: "We dive deep into your business, challenges, and opportunities" },
+    { id: "02", title: "Define", desc: "We shape a clear, scalable strategy aligned with your goals" },
+    { id: "03", title: " Architect", desc: "We design robust, future-ready system architecture" },
+    { id: "04", title: "Build", desc: "We develop high-performance, secure, and scalable solutions" },
+    { id: "05", title: " Launch", desc: "We deploy seamlessly with optimized infrastructure" },
+    { id: "06", title: "Evolve", desc: "We continuously improve, scale, and adapt your systems" }
   ];
 
   return (

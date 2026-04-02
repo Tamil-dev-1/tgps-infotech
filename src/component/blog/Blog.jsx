@@ -2,12 +2,21 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const BlogCarousel = () => {
+
+
+  const navigate = useNavigate();
+  const goToBlog = () => {
+  navigate("/blogs-details");
+};
+
+
   return (
     <div style={{ padding: "60px 0", backgroundColor: "#0B0B0B" }}>
       <div className="container text-center">
@@ -33,7 +42,7 @@ const BlogCarousel = () => {
 
           {/* SLIDE 1 */}
           <SwiperSlide>
-            <Link to="" className="text-decoration-none">
+            <Link to="/blogs1" className="text-decoration-none">
               <div
                 className="card border-0"
                 style={{
@@ -64,7 +73,7 @@ const BlogCarousel = () => {
 
           {/* SLIDE 2 */}
           <SwiperSlide>
-            <Link to="" className="text-decoration-none">
+            <Link to="/blogs2" className="text-decoration-none">
               <div
                 className="card border-0"
                 style={{
@@ -95,7 +104,7 @@ const BlogCarousel = () => {
 
           {/* SLIDE 3 */}
           <SwiperSlide>
-            <Link to="" className="text-decoration-none">
+            <Link to="/blogs3" className="text-decoration-none">
               <div
                 className="card border-0"
                 style={{
@@ -126,7 +135,7 @@ const BlogCarousel = () => {
 
           {/* SLIDE 4 */}
           <SwiperSlide>
-            <Link to="" className="text-decoration-none">
+            <Link to="/blogs4" className="text-decoration-none">
               <div
                 className="card border-0"
                 style={{
@@ -156,7 +165,7 @@ const BlogCarousel = () => {
           </SwiperSlide>
 
           {/* SLIDE 5 */}
-          <SwiperSlide>
+          {/* <SwiperSlide>
             <Link to="" className="text-decoration-none">
               <div
                 className="card border-0"
@@ -184,14 +193,15 @@ const BlogCarousel = () => {
                 </div>
               </div>
             </Link>
-          </SwiperSlide>
+          </SwiperSlide> */}
 
         </Swiper>
 
         {/* VIEW MORE BUTTON */}
         <div className="mt-5 text-center">
-          <Link to="">
+          
             <button
+            onClick={goToBlog}
               className="btn px-5 py-2 fw-semibold"
               style={{
                 backgroundColor: "#C6FF00",
@@ -203,7 +213,7 @@ const BlogCarousel = () => {
             >
               View More Blogs
             </button>
-          </Link>
+          
         </div>
 
       </div>

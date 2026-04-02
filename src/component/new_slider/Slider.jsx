@@ -1,27 +1,31 @@
 import "./slider.css";
+import Blockchain_Img from '../../assets/images/home/blockchain.jpg'
+import Nxt_Gen_Img from '../../assets/images/home/Next-Gen.jpg'
+import Smart_financial_Img from '../../assets/images/home/Smart-Financial.jpg'
+import RWA_Img from '../../assets/images/home/RWA.jpg'
 
 export default function TechSection(){
 
 const items=[
 {
-title:"BLOCKCHAIN",
-desc:"Antier delivers breakthrough blockchain solutions.",
-img:"https://images.pexels.com/photos/2047914/pexels-photo-2047914.jpeg"
+title:"Blockchain Systems",
+desc:"Redefining trust with secure, decentralized digital infrastructure.",
+img:Blockchain_Img
 },
 {
-title:"METAVERSE & GAMING",
-desc:"We create the critical mass needed to help.",
-img:"https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg"
+title:"Next-Gen Digital Experiences",
+desc:"Building platforms that go beyond interaction — creating connected ecosystems.",
+img:Nxt_Gen_Img
 },
 {
-title:"FINANCE SOLUTIONS",
-desc:"Through our extensive industry expertise we deliver .",
-img:"https://images.pexels.com/photos/1595244/pexels-photo-1595244.jpeg"
+title:"Smart Financial Systems",
+desc:"Engineering secure, scalable fintech solutions for modern businesses.",
+img:Smart_financial_Img
 },
 {
-title:"ARTIFICIAL INTELLIGENCE",
-desc:"We activate next generation algorithms to generate.",
-img:"https://images.pexels.com/photos/2007647/pexels-photo-2007647.jpeg"
+title:"RWA Tokenization",
+desc:"Transfer ownership & storage speedily without any centralized finance entity",
+img:RWA_Img
 }
 ];
 

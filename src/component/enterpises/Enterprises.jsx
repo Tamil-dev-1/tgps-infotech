@@ -3,10 +3,10 @@ import "./enterprises.css";
 export default function EnterpriseStats() {
 
   const stats = [
-    { value: "10.07%", label: "Revenue Growth Rate", highlight: true },
-    { value: "5,045", label: "Premium Customers", highlight: true },
-    { value: "12.56%", label: "Developer Growth Rate", highlight: true },
-    { value: "55+", label: "Platform Partners", highlight: true },
+    { value: "350+", label: "Clients Worldwide", highlight: true },
+    { value: "80+", label: "Retained Clients", highlight: true },
+    { value: "5+ Years", label: "of Innovation & Excellence", highlight: true },
+    { value: "4 Countries", label: "Global Presence", highlight: true },
   ];
 
   return (

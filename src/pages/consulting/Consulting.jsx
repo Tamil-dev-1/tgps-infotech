@@ -3,7 +3,8 @@ import './consulting.css'
 import Ai_Brain from '../../assets/images/ai/aibanner4.png';
 import Ai_smBrain from '../../assets/images/ai/aismbrain.png';
 import Web3Img from '../../assets/images/consulting/web3.png'
-import { FaUsers, FaLightbulb, FaExpandArrowsAlt, FaChartLine } from "react-icons/fa";
+import { FaUsers, FaLightbulb, FaExpandArrowsAlt, FaChartLine, FaFileInvoice } from "react-icons/fa";
+import { IoIosBusiness } from "react-icons/io";
 
 
 const Consulting = () => {
@@ -62,12 +63,12 @@ const services = [
       text: "Built with strong data protection, regulatory alignment, and enterprise-grade governance at every layer."
     },
      {
-      icon: <FaChartLine />,
+      icon: <FaFileInvoice />,
       title: "Innovation-Driven Approach",
       text: "We leverage the latest advancements in AI, Web3, and data intelligence to deliver cutting-edge, competitive solutions"
     },
      {
-      icon: <FaChartLine />,
+      icon: <IoIosBusiness />,
       title: "Business-Centric Execution",
       text: "Every solution is aligned with your business goals, ensuring measurable outcomes, ROI, and operational efficiency"
     }

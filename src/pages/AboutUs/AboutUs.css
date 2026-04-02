@@ -1,28 +1,233 @@
-.tgps-wrapper {
-  background: #000;
+/* SECTION ---- 1 */
+
+
+/* SECTION */
+.what-section {
+  background: #0b0b0b;
+  padding: 60px 0;
+ margin-top: 30px;
+}
+
+/* FLEX WRAPPER */
+.what-flex {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+/* LEFT */
+.what-left {
+  flex: 1;
+}
+
+.what-left h2 {
   color: #fff;
-}
-
-/* TOP SECTION */
-.top-section {
-  padding: 100px 20px 60px;
-}
-
-.main-title {
-  font-size: clamp(24px, 5vw, 38px);
   font-weight: 700;
-  color: #fff;
+  font-size: clamp(24px, 3vw, 36px);
   margin-bottom: 20px;
 }
 
-.main-para {
-  max-width: 700px;
-  margin: 0 auto;
-  font-size: 16px;
-  line-height: 1.7;
+.what-left p {
   color: #ccc;
-  margin-bottom: 40px; /* space below paragraph */
+  font-size: clamp(14px, 1.5vw, 16px);
+  line-height: 1.8;
 }
+
+/* RIGHT BOX */
+.what-right {
+  flex: 1;
+  background: #c6ff00;
+  border-radius: 16px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.what-right p {
+  color: #000;
+  font-size: clamp(14px, 2vw, 18px);
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.what-right span {
+  font-weight: 700;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .what-flex {
+    flex-direction: column;
+  }
+
+  .what-right {
+    width: 100%;
+  }
+}
+
+
+
+
+/* SECTION ------ 2 */
+
+
+/* SECTION */
+.innovate {
+  background: #0b0b0b;
+  color: #fff;
+}
+
+/* TITLE */
+.innovate__title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* CARD */
+.innovate__card {
+  background: #111;
+  border-radius: 10px;
+  padding: 25px;
+  text-align: left;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.innovate__card:hover {
+  transform: translateY(-5px);
+  border-color: #c6ff00;
+}
+
+/* ICON HEX */
+.innovate__icon {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #c6ff00;
+  color: #c6ff00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+
+  clip-path: polygon(
+    25% 5%,
+    75% 5%,
+    100% 50%,
+    75% 95%,
+    25% 95%,
+    0% 50%
+  );
+
+  font-size: 22px;
+}
+
+/* TEXT */
+.innovate__card-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.innovate__card-desc {
+  font-size: 14px;
+  color: #aaa;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .innovate__title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .innovate__title {
+    font-size: 24px;
+  }
+
+  .innovate__card {
+    text-align: center;
+  }
+
+  .innovate__icon {
+    margin: 0 auto 15px;
+  }
+}
+
+
+/* SECTION ----- 4 */
+
+
+/* SECTION */
+.belief-section {
+  background: #0b0b0b;
+  color: #fff;
+}
+
+/* TITLE */
+.belief-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* CARD */
+.belief-card {
+  background: #111;
+  padding: 25px;
+  border-radius: 8px;
+  height: 100%;
+  transition: all 0.3s ease;
+
+  /* subtle border like image */
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.belief-card:hover {
+  transform: translateY(-5px);
+  border-color: #c6ff00;
+}
+
+/* TEXT */
+.belief-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.belief-card-desc {
+  font-size: 14px;
+  color: #aaa;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .belief-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .belief-title {
+    font-size: 24px;
+  }
+
+  .belief-card {
+    text-align: center;
+  }
+}
+
+
+
+
+
+
 
 
 /* SECOND SECTION */

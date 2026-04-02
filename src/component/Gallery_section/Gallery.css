@@ -1,85 +1,103 @@
-.team-section {
-  background-color: #0B0B0B;
+/* SECTION */
+.team {
+  background: #0b0b0b;
   color: #fff;
+  padding: 60px 0;
 }
 
-/* Heading */
-.team-subtitle {
-  color: #C6FF00;
+/* HEADER */
+.team__header {
+  margin-bottom: 50px;
+}
+
+.team__subtitle {
+  color: #c6ff00;
   letter-spacing: 2px;
-  font-size: 15px;
+  font-size: 14px;
 }
 
-.team-title {
+.team__title {
   font-size: 40px;
   font-weight: 600;
 }
 
-.team-title {
-  color: #fff;
+.team__highlight {
+  color: #c6ff00;
 }
 
-.team-desc {
+.team__description {
   color: #aaa;
   max-width: 700px;
   margin: 10px auto 0;
 }
 
-/* Card */
-.team-card {
+/* CARD */
+.team__card {
   background: #111;
   border: 1px solid #222;
   padding: 20px;
   border-radius: 10px;
-  transition: 0.3s;
+  transition: all 0.3s ease;
   height: 100%;
 }
 
-/* Hover Effect */
-.team-card:hover {
-  border: 1px solid #c6ff00;
+.team__card:hover {
+  border-color: #c6ff00;
   box-shadow: 0 0 15px rgba(198, 255, 0, 0.2);
   transform: translateY(-5px);
 }
 
-/* Icon Box */
-.icon-box {
+/* ICON */
+.team__icon {
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, #0B0B0B, #C6FF00);
+  background: linear-gradient(135deg, #0b0b0b, #c6ff00);
   border: 1px solid #333;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
   color: #c6ff00;
-  font-size: 24px;
+  font-size: 22px;
+  flex-shrink: 0;
 }
 
-/* Text */
-.category {
-  color: #C6FF00;
+/* CONTENT */
+.team__content {
+  margin-left: 15px;
+}
+
+.team__category {
+  color: #c6ff00;
   font-size: 12px;
   letter-spacing: 1px;
   margin-bottom: 5px;
 }
 
-.team-card h5 {
+.team__role {
   font-weight: 600;
+  margin-bottom: 5px;
 }
 
-.desc {
+.team__text {
   color: #aaa;
   font-size: 14px;
+  margin: 0;
 }
 
-/* Responsive */
+/* RESPONSIVE */
 @media (max-width: 768px) {
-  .team-title {
-    font-size: 32px;
+  .team__title {
+    font-size: 30px;
   }
 
-  .team-card {
+  .team__card {
     padding: 15px;
+  }
+
+  .team__icon {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
   }
 }

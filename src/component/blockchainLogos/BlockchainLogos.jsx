@@ -8,6 +8,13 @@ import AvalancheLogo from '../../assets/images/blockchain/avalanchelogo.webp'
 import CordaLogo from '../../assets/images/blockchain/cordalogo.png'
 import TezosLogo from '../../assets/images/blockchain/tezoslogo.png'
 import ZetachainLogo from '../../assets/images/blockchain/zetachainlogo.png'
+import PiriLogo from '../../assets/images/blockchain/piri_logo.png'
+import BobaLogo from '../../assets/images/blockchain/boba_logo.svg'
+import RippleLogo from '../../assets/images/blockchain/Ripple_logo.jpg'
+import TelosLogo from '../../assets/images/blockchain/Telos_logo.jpg'
+import KlaytnLogo from '../../assets/images/blockchain/klaytn_logo.jpg'
+import TonLogo from '../../assets/images/blockchain/tonlogo.png'
+import HyperledgerLogo from '../../assets/images/blockchain/hyperledger_logo.webp'
 
 const BlockchainLogos = () => {
   // Data array to keep the code clean
@@ -27,14 +34,14 @@ const BlockchainLogos = () => {
     { name: "Harmony", logo: BlockchainLogo },
     { name: "Tezos", logo: TezosLogo },
     { name: "Zetachain", logo: ZetachainLogo },
-    { name: "Hyperledger Fabric", logo: BlockchainLogo },
+    { name: "Hyperledger Fabric", logo: HyperledgerLogo },
     { name: "ICP", logo: BlockchainLogo },
-    { name: "ton", logo: BlockchainLogo },
-    { name: "klaytn", logo: BlockchainLogo },
-    { name: "Telos", logo: BlockchainLogo },
-    { name: "Ripple", logo: BlockchainLogo },
-    { name: "Boba Network", logo: BlockchainLogo },
-    { name: "Pirichain", logo: BlockchainLogo },
+    { name: "ton", logo: TonLogo },
+    { name: "klaytn", logo: KlaytnLogo },
+    { name: "Telos", logo: TelosLogo },
+    { name: "Ripple", logo: RippleLogo  },
+    { name: "Boba Network", logo: BobaLogo },
+    { name: "Pirichain", logo: PiriLogo },
   ];
 
   return (

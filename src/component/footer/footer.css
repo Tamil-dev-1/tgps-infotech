@@ -119,3 +119,8 @@
 .presence:last-child {
   border-bottom: none;
 }
+
+
+.blog-hover:hover {
+  color: #c6ff00; /* your theme color */
+}

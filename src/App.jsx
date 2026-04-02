@@ -2,6 +2,7 @@ import React from 'react'
 import AppRouter from './Router/AppRouter'
 import { useEffect } from "react";
 import './theme.css'
+import './App.css'
 const App = () => {
 
   

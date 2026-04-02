@@ -2,29 +2,33 @@ import React, { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./ScrollBox.css";
+import Sales_Img from '../../assets/images/home/sales.jpg'
+import Security_Img from '../../assets/images/home/security.jpg'
+import Future_Img from '../../assets/images/home/future.jpg'
+import End_Img from '../../assets/images/home/end.jpg'
 
 gsap.registerPlugin(ScrollTrigger);
 
 const panels = [
   {
-    title: "IT Consultancy",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    img: "",
+    title: "Built for Scale",
+    desc: " We design systems that grow with your business —from startup to enterprise-level operations.Our solutions are engineered for performance, reliability, and long-term scalability.",
+    img: Sales_Img,
   },
   {
-    title: "Cloud Computing",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    img: "",
+    title: "Security-First Approach",
+    desc: "Security is not an afterthought — it’s built into every layer. From infrastructure to application level, we ensure your systems remain protected, compliant, and resilient." ,
+    img: Security_Img,
   },
   {
-    title: "Cyber Security",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    img: "",
+    title: "Future-Ready Technology",
+    desc: "We don’t just follow trends — we implement what truly matters.From AI to cloud-native architecture and decentralized systems,we build technology that keeps you ahead.",
+    img: Future_Img,
   },
   {
-    title: "Backup & Recovery",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    img: "",
+    title: "End-to-End Execution",
+    desc: "From idea to deployment and beyond — we handle everything. Strategy, development, integration, and scaling — all under one roof.",
+    img: End_Img,
   },
 ];
 

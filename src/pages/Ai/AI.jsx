@@ -15,6 +15,9 @@ import Particles from "react-tsparticles";
 import VanillaTilt from "vanilla-tilt";
 import { HiH2 } from 'react-icons/hi2';
 import CTA_pattern_img from '../../assets/images/ai/cta-patternImg.png'
+import Generation_img from '../../assets/images/ai/generation.png'
+import DigitalAi_img from '../../assets/images/ai/digitalAi.jpg'
+import Generative_img from '../../assets/images/ai/Generative.jpg'
 
 const AI = () => {
 
@@ -355,7 +358,7 @@ const serviceses = [
           <div className="col-lg-6 col-md-12 text-center">
 
             <img
-              src="https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg"
+              src={Generation_img}
               alt="AI"
               className="img-fluid ai-hero-image"
             />
@@ -379,7 +382,7 @@ const serviceses = [
           {/* LEFT IMAGE */}
           <div className="col-lg-6 col-md-12 text-center mb-4 mb-lg-0">
             <img
-              src='https://images.pexels.com/photos/159108/light-lamp-electricity-power-159108.jpeg'
+              src={DigitalAi_img}
               alt="AI Conversation"
               className="img-fluid conversation-image"
             />
@@ -890,7 +893,7 @@ Choose a flexible engagement approach designed to support your AI journey at eve
           {/* LEFT IMAGE */}
           <div className="col-lg-6 text-center">
             <img
-              src=''
+              src={Generative_img}
               alt="AI"
               className="production-ai-image img-fluid"
             />

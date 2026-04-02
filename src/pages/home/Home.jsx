@@ -10,8 +10,7 @@ import Enterprises from '../../component/enterpises/Enterprises';
 import React, { useContext } from "react";
 import { ThemeContext } from "../../ThemeContext";
 
-import VectorImg1 from '../../assets/images/home/vector2.jpeg';
-import VectorImg2 from '../../assets/images/home/vector3.jpeg';
+
 import { Link} from 'react-router-dom';
 // react - icons
 import { FaPlay } from "react-icons/fa";
@@ -25,6 +24,7 @@ import Img3 from '../../assets/images/Ourservices/3.png'
 import Img4 from '../../assets/images/Ourservices/4.png'
 import globleImg from '../../assets/images/home/global.png';
 import AIbrainImg from '../../assets/images/home/aibrain.png';
+import Tgps_Side_Img from '../../assets/images/home/tgps_side.jpg'
 
 import { motion } from "framer-motion";
 import Testimonial from '../../component/Testimonial/Testimonial';
@@ -88,14 +88,13 @@ export default function Home() {
           </p>
 
           <h1 className="digital-hero-title">
-            The Internet Is Changing —
+            The internet is evolving.
             <br />
-            Be Part of the Digital Revolution
+            Don’t just adapt — lead the shift.
           </h1>
 
           <p className="digital-hero-desc">
-            Fast track your journey with secure digital solutions and 
-            modern enterprise technology platforms.
+            Accelerate your journey with secure, scalable digital solutions.
           </p>
 
           <button className="digital-hero-btn">
@@ -130,10 +129,11 @@ export default function Home() {
             <h1 className="studio-title">TGPS<span style={{color:"#C6FF00"}}>INFOTECH</span></h1>
 
             <p className="studio-text">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Laboriosam, ducimus blanditiis. Distinctio assumenda totam nisi,
-              veniam sed perspiciatis unde? Autem laboriosam maxime tenetur
-              totam incidunt in aut dignissimos eveniet eum.
+              At TGPS Infotech, we go beyond building software —
+we create digital systems that empower businesses, institutions, and communities.
+Our focus is simple: deliver technology that is scalable, secure, and built for the future.
+From enterprise platforms to advanced digital ecosystems,
+we help organizations transform, grow, and lead in a rapidly evolving world.
             </p>
 
             <div className="tag-wrapper">
@@ -150,7 +150,7 @@ export default function Home() {
           <div className="col-lg-5 text-center">
             <div className="image-box">
               <img
-                src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1"
+                src={Tgps_Side_Img}
                 alt="studio"
                 className="studio-img"
               />
@@ -192,13 +192,11 @@ export default function Home() {
             <span className="ai-label">FUTURE TECHNOLOGY</span>
 
             <h1 className="ai-titles mt-3">
-              AI <span style={{color:"#C6FF00"}}>Offerings</span>
+              Intelligence That  <span style={{color:"#C6FF00"}}> Works for You</span>
             </h1>
 
             <p className="ai-text mt-3">
-              Leverage secure and scalable AI-powered solutions to
-              accelerate business transformation and unlock new
-              possibilities.
+             From automation to autonomous systems we build AI that doesn’t just assist, but acts. We don’t just implement AI we make it work where it matters.
             </p>
 
             <button className="ai-btn mt-4">
@@ -323,7 +321,8 @@ export default function Home() {
             </h2>
 
             <p className="section-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto a vel eaque inventore voluptatum iure? Suscipit modi quas quo quia.
+              We create seamless, scalable, and intelligent digital systems
+              that enhance how businesses operate, engage, and grow..
             </p>
 
             <button className="overlap-btn mt-3">
