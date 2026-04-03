@@ -3,9 +3,9 @@ import "./AboutUs.css";
 import Infotech_diff from '../../assets/images/about/infotech_diff.png'
 // import Gallery from "../../component/Gallery_section/Gallery";
 import globleImg from '../../assets/images/home/global.png';
-import Our_Team from '../../assets/images/about/our_team.jpg';
+import Our_Team from '../../assets/images/about/ourTeam.png';
 import AboutTest from '../../component/aboutTestimonial/AboutTest'
-
+import Flow_Img from '../../assets/images/about/flowImg.jpg'
 
 import { MdOutlineContentPasteSearch } from "react-icons/md";
 import { PiStrategyBold } from "react-icons/pi";
@@ -13,38 +13,41 @@ import { GoCommentDiscussion } from "react-icons/go";
 import { AiOutlineGlobal } from "react-icons/ai";
 import { FcElectronics } from "react-icons/fc";
 import { RiFunctionFill } from "react-icons/ri";
+import { Link } from "react-router-dom";
+
+
 export default function AboutUs() {
 
   // section --- 2
   const data = [
   {
     title: "Research",
-    desc: "Rigorous research processes and design thinking-driven methodologies ensure that you access the trusted insights, guidance and solutions required to gain essential competitive edge, operate efficiently, minimize risk, drive results and achieve business success.",
+    desc: "Insight-driven research and design thinking methodologies ensure you gain actionable intelligence, enabling smarter decisions, reduced risks, improved efficiency, and sustained business growth.",
     icon: <MdOutlineContentPasteSearch />,
   },
   {
     title: "Strategy",
-    desc: "Devised leveraging deep industry expertise and analytics, and provided with the accretive value of human insights, our strategy empowers businesses to act with confidence and speed.",
+    desc: "centered insights, our strategies empower businesses to move with clarity, confidence, and speed.",
     icon: <PiStrategyBold />,
   },
   {
     title: "Consulting",
-    desc: "Antier’s ability to identify and leverage opportunity relies on smart innovation architecture and cross-functional teams.",
+    desc: "Our consulting approach focuses on identifying opportunities through innovation frameworks and cross-functional expertise to deliver scalable and impactful solutions",
     icon: <GoCommentDiscussion />,
   },
   {
     title: "Digital",
-    desc: "We navigate our clients’ journey from thinking digital to being digital by leveraging cutting-edge technologies.",
+    desc: "We guide businesses from digital adoption to digital excellence by leveraging Web2, Web3, and AI-driven technologies for measurable transformation.",
     icon:<AiOutlineGlobal />,
   },
   {
     title: "Technology",
-    desc: "Antier fuels digital transformation through crafted services to redefine your application portfolio.",
+    desc: "We drive transformation through advanced technology solutions, building and optimizing applications that align with evolving business needs.",
     icon: <FcElectronics />,
   },
   {
     title: "Operations",
-    desc: "To thrive in today’s market, businesses must act quickly. We help transform operations to harness technology.",
+    desc: "We help modernize operations with intelligent systems and agile processes, enabling businesses to adapt quickly and perform efficiently in dynamic markets.",
     icon: <RiFunctionFill />,
   },
 ];
@@ -57,27 +60,27 @@ export default function AboutUs() {
 const beliefs = [
   {
     title: "Transparency",
-    desc: "Grounded in the value of open and honest communication, we operate in a completely transparent manner to ensure success of our clients.",
+    desc: "We believe in open and honest communication, ensuring complete clarity in our processes to build trust and deliver successful outcomes for our clients",
   },
   {
     title: "Passion",
-    desc: "At Antier, we do everything with passion – for our clients and our organization. Our teams are driven by enthusiasm and commitment.",
+    desc: "We approach every project with energy and dedication, driven by a strong commitment to creating meaningful impact for our clients and our organization.",
   },
   {
     title: "Empowerment",
-    desc: "We are driven to deliver results. We encourage ownership, responsibility, and adopting the right technologies.",
+    desc: "We focus on delivering results by encouraging ownership, accountability, and the adoption of the right technologies to drive progress.",
   },
   {
     title: "Collaboration",
-    desc: "Our experts share knowledge and work together as a team to achieve common goals for clients and ourselves.",
+    desc: "We foster a culture of shared knowledge and teamwork, working together to achieve common goals and deliver better outcomes.",
   },
   {
     title: "Customer Focus",
-    desc: "We create long-term relationships by being responsive and consistently delivering value.",
+    desc: "We prioritize long-term relationships by staying responsive, understanding client needs, and consistently delivering measurable value.",
   },
   {
     title: "Integrity",
-    desc: "We uphold the highest standards of governance and operate with moral and intellectual integrity.",
+    desc: "We operate with strong ethical principles, maintaining the highest standards of professionalism, accountability, and trust in everything we do.",
   },
 ];
 
@@ -90,42 +93,40 @@ const beliefs = [
 
   
      <section className="what-section">
-      <div className="container">
+  <div className="container">
 
-        <div className="what-flex">
+    <div className="what-flex">
 
-          {/* LEFT */}
-          <div className="what-left">
-            <h2>What we do</h2>
+      {/* LEFT */}
+      <div className="what-left">
+        <h2>What we do</h2>
 
-            <p>
-              Founded in 2011, Antier is a global team of 700+ Web3 specialists
-              building trusted digital infrastructures for the decentralized
-              economy. Since pivoting to blockchain in 2017, we have advanced the
-              intersection of trust and intelligence - developing scalable
-              solutions across stablecoins, real-world asset tokenization,
-              exchanges, gaming, rollups, and unified smart accounts.
+        <p>
+          TGPS Infotech is a global team of 90+ specialists building scalable digital ecosystems. We operate at the intersection of Web2, Web3, and AI—delivering solutions across web, mobile, SaaS, blockchain, and next-generation digital platforms.
+        </p>
 
-              Today, under the philosophy Trust Empowering Intelligence, we
-              integrate blockchain and artificial intelligence to help
-              across an increasingly connected world.
-            </p>
-          </div>
+        <p>
+          Guided by our philosophy Trust Empowering Intelligence, we integrate blockchain, AI, and advanced technologies to help businesses enhance transparency, move value, and drive smarter growth.
+        </p>
 
-          {/* RIGHT */}
-          <div className="what-right">
-            <p>
-              We have real-world experience linking blockchain technology and
-              business processes—across the entire blockchain journey
-              <br />
-              <span>—for clients.</span>
-            </p>
-          </div>
-
-        </div>
-
+        <p>
+          We connect Web2, Web3, and AI with real business outcomes—covering the full journey from strategy and design to development and optimization.
+        </p>
       </div>
-    </section>
+
+      {/* RIGHT → IMAGE */}
+      <div className="what-right">
+        <img
+          src={Flow_Img}
+          alt="what we do"
+          className="img-fluid what-img"
+        />
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
 
     {/* SECTION ----- 2 */}
@@ -133,7 +134,7 @@ const beliefs = [
     <section className="innovate py-5">
   <div className="container">
     <h2 className="innovate__title text-center mb-5">
-      How we innovate
+      How We Innovate
     </h2>
 
     <div className="row g-4">
@@ -167,11 +168,11 @@ const beliefs = [
           </h6>
 
           <h2 className="discovery-title">
-            Lorem ipsum dolor sit <span style={{color:"#B4E701"}}>amet Lorem, ipsum.</span>
+            Don’t Just Adapt.  <span style={{color:"#B4E701"}}>Lead the Shift.</span>
           </h2>
 
           <p className="discovery-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur atque, asperiores vero, fugiat ducimus minus, consequatur reprehenderit illo itaque qui praesentium quo! Alias laboriosam magnam ullam maxime eveniet qui neque.
+            Build with a team that blends Web2, Web3, and AI to create systems that don’t follow trends—they define them.
           </p>
 
         </div>
@@ -263,34 +264,35 @@ const beliefs = [
 
 {/* FUTURE TECHNOLOGY VISION --------- 14 */}
 
-<section className="ft-section d-flex align-items-center">
+<section className="ft-section">
   <div className="container">
-    <div className="row align-items-center">
-
+    
+    <div className="ft-wrapper">
+      
       {/* Left Content */}
-      <div className="col-lg-4 text-white">
-        {/* <span className="ft-label">Join Our</span> */}
-
-        <h1 className="ft-title mt-3">
-          Join Our
-          <span style={{color:"#C6FF00"}}> Team</span>
+      <div className="ft-left text-white">
+        <h1 className="ft-title">
+          Join Our <span className="highlight">Team</span>
         </h1>
 
         <p className="ft-text mt-3">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nam magni, pariatur illo vel soluta!
         </p>
 
+        <Link to="/contact-form2" className="text-decoration-none">
         <button className="ft-btn mt-4">
-          Learn more
+          Contact Us
         </button>
+        </Link>
       </div>
 
       {/* Right Image */}
-      <div className="col-lg-8 text-center">
-        <img src={Our_Team} alt="Globe" className="ft-image img-fluid" />
+      <div className="ft-right">
+        <img src={Our_Team} alt="Globe" className="ft-image" />
       </div>
 
     </div>
+
   </div>
 </section>
     </>

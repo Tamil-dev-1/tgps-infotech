@@ -3,8 +3,13 @@ import './consulting.css'
 import Ai_Brain from '../../assets/images/ai/aibanner4.png';
 import Ai_smBrain from '../../assets/images/ai/aismbrain.png';
 import Web3Img from '../../assets/images/consulting/web3.png'
+import Brand1 from '../../assets/images/consulting/brand1.jpg'
+import Brand2 from '../../assets/images/consulting/brand2.jpg'
+import Brand3 from '../../assets/images/consulting/brand3.jpg'
 import { FaUsers, FaLightbulb, FaExpandArrowsAlt, FaChartLine, FaFileInvoice } from "react-icons/fa";
 import { IoIosBusiness } from "react-icons/io";
+import { Link } from 'react-router-dom';
+
 
 
 const Consulting = () => {
@@ -275,7 +280,9 @@ Our products and services are designed to support creators at every stage of the
           </p>
 
           <div className="cta-buttons">
-            <button className="btn-primary">Schedule a Demo</button>
+            <Link to="/contact-form1" className="text-decoration-none">
+              <button className="btn-primary">Schedule a Demo</button>
+            </Link>
           </div>
         </div>
 
@@ -284,15 +291,15 @@ Our products and services are designed to support creators at every stage of the
           <div className="stack-wrapper">
 
             <div className="img-card card-1">
-              <img src="https://images.pexels.com/photos/4389465/pexels-photo-4389465.jpeg" alt="" />
+              <img src={Brand1} alt="" />
             </div>
 
             <div className="img-card card-2">
-              <img src="https://images.pexels.com/photos/7562249/pexels-photo-7562249.jpeg" alt="" />
+              <img src={Brand2} alt="" />
             </div>
 
             <div className="img-card card-3">
-              <img src="https://images.pexels.com/photos/6476270/pexels-photo-6476270.jpeg" alt="" />
+              <img src={Brand3} alt="" />
             </div>
 
           </div>

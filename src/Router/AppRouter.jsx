@@ -17,6 +17,8 @@ import Blog1 from '../pages/Blogs/BlogSingles/blog1/Blog1';
 import Blog2 from '../pages/Blogs/BlogSingles/blog2/Blog2';
 import Blog3 from '../pages/Blogs/BlogSingles/blog3/Blog3';
 import Blog4 from '../pages/Blogs/BlogSingles/blog4/Blog4';
+import Form from '../pages/cta_form/Form';
+import Form2 from '../pages/contact_form/Form2';
 
 const AppRouter = () => {
   const location = useLocation();
@@ -46,6 +48,8 @@ const AppRouter = () => {
           <Route path='/blogs2' element={<Blog2 />} />
           <Route path='/blogs3' element={<Blog3 />} />
           <Route path='/blogs4' element={<Blog4 />} />
+          <Route path='/contact-form1' element={<Form />} />
+          <Route path='/contact-form2' element={<Form2 />} />
         </Routes>
       </main>
 

@@ -18,6 +18,7 @@ import CTA_pattern_img from '../../assets/images/ai/cta-patternImg.png'
 import Generation_img from '../../assets/images/ai/generation.png'
 import DigitalAi_img from '../../assets/images/ai/digitalAi.jpg'
 import Generative_img from '../../assets/images/ai/Generative.jpg'
+import { Link } from 'react-router-dom';
 
 const AI = () => {
 
@@ -1013,9 +1014,11 @@ Choose a flexible engagement approach designed to support your AI journey at eve
             </p>
 
             <div className="d-flex gap-3 flex-wrap mt-4">
-              <button className="btn btn-accent">
-                Get started, it’s free →
-              </button>
+             <Link to="/contact-form1" className="text-decoration-none">
+               <button className="cta-btn">
+                 Get in Touch <span>●</span>
+               </button>
+             </Link>
             </div>
           </div>
 

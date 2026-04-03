@@ -8,6 +8,12 @@
  margin-top: 30px;
 }
 
+.what-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+}
 /* FLEX WRAPPER */
 .what-flex {
   display: flex;
@@ -36,7 +42,7 @@
 /* RIGHT BOX */
 .what-right {
   flex: 1;
-  background: #c6ff00;
+  /* background: #c6ff00; */
   border-radius: 16px;
   padding: 30px;
   display: flex;
@@ -534,17 +540,30 @@
   padding: 80px 0;
 }
 
-.ft-label {
-  color: #C6FF00;
-  font-size: 13px;
-  letter-spacing: 2px;
-  font-weight: 600;
+/* FLEX WRAPPER */
+.ft-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
 }
 
+/* LEFT + RIGHT = 50% */
+.ft-left,
+.ft-right {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+/* TEXT */
 .ft-title {
   font-size: clamp(28px, 5vw, 45px);
   font-weight: 700;
   line-height: 1.2;
+}
+
+.highlight {
+  color: #C6FF00;
 }
 
 .ft-text {
@@ -566,13 +585,26 @@
   background-color: #EFFE00;
 }
 
+/* IMAGE */
+.ft-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .ft-image {
   width: 100%;
-  height: auto;
+  max-width: 500px;
+
+  /* ✅ Reduced height */
+  max-height: 350px;
+  object-fit: contain;
+
   filter: drop-shadow(0 0 40px rgba(158, 255, 0, 0.5));
   animation: glow 3s infinite alternate;
 }
 
+/* GLOW ANIMATION */
 @keyframes glow {
   from {
     filter: drop-shadow(0 0 20px rgba(158,255,0,0.4));
@@ -582,17 +614,19 @@
   }
 }
 
-/* RESPONSIVE */
+/* ✅ RESPONSIVE */
 
+/* Tablet */
 @media (max-width: 991px) {
-
-  .ft-section {
-    padding: 60px 20px;
+  .ft-wrapper {
+    flex-direction: column;
     text-align: center;
   }
 
-  .ft-title {
-    font-size: 38px;
+  .ft-left,
+  .ft-right {
+    max-width: 100%;
+    flex: 0 0 100%;
   }
 
   .ft-text {
@@ -600,32 +634,28 @@
   }
 
   .ft-image {
-    max-width: 450px;
     margin-top: 40px;
+    max-height: 300px;
   }
 }
 
+/* Mobile */
 @media (max-width: 576px) {
-
   .ft-title {
     font-size: 30px;
-    line-height: 1.3;
-  }
-
-  .ft-label {
-    font-size: 11px;
   }
 
   .ft-text {
     font-size: 14px;
   }
 
-  .ft-image {
-    max-width: 320px;
-  }
-
   .ft-btn {
     padding: 10px 22px;
     font-size: 14px;
+  }
+
+  .ft-image {
+    max-width: 320px;
+    max-height: 250px;
   }
 }

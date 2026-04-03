@@ -1,6 +1,6 @@
 import React from "react";
 import "./FeaturesSection.css";
-import ServicesImg from "../../assets/images/Core_Features/services.png";
+import EbImg from "../../assets/images/Core_Features/eb.png";
 
 const FeatureCard = ({ icon, title, desc, shape }) => {
   return (
@@ -63,7 +63,7 @@ const FeaturesSection = () => {
           {/* Center Image */}
           <div className="col-lg-6 text-center my-4 my-lg-0">
             <div className="center-image-wrapper mx-auto">
-              <img src={ServicesImg} alt="services"/>
+              <img src={EbImg} alt="services"/>
             </div>
           </div>
 

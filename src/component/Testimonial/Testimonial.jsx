@@ -1,34 +1,34 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { useRef } from "react";
+import Dummy from '../../assets/images/home/dummy.jpg'
 
 import "swiper/css";
 import "./testimonial.css";
 
 export default function Testimonial() {
-
   const swiperRef = useRef(null);
 
   return (
-    <section className="testimonial-section">
+    <section className="testimonial-wrapper">
       <div className="container">
         <div className="row align-items-center">
 
           {/* LEFT */}
           <div className="col-lg-4 mb-4 mb-lg-0">
 
-            <p className="small-title">Testimonial</p>
+            <p className="testimonial-small-title">Testimonial</p>
 
-            <h2 className="main-title">
-              What Our Clients <br /> <span style={{color:"#C6FF00"}}>Say About Us</span>
+            <h2 className="testimonial-main-title">
+              What Our Clients <br /> <span style={{ color: "#C6FF00" }}>Say About Us</span>
             </h2>
 
-            <p className="desc">
+            <p className="testimonial-desc">
               Each demo built with Teba will look different.
               You can customize almost anything in the appearance of your website.
             </p>
 
-            <div className="nav-buttons">
+            <div className="testimonial-nav-buttons">
               <button onClick={() => swiperRef.current.slidePrev()}>
                 ←
               </button>
@@ -52,9 +52,17 @@ export default function Testimonial() {
                 disableOnInteraction: false
               }}
             >
-              <SwiperSlide><Card/></SwiperSlide>
-              <SwiperSlide><Card2 /></SwiperSlide>
-              <SwiperSlide><Card /></SwiperSlide>
+              <SwiperSlide>
+                <ImageCard img={Dummy} />
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <ImageCard img="https://images.pexels.com/photos/3228817/pexels-photo-3228817.jpeg" />
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <ImageCard img="https://images.pexels.com/photos/3184399/pexels-photo-3184399.jpeg" />
+              </SwiperSlide>
             </Swiper>
 
           </div>
@@ -65,61 +73,11 @@ export default function Testimonial() {
   );
 }
 
-function Card() {
+/* IMAGE CARD COMPONENT */
+function ImageCard({ img }) {
   return (
-    <div className="testimonial-card">
-
-      <div className="stars">★★★★★</div>
-
-      <p className="testimonial-text">
-        Working with several word themes and templates the last
-        years only can say this is best in every level use it for
-        my reviews that I have already are company and the reviews
-        that I have already are all excellent. Not only the design
-        but the code.
-      </p>
-
-      <div className="client-info">
-        <img src="https://i.pravatar.cc/60" alt="" />
-
-        <div>
-          <h6>Marvin McKinney</h6>
-          <span>Product Manager</span>
-        </div>
-
-        <div className="quote">❞</div>
-      </div>
-
-    </div>
-  );
-}
-
-
-function Card2() {
-  return (
-    <div className="testimonial-card">
-
-      <div className="stars">★★★★★</div>
-
-      <p className="testimonial-text">
-        Card Working with several word themes and templates the last
-        years only can say this is best in every level use it for
-        my reviews that I have already are company and the reviews
-        that I have already are all excellent. Not only the design
-        but the code
-      </p>
-
-      <div className="client-info">
-        <img src="https://i.pravatar.cc/60" alt="" />
-
-        <div>
-          <h6>Marvin McKinney</h6>
-          <span>Product Manager</span>
-        </div>
-
-        <div className="quote">❞</div>
-      </div>
-
+    <div className="testimonial-image-box">
+      <img src={img} alt="client" />
     </div>
   );
 }

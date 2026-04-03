@@ -25,6 +25,9 @@ import Img4 from '../../assets/images/Ourservices/4.png'
 import globleImg from '../../assets/images/home/global.png';
 import AIbrainImg from '../../assets/images/home/aibrain.png';
 import Tgps_Side_Img from '../../assets/images/home/tgps_side.jpg'
+import Trans1 from '../../assets/images/home/trans1.jpg'
+import Trans2 from '../../assets/images/home/trans2.jpg'
+import Trans3 from '../../assets/images/home/trans3.jpg'
 
 import { motion } from "framer-motion";
 import Testimonial from '../../component/Testimonial/Testimonial';
@@ -126,7 +129,7 @@ export default function Home() {
 
           {/* Left Content */}
           <div className="col-lg-7">
-            <h1 className="studio-title">TGPS<span style={{color:"#C6FF00"}}>INFOTECH</span></h1>
+            <h1 className="studio-title">TGPS<span style={{color:"#C6FF00"}}>Infotech</span></h1>
 
             <p className="studio-text">
               At TGPS Infotech, we go beyond building software —
@@ -325,17 +328,19 @@ we help organizations transform, grow, and lead in a rapidly evolving world.
               that enhance how businesses operate, engage, and grow..
             </p>
 
+          <Link to="/contact-form1" className="text-decoration-none">
             <button className="overlap-btn mt-3">
-            Get Started
-          </button>
+              Get Started
+            </button>
+          </Link>
           </div>
 
           {/* RIGHT IMAGES */}
           <div className="col-lg-6 overlap-wrapper">
 
-            <img src='https://images.pexels.com/photos/7974/pexels-photo.jpg' alt="" className="overlap-img img-1"/>
-            <img src='https://images.pexels.com/photos/1042143/pexels-photo-1042143.jpeg' alt="" className="overlap-img img-2"/>
-            <img src='https://images.pexels.com/photos/969462/pexels-photo-969462.jpeg' alt="" className="overlap-img img-3"/>
+            <img src={Trans1} alt="" className="overlap-img img-1"/>
+            <img src={Trans2} alt="" className="overlap-img img-2"/>
+            <img src={Trans3} alt="" className="overlap-img img-3"/>
 
           </div>
 
@@ -423,7 +428,7 @@ we help organizations transform, grow, and lead in a rapidly evolving world.
 
         <h1 className="ft-title mt-3">
           Future 
-          Technology <br />
+          Technology 
           <span style={{color:"#C6FF00"}}>Vision</span>
         </h1>
 
@@ -431,9 +436,11 @@ we help organizations transform, grow, and lead in a rapidly evolving world.
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nam magni, pariatur illo vel soluta!
         </p>
 
+        <Link to='/contact-form1'>
         <button className="ft-btn mt-4">
-          Learn more
+          Reach Us
         </button>
+        </Link>
       </div>
 
       {/* Right Image */}

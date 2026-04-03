@@ -8,6 +8,7 @@ import Management_Img from '../../assets/images/blockchain/management.jpg'
 import Smart_Img from '../../assets/images/blockchain/smart.jpg'
 import Lap_Img from '../../assets/images/blockchain/lap.jpeg'
 
+import { Link } from "react-router-dom";
 
 export default function BlockchainHero() {
 
@@ -657,9 +658,11 @@ TGPS Infotech empowers businesses to automate complex workflows by delivering se
               </p>
 
               <div className="cta-buttons">
+                <Link to="/contact-form1" className="text-decoration-none">
                 <button className="cta-btn">
                   Get in Touch <span>●</span>
                 </button>
+                </Link>
 
                 {/* <button className="cta-btn">
                   Start Project <span>●</span>

@@ -10,6 +10,8 @@ import Web2Sec4 from "../../component/web2_Sec4/Web2Sec4";
 import Web2Sec5 from "../../component/web2_sec5/Web2Sec5";
 import Web2Sec6 from "../../component/web2_sec6/Web2Sec6";
 import Web2Sec7 from "../../component/web2_sec7/Web2Sec7";
+import EnterpriseStats from "../../component/enterpises/Enterprises";
+import { Link } from "react-router-dom";
 // import CountUp from "react-countup";
 
 const Web2 = () => {
@@ -81,7 +83,11 @@ const Web2 = () => {
 
       {/* SECTION ----  4*/}
 
-     <Web2Stats />
+       {/* WHY ENTERPRISES CHOOSE US SECTION --------9  */}
+    
+       <EnterpriseStats />
+
+
 
      {/* TEXT MARQUEE SECTION -------- 5 */}
      <WebMarqueeText />
@@ -105,9 +111,11 @@ const Web2 = () => {
 Create scalable, secure, and high-performing digital products built for today’s evolving business landscape.
       </p>
 
-      <button className="web2-cta-btn">
-        Get Started Now →
-      </button>
+     <Link to="/contact-form1" className="text-decoration-none">
+       <button className="web2-cta-btn">
+         Get Started Now →
+       </button>
+     </Link>
 
     </div>
   </div>
