@@ -52,7 +52,7 @@ export default function Web2Sec3() {
         <h1 className="branding-title">
          Transforming your
      brand Into 
-          <span className="branding-highlight"> growth</span>
+          <span className="branding-highlight"> Growth</span>
         </h1>
 
         <p className="branding-description mt-4">

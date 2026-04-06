@@ -15,6 +15,21 @@ import {
 } from "react-icons/fa6";
 
 export default function Footer() {
+
+  const sharePage = () => {
+    if (navigator.share) {
+      navigator.share({
+        title: document.title,
+        text: "Check out this page",
+        url: window.location.href,
+      })
+      .catch((error)=> console.log("Sharing failed", error));
+    }
+    else {
+      alert("Sharing is not supported in this browser")
+    }
+  }
+
   return (
     <footer className="footer-section">
       <div className="container">
@@ -132,7 +147,7 @@ export default function Footer() {
           <div className="col-lg-2 col-md-6">
             <h5 className="footer-title text-white">Follow</h5>
 
-            <div className="social-icons">
+            <div className="social-icons" style={{cursor: 'pointer'}} onClick={sharePage}>
               <span><FaLinkedinIn /></span>
               <span><FaXTwitter /></span>
               <span><FaInstagram /></span>

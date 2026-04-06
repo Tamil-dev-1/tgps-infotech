@@ -30,10 +30,11 @@ import Trans2 from '../../assets/images/home/trans2.jpg'
 import Trans3 from '../../assets/images/home/trans3.jpg'
 
 import { motion } from "framer-motion";
-import Testimonial from '../../component/Testimonial/Testimonial';
+// import Testimonial from '../../component/Testimonial/Testimonial';
 import OurProcess from '../../component/ourprocess/OurProcess';
 import ClientsPartner from '../../component/clients&partner/ClientsPartner';
 import ScrollBox from '../../component/scrollbox/ScrollBox';
+import Faq from '../../component/FAQ/Faq';
 // import ScrollBoxes from "../../component/ScrollBoxes/ScrollBoxes";
 export default function Home() {
 
@@ -129,7 +130,7 @@ export default function Home() {
 
           {/* Left Content */}
           <div className="col-lg-7">
-            <h1 className="studio-title">TGPS<span style={{color:"#C6FF00"}}>Infotech</span></h1>
+            <h1 className="studio-title">TGPS<span style={{color:"#C6FF00"}}> Infotech</span></h1>
 
             <p className="studio-text">
               At TGPS Infotech, we go beyond building software —
@@ -140,10 +141,24 @@ we help organizations transform, grow, and lead in a rapidly evolving world.
             </p>
 
             <div className="tag-wrapper">
-              <span className="tag">Our Mission</span>
-              <span className="tag">Our Vision</span>
-              <span className="tag">Our Awards</span>
-              <span className="tag">Our Values</span>
+              <Link to="/aboutus" className='text-decoration-none'>
+              <span className="tag">What We Do</span>
+              </Link>
+
+              <Link to="/aboutus" className='text-decoration-none'>
+              <span className="tag">How We Innovate</span>
+              </Link>
+
+              <Link to="/aboutus" className='text-decoration-none'>
+              <span className="tag">What We Believe</span>
+              </Link>
+
+              <Link to="/aboutus" className='text-decoration-none'>
+              <span className="tag">Our People</span>
+              </Link>
+              {/* <span className="tag">How We Innovate</span>
+              <span className="tag">What We Believe</span>
+              <span className="tag">Our People</span> */}
               {/* <span className="tag">Our Vision</span> */}
               {/* <span className="tag">Our Awards</span> */}
             </div>
@@ -202,9 +217,11 @@ we help organizations transform, grow, and lead in a rapidly evolving world.
              From automation to autonomous systems we build AI that doesn’t just assist, but acts. We don’t just implement AI we make it work where it matters.
             </p>
 
+            <Link to="/contact-form1" className='text-decoration-none'>
             <button className="ai-btn mt-4">
               Get Started Now
             </button>
+            </Link>
           </div>
 
         </div>
@@ -413,7 +430,11 @@ we help organizations transform, grow, and lead in a rapidly evolving world.
 
     {/*TESTIMONIAL SECTION -------- 13*/}
 
-    <Testimonial />
+    {/* <Testimonial /> */}
+
+    {/* FAQ SECTION  */}
+
+    <Faq />
 
 
  {/* FUTURE TECHNOLOGY VISION --------- 14 */}
@@ -426,14 +447,14 @@ we help organizations transform, grow, and lead in a rapidly evolving world.
       <div className="col-lg-4 text-white">
         <span className="ft-label">FUTURE TECHNOLOGY</span>
 
-        <h1 className="ft-title mt-3">
+        <h1 className="ft-title-section mt-3">
           Future 
           Technology 
-          <span style={{color:"#C6FF00"}}>Vision</span>
+          <span style={{color:"#C6FF00"}}> Vision</span>
         </h1>
 
         <p className="ft-text mt-3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nam magni, pariatur illo vel soluta!
+            Your call connects you with our Web2, Web3, and AI experts, who assess your workflows and recommend high-impact solutions for growth and efficiency.  
         </p>
 
         <Link to='/contact-form1'>

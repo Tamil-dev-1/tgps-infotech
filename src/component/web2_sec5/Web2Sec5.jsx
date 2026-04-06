@@ -52,7 +52,7 @@ export default function Web2Sec5() {
         <h1 className="branding-title">
        Building your
 ideas Into 
-          <span className="branding-highlight"> applications</span>
+          <span className="branding-highlight"> Applications</span>
         </h1>
 
         <p className="branding-description mt-4">

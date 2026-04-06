@@ -52,7 +52,7 @@ export default function Web2Sec7() {
         <h1 className="branding-title">
  Protecting your
 business And 
-          <span className="branding-highlight"> data </span>
+          <span className="branding-highlight"> Data </span>
         </h1>
 
         <p className="branding-description mt-4">

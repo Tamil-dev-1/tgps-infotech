@@ -52,7 +52,7 @@ export default function Web2Sec6() {
         <h1 className="branding-title">
  Building your
 ideas Into 
-          <span className="branding-highlight"> platforms </span>
+          <span className="branding-highlight"> Platforms </span>
         </h1>
 
         <p className="branding-description mt-4">

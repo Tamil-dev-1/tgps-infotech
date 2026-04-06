@@ -31,7 +31,7 @@
 
 .bc-hero-desc{
     color:#b5b5b5;
-    max-width:500px;
+    /* max-width:500px; */
     line-height:1.7;
     margin-bottom:30px;
 }
@@ -162,7 +162,7 @@ margin-left:auto;
 
 .bc-hero-img{
 margin:auto;
-max-width:350px;
+/* max-width:400px; */
 }
 
 }
@@ -534,7 +534,7 @@ max-width:350px;
 .cta-text {
   color: #cccccc;
   margin-top: 15px;
-  max-width: 450px;
+  /* max-width: 450px; */
 }
 
 /* BUTTONS */

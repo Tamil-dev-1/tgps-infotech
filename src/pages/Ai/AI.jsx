@@ -813,9 +813,9 @@ Choose a flexible engagement approach designed to support your AI journey at eve
       {/* LEFT CONTENT */}
       <div className="col-lg-6 order-2 order-lg-1">
 
-        <h2 className="section-title mb-3">
+        <h2 className=" mb-3">
           Custom AI & Generative AI Application
- <span> Development Solutions</span>
+  Development Solutions
         </h2>
 
         <p className="section-desc mb-4">
@@ -1016,7 +1016,7 @@ Choose a flexible engagement approach designed to support your AI journey at eve
             <div className="d-flex gap-3 flex-wrap mt-4">
              <Link to="/contact-form1" className="text-decoration-none">
                <button className="cta-btn">
-                 Get in Touch <span>●</span>
+               Connect <span>●</span>
                </button>
              </Link>
             </div>

@@ -175,10 +175,10 @@ const fullMenuData = {
       description:"",
       cards:[
         {title:"Blockchain Development",desc:"",path:"/blockchain"},
-        {title:"Identity development ",desc:"",path:"/blockchain"},
-        {title:"DePin development",desc:"",path:"/blockchain"},
+        {title:"Identity Development ",desc:"",path:"/blockchain"},
+        {title:"DePin Development",desc:"",path:"/blockchain"},
         {title:"White paper Development",desc:"",path:"/blockchain"},
-        {title:"Smart contract audit &  development",desc:"",path:"/blockchain"},
+        {title:"Smart contract audit &  Development",desc:"",path:"/blockchain"},
         // {title:"Depin Development",desc:"Future apps"},
         // {title:"Offshore Center",desc:"Build teams"}
       ]
@@ -212,7 +212,7 @@ const fullMenuData = {
       cards:[
         {title:"Modern Web Design Solutions",desc:"",path:"/web2"},
         {title:"Branding",desc:"",path:"/web2"},
-        {title:"Digital Marketing Solution",desc:"",path:"/web2"},
+        {title:"Digital Marketing Solutions",desc:"",path:"/web2"},
         {title:"Creative Design Solutions",desc:"",path:"/web2"},
         {title:"SaaS & Product Development",desc:"",path:"/web2"},
         // {title:"Web3",desc:"Blockchain games"},
@@ -226,8 +226,8 @@ const fullMenuData = {
       cards:[
         {title:"Blockchain Consulting & Advisory",desc:"", path:"/consulting"},
         {title:"AI Future-Ready Company",desc:"",path:"/consulting"},
-        {title:"Web3 ecosystems",desc:"",path:"/consulting"},
-        {title:"DeFI consulting",desc:"",path:"/consulting"},
+        {title:"Web3 Ecosystems",desc:"",path:"/consulting"},
+        {title:"DeFI Consulting",desc:"",path:"/consulting"},
         // {title:"Cloud",desc:"Infra"},
         // {title:"Scaling",desc:"Growth"}
       ]
@@ -250,7 +250,7 @@ const fullMenuData = {
       cards:[
         {title:"What we do",desc:"",path:"/aboutus"},
         {title:"What we belive",desc:"",path:"/aboutus"},
-        {title:"careers",desc:"",path:"/aboutus"},
+        {title:"Careers",desc:"",path:"/aboutus"},
         // {title:"Careers",desc:"Join"},
         // {title:"Contact",desc:"Reach us"}
       ]

@@ -65,7 +65,7 @@ box-shadow:0 20px 50px rgba(198,255,0,0.45);
 
 /* Soft Glow Effect */
 
-.feature-card::before{
+/* .feature-card::before{
 
 content:"";
 
@@ -87,7 +87,7 @@ filter:blur(25px);
 
 opacity:0.4;
 
-}
+} */
 
 /* Icon */
 

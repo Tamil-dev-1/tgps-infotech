@@ -4,7 +4,7 @@ import Infotech_diff from '../../assets/images/about/infotech_diff.png'
 // import Gallery from "../../component/Gallery_section/Gallery";
 import globleImg from '../../assets/images/home/global.png';
 import Our_Team from '../../assets/images/about/ourTeam.png';
-import AboutTest from '../../component/aboutTestimonial/AboutTest'
+// import AboutTest from '../../component/aboutTestimonial/AboutTest'
 import Flow_Img from '../../assets/images/about/flowImg.jpg'
 
 import { MdOutlineContentPasteSearch } from "react-icons/md";
@@ -254,10 +254,60 @@ const beliefs = [
 </section> */}
 
 
+{/* NEW SECTION */}
+
+   <section className="branding-section d-flex align-items-center">
+  <div className="container">
+
+    {/* NEW TOP CENTER HEADING */}
+    {/* <div className="text-center mb-5">
+      <h2 className="branding-top-heading">
+       Webdesign
+      </h2>
+    </div> */}
+
+    {/* TOP CONTENT */}
+    <div className="row">
+      <div className="col-lg-8">
+        <h1 className="branding-title">
+         Create the career <br />you love
+          <span className="branding-highlight"> Brand</span>
+        </h1>
+
+        <p className="branding-description mt-4">
+        Build your future in a fast-evolving environment where innovation meets opportunity. We empower you to grow, explore your potential, and shape a career aligned with your ambitions.
+        </p>
+
+        {/* <button className="btn branding-button mt-4">
+          Schedule a Call
+        </button> */}
+      </div>
+    </div>
+
+    {/* BOTTOM CONTENT */}
+    <div className="row branding-bottom mt-5 pt-5">
+
+      <div className="col-lg-6 mb-4">
+        <h2 className="branding-subtitle">
+          Experience the Advantage <br /> of Working  at TGPS Infotech
+        </h2>
+      </div>
+
+      <div className="col-lg-6">
+        <p className="branding-text">
+          At TGPS Infotech, we are a team driven by innovation, ownership, and results. We move with speed, embrace challenges, and continuously evolve with technology. Beyond work, we foster a culture where learning, collaboration, and growth come together—creating a journey that is both rewarding and impactful. Ready to grow with us?
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 
 
-<AboutTest />
+
+
+{/* <AboutTest /> */}
 
 
 
@@ -276,7 +326,7 @@ const beliefs = [
         </h1>
 
         <p className="ft-text mt-3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nam magni, pariatur illo vel soluta!
+          Our team thrives on innovation, collaboration, and ownership, building impactful solutions while growing together in a culture driven by trust and excellence.
         </p>
 
         <Link to="/contact-form2" className="text-decoration-none">

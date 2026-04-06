@@ -69,10 +69,10 @@ function Card() {
       </p>
 
       <div className="tm-client-info">
-        <img src="https://i.pravatar.cc/60" alt="" />
+        {/* <img src="https://i.pravatar.cc/60" alt="" /> */}
 
         <div>
-          <h6>Marvin McKinney</h6>
+          <h6>Marvin McKinney1</h6>
           <span>Product Manager</span>
         </div>
 
@@ -93,10 +93,10 @@ function Card2() {
       </p>
 
       <div className="tm-client-info">
-        <img src="https://i.pravatar.cc/60" alt="" />
+        {/* <img src="https://i.pravatar.cc/60" alt="" /> */}
 
         <div>
-          <h6>Marvin McKinney</h6>
+          <h6>Marvin McKinney2</h6>
           <span>Product Manager</span>
         </div>
 

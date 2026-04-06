@@ -1097,10 +1097,15 @@
 
 /* FUTURE TECHNOLOGY VISION */
 
+/* ================= SECTION ================= */
+
 .ft-future-section {
   background-color: #0B0B0B;
   padding: 80px 0;
 }
+
+
+/* ================= TEXT ================= */
 
 .ft-label {
   color: #C6FF00;
@@ -1109,8 +1114,8 @@
   font-weight: 600;
 }
 
-.ft-title {
-  font-size: clamp(28px, 5vw, 45px);
+.ft-title-section {
+  font-size: clamp(24px, 5vw, 38px);
   font-weight: 700;
   line-height: 1.2;
 }
@@ -1119,6 +1124,9 @@
   color: #cccccc;
   max-width: 450px;
 }
+
+
+/* ================= BUTTON ================= */
 
 .ft-btn {
   background-color: #C6FF00;
@@ -1134,9 +1142,15 @@
   background-color: #EFFE00;
 }
 
+
+/* ================= IMAGE ================= */
+
 .ft-image {
   width: 100%;
   height: auto;
+  display: block;
+  margin: 0 auto;
+
   filter: drop-shadow(0 0 40px rgba(158, 255, 0, 0.5));
   animation: glow 3s infinite alternate;
 }
@@ -1150,16 +1164,18 @@
   }
 }
 
-/* RESPONSIVE */
 
+/* ================= RESPONSIVE ================= */
+
+/* TABLET + BELOW */
 @media (max-width: 991px) {
 
-  .ft-section {
+  .ft-future-section {
     padding: 60px 20px;
-    text-align: center;
+    text-align: center; /* ✅ FIXED */
   }
 
-  .ft-title {
+  .ft-title-section {
     font-size: 38px;
   }
 
@@ -1173,9 +1189,34 @@
   }
 }
 
+
+/* 🔥 FIX FOR 820px–900px (ZENBOOK ISSUE) */
+@media (min-width: 800px) and (max-width: 900px) {
+
+  .ft-future-section .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ft-future-section .col-lg-4 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .ft-future-section .col-lg-8 {
+    width: 100%;
+  }
+
+  .ft-text {
+    margin: 0 auto;
+  }
+}
+
+
+/* MOBILE */
 @media (max-width: 576px) {
 
-  .ft-title {
+  .ft-title-section {
     font-size: 30px;
     line-height: 1.3;
   }
@@ -1197,6 +1238,9 @@
     font-size: 14px;
   }
 }
+
+
+
 
 
 

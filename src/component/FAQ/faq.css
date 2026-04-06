@@ -1,0 +1,91 @@
+/* Section */
+.faq-section {
+  background-color: #0b0b0b;
+  color: #fff;
+}
+
+/* Badge */
+.faq-badge {
+  background: #c6ff00;
+  color: #111;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* Title */
+.faq-title {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+/* Subtitle */
+.faq-subtitle {
+  color: #aaa;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Link */
+.faq-link {
+  color: #c6ff00;
+  cursor: pointer;
+}
+
+/* Accordion */
+.faq-accordion {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Item */
+.faq-item {
+  background: #111;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+/* Button */
+.faq-btn {
+  background-color: #111 !important;
+  color: #fff !important;
+  font-weight: 500;
+  padding: 18px;
+  box-shadow: none !important;
+}
+
+/* Icon color */
+.accordion-button::after {
+  filter: invert(1);
+}
+
+/* Active */
+.faq-btn:not(.collapsed) {
+  color: #c6ff00 !important;
+}
+
+/* Body */
+.faq-body {
+  background-color: #0f0f0f;
+  color: #bbb;
+  padding: 15px 20px;
+}
+
+/* Hover */
+.faq-item:hover {
+  border: 1px solid #c6ff00;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .faq-title {
+    font-size: 26px;
+  }
+
+  .faq-btn {
+    font-size: 14px;
+    padding: 14px;
+  }
+}

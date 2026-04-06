@@ -1,56 +1,62 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay, Navigation } from "swiper/modules";
+import React from "react";
+import "./hero.css";
 
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-
-import "./Hero.css";
-import { useState } from "react";
-
-
-export default function HeroSlider() {
-  const [activeIndex, setActiveIndex] = useState(0);
-
+const Hero = () => {
   return (
-    <section className="heros">
-      <Swiper
-        modules={[Pagination, Autoplay, Navigation]}
-        loop={true}
-        autoplay={{
-          delay: 4000,
-          disableOnInteraction: false,
-        }}
-        pagination={{ clickable: true }}
-        navigation={true}
-        onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
-        className="heroSwiper"
-        
-      >
-        <SwiperSlide className="hero-slide hero1">
-          <div className={`hero-content ${activeIndex === 0 ? "animate" : ""}`}>
-            <h1>Grow Your Business</h1>
-            <p>We build modern digital solutions</p>
-            <button>Let's Talk</button>
-          </div>
-        </SwiperSlide>
+    <section className="hx-hero d-flex align-items-center">
+      <div className="container">
+        <div className="row align-items-center">
 
-        <SwiperSlide className="hero-slide hero2">
-          <div className={`hero-content ${activeIndex === 1 ? "animate" : ""}`}>
-            <h1>Creative IT Solutions</h1>
-            <p>We turn ideas into reality</p>
-            <button>Get Started</button>
-          </div>
-        </SwiperSlide>
+          {/* LEFT */}
+          <div className="col-lg-6 text-white hx-content">
+            <h1 className="hx-title">
+              Build the Future of Digital
+            </h1>
 
-        <SwiperSlide className="hero-slide hero3">
-          <div className={`hero-content ${activeIndex === 2 ? "animate" : ""}`}>
-             <h1>Build Your Future</h1>
-            <p>Modern Web Development</p>
-            <button>Contact Us</button>
+            <p className="hx-subtitle">
+              WEB2. WEB3. AI. UNIFIED.
+            </p>
+
+            <div className="hx-divider">
+              <span></span>
+              <span className="hx-green"></span>
+            </div>
+
+            <p className="hx-desc">
+              We design and develop intelligent platforms that scale,
+              adapt, and lead in a rapidly evolving world.
+            </p>
+
+            {/* STATS */}
+            <div className="hx-stats d-flex justify-content-between align-items-center">
+              <div>
+                <h4>05+</h4>
+                <p>YEARS OF EXPERIENCE</p>
+              </div>
+              <div>
+                <h4>350+</h4>
+                <p>PROJECTS</p>
+              </div>
+              <div>
+                <h4>04</h4>
+                <p>OFFICES</p>
+              </div>
+              <div>
+                <h4>100+</h4>
+                <p>HAPPY CLIENTS</p>
+              </div>
+            </div>
           </div>
-        </SwiperSlide>
-      </Swiper>
+
+          {/* RIGHT */}
+          <div className="col-lg-6 d-none d-lg-block hx-visual">
+            <div className="hx-diagonal"></div>
+          </div>
+
+        </div>
+      </div>
     </section>
   );
-}
+};
+
+export default Hero;
